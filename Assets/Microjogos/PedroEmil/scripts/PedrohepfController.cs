@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MeuController : BaseMGController
+public class PedrohepfController : BaseMGController
 {
 
     protected override void EndMicrogame()
     {
         Debug.Log("Não Implementada End");
+    }
+
+    protected override void StartMicrogame()
+    {
+        Debug.Log("Não Implementada Start");
     }
 
     protected override void WinMicrogame()
@@ -19,7 +24,7 @@ public class MeuController : BaseMGController
 
     private void LateUpdate()
     {
-        //if (GameData.level == 5) GameData.lost = true;
+        if (GameData.level %2 == 0) GameData.lost = true;
     }
 
     

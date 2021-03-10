@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 // Classe base para os microjogos
 public abstract class BaseMGController : MonoBehaviour
@@ -22,7 +19,9 @@ public abstract class BaseMGController : MonoBehaviour
         gameManager.SetUI(uiLocation);
         
         GameData.DebugLog("[BageMGController] Registering delagates");
-        
+
+        GameManager.startMicrogameDelegate += StartMicrogame;
+
         // Registra métodos de derrota e vitória
         GameManager.loseMicrogameDelegate += EndMicrogame;
         GameManager.winMicrogameDelegate += WinMicrogame;
@@ -32,15 +31,13 @@ public abstract class BaseMGController : MonoBehaviour
     {
         GameData.DebugLog("[BageMGController] OnDisable()");
 
-        //SceneManager.sceneLoaded -= GameManager.Initialize;
-
         GameData.DebugLog("[BageMGController] De-registering delegates");
-
+        GameManager.startMicrogameDelegate -= StartMicrogame;
         GameManager.loseMicrogameDelegate -= EndMicrogame;
         GameManager.winMicrogameDelegate -= WinMicrogame;
     }
-
-
+    
+    protected abstract void StartMicrogame();
     protected abstract void WinMicrogame();
     protected abstract void EndMicrogame();
 

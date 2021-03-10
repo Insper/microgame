@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +14,7 @@ public class GameData
 
     static List<int> lastScenes = new List<int>();
     public static int level { get; private set; } = 0;
+    public static int lives = 3;
 
     // caso jogador perca uma partida essa variável se torna verdade temporariamente
     public static bool lost = false;
