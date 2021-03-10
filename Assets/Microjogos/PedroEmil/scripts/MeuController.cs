@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+
 public class MeuController : BaseMGController
 {
 
-    protected override void EndGame()
+    protected override void EndMicrogame()
     {
         Debug.Log("Não Implementada End");
     }
 
-    protected override void WinGame()
+    protected override void WinMicrogame()
     {
         Debug.Log("Não Implementada Win");
     }

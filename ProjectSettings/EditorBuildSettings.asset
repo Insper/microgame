@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/EndGame.unity
     guid: 098e97ad264c37946a471470c1e7cfaa
   - enabled: 1
-    path: Assets/exemplo/scenes/Cena01.unity
+    path: Assets/microjogos/PedroEmil/scenes/Cena01.unity
     guid: cf07f4aa84c86c0488f506f1bdd2826e
   - enabled: 1
     path: Assets/Scenes/Cena02.unity

@@ -9,11 +9,15 @@ public class GameManager : MonoBehaviour
 {
 
     #region GameManagement
-    public delegate void WinGameDelegate();
-    public static WinGameDelegate winGameDelegate;
 
-    public delegate void LoseGameDelegate();
-    public static LoseGameDelegate loseGameDelegate;
+        // Delegate que será usado quando jogador ganhar partida
+        public delegate void WinMicrogameDelegate();
+        public static WinMicrogameDelegate winMicrogameDelegate;
+
+        // Delegate que será usado quando jogador perder partida
+        public delegate void LoseMicrogameDelegate();
+        public static LoseMicrogameDelegate loseMicrogameDelegate;
+        
     #endregion
 
     public enum UILocation { UP, DOWN, LEFT, RIGHT};
@@ -22,6 +26,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _down = default;
     [SerializeField] private GameObject _right = default;
     [SerializeField] private GameObject _left = default;
+
 
     private Slider slider;
 
@@ -44,6 +49,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(timeLeft);
     }
 
+    // ativa e reseta a barra de tempo
     public void SetUI(UILocation location)
     {
         switch (location)
@@ -65,22 +71,28 @@ public class GameManager : MonoBehaviour
                 slider = _right.GetComponentInChildren<Slider>();
                 break;
         }
+
         slider.maxValue = 1;
         slider.minValue = 0;
+
     }
 
-   IEnumerator LoadNext()
+    // carrega a próxima cena
+    IEnumerator LoadNext()
     {
         GameData.DebugLog("[GameManager] LoadNext() Started");
         yield return new WaitForSecondsRealtime(GameData.GetTime());
+
+        // caso as vidas tenham acabado, termina o jogo
         if (GameData.lost)
         {
-            StartCoroutine(EndGame());
+            StartCoroutine(EndMicrogame());
             yield break;
         }
+
         int nextScene;
-        GameData.DebugLog("[GameManager] Will call WinGameDelegate()");
-        winGameDelegate();
+        GameData.DebugLog("[GameManager] Will call WinMicrogameDelegate()");
+        winMicrogameDelegate();
         yield return new WaitForSecondsRealtime(1.0f);
         
         do
@@ -93,11 +105,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
-    IEnumerator EndGame()
+    IEnumerator EndMicrogame()
     {
-        GameData.DebugLog("[Game Manager] EndGame() Started");
-        GameData.DebugLog("[GameManager] Will call EndGameDelegate()");
-        loseGameDelegate();
+        GameData.DebugLog("[Game Manager] EndMicrogame() Started");
+        GameData.DebugLog("[GameManager] Will call EndMicrogameDelegate()");
+        loseMicrogameDelegate();
         yield return new WaitForSecondsRealtime(1.0f);
         GameData.DebugLog("[GameManager] Will load end game scene");
         SceneManager.LoadScene(1);
