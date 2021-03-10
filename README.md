@@ -89,9 +89,9 @@ public class NomeController : BaseMGController
 
 Existem também 2 *prefabs* importantes na pasta ressources:
 
-**Canvas**
+**Canvas** onde residem os sliders que funcionam como barra de tempo.
 
-**GameManager**
+**GameManager** é o GameObject em que reside o Script do GameManager, ele é instanciado automaticamente pelo awake do `BaseMGController`.
 
 ### Entrega (Pull Request)
 
@@ -99,6 +99,7 @@ Para que seu pull request seja aceito, e consequentemente entregue você deverá
 
 Para os assets que for criar adicione um prefixo com as iniciais de seu nome, para evitar colisão de nomes com colegas.
 
+Exemplo
 ```
 Microjogos
 |   +---PedroEmil
