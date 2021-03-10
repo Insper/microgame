@@ -18,10 +18,10 @@ public class GameManager : MonoBehaviour
 
     public enum UILocation { UP, DOWN, LEFT, RIGHT};
 
-    [SerializeField] private GameObject _up;
-    [SerializeField] private GameObject _down;
-    [SerializeField] private GameObject _right;
-    [SerializeField] private GameObject _left;
+    [SerializeField] private GameObject _up = default;
+    [SerializeField] private GameObject _down = default;
+    [SerializeField] private GameObject _right = default;
+    [SerializeField] private GameObject _left = default;
 
     private Slider slider;
 

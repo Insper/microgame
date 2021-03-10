@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public abstract class BaseMGController : MonoBehaviour
 {
-    [SerializeField] GameManager.UILocation uiLocation;
+    [SerializeField] GameManager.UILocation uiLocation = default;
     protected GameManager gameManager;
 
     protected virtual void Awake()
