@@ -32,18 +32,6 @@ public class ControllerLucianoSoares : BaseMGController
         // Mensagem inicial
         GameManager.Text.text = "Não deixe a bola cair!";
         
-        // Bola é desativada enquanto partida não começa
-        bola.SetActive(false);
-
-    }
-
-    // Exemplo de jogo principal
-    protected override void Microgame()
-    {
-        // Bola é ativada em posição aleatória e gravidade faz ela cair
-        float pos = Random.Range(-6.0f, 6.0f);
-        bola.transform.position += new Vector3(pos, 0, 0);
-
         // Raquete é escalada conforme o nível
         if(GameData.level > 4)
         {
@@ -57,7 +45,18 @@ public class ControllerLucianoSoares : BaseMGController
         {
             raquete.transform.localScale = new Vector3(4, 1, 1);
         }
-        
+
+        // Bola é desativada enquanto partida não começa
+        bola.SetActive(false);
+
+    }
+
+    // Exemplo de jogo principal
+    protected override void Microgame()
+    {
+        // Bola é ativada em posição aleatória e gravidade faz ela cair
+        float pos = Random.Range(-6.0f, 6.0f);
+        bola.transform.position += new Vector3(pos, 0, 0);
 
         bola.SetActive(true);
         
