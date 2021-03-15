@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     private Slider slider;
     private float startTime;
 
+    private int vidas = 3;
+
     // ativa e reseta a barra de tempo
     public void SetUI(UILocation location)
     {
@@ -69,21 +71,59 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region UnityScriptLifecycle
+
     private void OnEnable()
     {
         GameData.DebugLog("[Game Manager] OnEnable");
         GameData.lost = false;
         GetComponentInChildren<Text>().text = GameData.GetTime().ToString();
         startTime = Time.time;
-        StartCoroutine(TimeControl());
+
+        Button btn = gameObject.GetComponentInChildren<Canvas>().GetComponentInChildren<Button>();
+        
+        int buildIndex = SceneManager.GetActiveScene().buildIndex;
+        // Caso seja a cena principal (aquela que chama os microgames)
+    	if (buildIndex==0) {
+            btn.gameObject.SetActive(true);
+            if (GameData.lives > 0) {
+                GetComponentInChildren<Text>().text = "Microjogos";
+                btn.GetComponentInChildren<Text>().text = "Começar";
+                btn.onClick.AddListener(StartGame);
+            } else {
+                GetComponentInChildren<Text>().text = "Fim";
+                btn.GetComponentInChildren<Text>().text = "Reiniciar";
+                btn.onClick.AddListener(ResetGame);
+            }
+        } else {
+            print(GameData.lives);
+            btn.gameObject.SetActive(false);
+            StartCoroutine(TimeControl());
+        }
+
+    }
+
+    private void StartGame() {
+        GameData.reset(vidas);
+        LoadNext();
+    }
+
+    // Inicia/Reinicia o número de vidas do jogador
+    void ResetGame()
+    {
+        GameData.reset(vidas);
+        SceneManager.LoadScene(0);
     }
 
     private void LateUpdate()
     {
-        float timeLeft = (Time.time - startTime) / GameData.GetTime();
-        slider.value = timeLeft;
+        int buildIndex = SceneManager.GetActiveScene().buildIndex;
+        if (buildIndex>0) {
+            float timeLeft = (Time.time - startTime) / GameData.GetTime();
+            slider.value = timeLeft;
+        }
     }
     #endregion
+
 
     // Assim que carregado, inicializa esta corrotina para controlar o tempos dos microjogos
     // Introdução (2s)> Jogo (5s max) > Ganhar ou Perder(3s)
@@ -102,6 +142,7 @@ public class GameManager : MonoBehaviour
 
         if (GameData.lost)
         {
+
             GameData.DebugLog("[GameManager] TimeControll() Will call EndMicrogameDelegate()");
             loseMicrogameDelegate();
             yield return new WaitForSecondsRealtime(outroTime);
@@ -130,7 +171,7 @@ public class GameManager : MonoBehaviour
         do
         {
             int max = SceneManager.sceneCountInBuildSettings;
-            nextScene = Random.Range(2, max);
+            nextScene = Random.Range(1, max);
         } while (!GameData.CanLoadScene(nextScene));
 
         GameData.DebugLog("[GameManager] Will load next scene");
@@ -140,7 +181,7 @@ public class GameManager : MonoBehaviour
     void LostMicrogame()
     {
         GameData.lives--;
-        if (GameData.lives < 0)
+        if (GameData.lives <= 0)
         {
             EndGame();
             return;
@@ -151,7 +192,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         GameData.DebugLog("[GameManager] Will load end game scene");
-        SceneManager.LoadScene(1); //Cena EndGame deve ter id 1 no build settings
+        SceneManager.LoadScene(0); //Cena para o fim do jogo deve ter id 0 no build settings
     }
 
 
