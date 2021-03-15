@@ -43,6 +43,22 @@ public class ControllerLucianoSoares : BaseMGController
         // Bola é ativada em posição aleatória e gravidade faz ela cair
         float pos = Random.Range(-6.0f, 6.0f);
         bola.transform.position += new Vector3(pos, 0, 0);
+
+        // Raquete é escalada conforme o nível
+        if(GameData.level > 4)
+        {
+            raquete.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if(GameData.level > 2)
+        {
+            raquete.transform.localScale = new Vector3(2, 1, 1);
+        }
+        else 
+        {
+            raquete.transform.localScale = new Vector3(4, 1, 1);
+        }
+        
+
         bola.SetActive(true);
         
     }
