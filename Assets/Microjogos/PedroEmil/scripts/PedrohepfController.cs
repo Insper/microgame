@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class PedrohepfController : BaseMGController
@@ -17,9 +18,10 @@ public class PedrohepfController : BaseMGController
         Debug.Log("Não Implementada Start");
     }
 
-    protected override void WinMicrogame()
+    protected override void Microgame()
     {
-        Debug.Log("Não Implementada Win");
+        Debug.Log("Não Implementada");
+        GameManager.Text.text = GameData.GetTime().ToString();
     }
 
     private void LateUpdate()

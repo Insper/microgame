@@ -2,6 +2,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/* ----------------------------------------------------------------- //
+// Esse código não deve ser alterado, caso precise ser feito algum   //
+// ajuste, entrar em contato com o professor da disciplina.          //
+// ----------------------------------------------------------------- */
+
 // Class para gerenciar 
 public class GameData
 {
