@@ -4,18 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Timer : MonoBehaviour
+public class rs_Timer : MonoBehaviour
 {
     [SerializeField] private GameObject startMenu;
-    [SerializeField] private Gameover gameOverMenu;
 
-    private float timer;
+    private float timer = 5;
 
     public bool start = false; 
 
     void Start()
     {
-        GetComponent<Text>().text = $"5,000";
+        GetComponent<Text>().text = "5,000";
     }
 
     void Update()
@@ -38,13 +37,11 @@ public class Timer : MonoBehaviour
     public void Lose()
     {
         start = false;
-        gameOverMenu.won = 2;
     }
 
     public void Win()
     {
         start = false;
-        gameOverMenu.won = 1;
     }
 
     public void Easy() { SetDificulty("easy");  }

@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 5230158386974714626, guid: a03c81a5aada4dc448c43887ef062241,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5230158386974714629, guid: a03c81a5aada4dc448c43887ef062241,
         type: 3}
@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 5230158387289260586, guid: a03c81a5aada4dc448c43887ef062241,
         type: 3}
       propertyPath: m_Name
-      value: right-tronco-galho Variant
+      value: rs_right-tronco-galho Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5230158387289260586, guid: a03c81a5aada4dc448c43887ef062241,
         type: 3}

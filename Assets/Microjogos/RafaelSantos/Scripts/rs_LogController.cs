@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LogController : MonoBehaviour
+public class rs_LogController : MonoBehaviour
 {
-    [SerializeField] private LumberjackController player;
+    [SerializeField] private rs_LumberjackController player;
 
-    private int k = 700;
+    private int k = 1000;
     private int y = 100;
 
     public bool machadado = false;
@@ -17,6 +17,8 @@ public class LogController : MonoBehaviour
 
         if (machadado || transform.position.y > -4) return;
         Destroy(gameObject, 0.2f);
+
+        transform.position += new Vector3(0f, 2f, 0f);
 
         machadado = true;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -31,10 +33,7 @@ public class LogController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) player.t.start = true;
-
-        if (!player.t.start) return;
-
+        if (player.controller.end) return;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Hit(player.lado);

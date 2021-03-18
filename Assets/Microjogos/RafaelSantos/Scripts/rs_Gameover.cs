@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Gameover : MonoBehaviour
+public class rs_Gameover : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private Text txt;

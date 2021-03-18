@@ -2,25 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LumberjackController : MonoBehaviour
+public class rs_LumberjackController : MonoBehaviour
 {
-    [SerializeField] private Timer timer;
+    [SerializeField] public rs_Controller controller;
 
     public int lado = 0;
-    public Timer t;
-
-    void Start()
-    {
-        t = timer;
-    }
 
     void Update()
     {
+        if (controller.end) return;
+
         float inputX = Input.GetAxis("Horizontal");
-        if (inputX != 0) timer.start = true;
-
-        if (!timer.start) return;
-
 
         if(inputX < 0)
         {

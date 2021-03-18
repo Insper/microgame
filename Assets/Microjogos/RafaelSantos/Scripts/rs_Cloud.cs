@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloud : MonoBehaviour
+public class rs_Cloud : MonoBehaviour
 {
     private Vector3 speed;
 

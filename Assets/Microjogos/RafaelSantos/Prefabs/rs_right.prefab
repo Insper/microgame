@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1730948735221810177}
   m_Layer: 0
-  m_Name: right
+  m_Name: rs_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ PrefabInstance:
     - target: {fileID: 1649822468082417817, guid: 13a9139533e37784e83f0536590d9d85,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1649822468082417819, guid: 13a9139533e37784e83f0536590d9d85,
         type: 3}
