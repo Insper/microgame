@@ -33,7 +33,7 @@ public class rs_LogController : MonoBehaviour
 
     void Update()
     {
-        if (player.controller.end) return;
+        if (player.controller.end || !player.controller.start) return;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Hit(player.lado);

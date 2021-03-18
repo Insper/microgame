@@ -10,7 +10,7 @@ public class rs_LumberjackController : MonoBehaviour
 
     void Update()
     {
-        if (controller.end) return;
+        if (controller.end || !controller.start) return;
 
         float inputX = Input.GetAxis("Horizontal");
 

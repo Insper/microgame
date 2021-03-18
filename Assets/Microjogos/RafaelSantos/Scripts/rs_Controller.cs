@@ -7,50 +7,54 @@ public class rs_Controller : BaseMGController
     [SerializeField] private GameObject startMenu;
 
     public bool end = false;
+    public bool start = false;
 
     private float startTime;
 
     protected override void StartMicrogame()
     {
         Debug.Log("Inicio do Jogo");
+        start = true;
+        Debug.Log(start);
+        startTime = Time.time;
     }
 
     protected override void WinMicrogame()
     {
         Debug.Log("Jogador Ganhou");
-        end = true;
     }
 
     protected override void EndMicrogame()
     {
         Debug.Log("Jogador Perdeu");
-        end = true;
-    }
-
-    void Start()
-    {
-        startTime = Time.time;
     }
 
     private void LateUpdate()
     {
-        if (end) return;
+        if (end && !start) return;
 
         float timer = (Time.time - startTime);
 
-        if (timer > GameData.GetTime()) EndMicrogame();
+        if (timer > GameData.GetTime()) Lose();
         else
         {
             GameObject[] objs = GameObject.FindGameObjectsWithTag("Log");
             if (objs.Length == 0)
             {
-                WinMicrogame();
+                Win();
             }
         }
     }
 
     public void Lose()
     {
+        end = true;
         EndMicrogame();
+    }
+
+    private void Win()
+    {
+        end = true;
+        WinMicrogame();
     }
 }
