@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rs_LumberjackController : MonoBehaviour
-{
+public class rs_LumberjackController : MonoBehaviour {
     [SerializeField] public rs_Controller controller;
 
     public int lado = 0;
 
-    void Start()
-    {
+    void Start() {
         float x = Random.Range(0f, 1f);
         if (x <= 0.5)
         {
@@ -18,13 +16,13 @@ public class rs_LumberjackController : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (controller.end || !controller.start) return;
+    void Update() {
+        if (controller.end || !controller.start)
+            return;
 
         float inputX = Input.GetAxis("Horizontal");
 
-        if(inputX < 0)
+        if (inputX < 0)
         {
             transform.position = new Vector3(-2.5f, -3.6f, 0f);
             lado = 0;
