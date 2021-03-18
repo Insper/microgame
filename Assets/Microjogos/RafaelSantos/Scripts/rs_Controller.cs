@@ -15,7 +15,6 @@ public class rs_Controller : BaseMGController
     {
         Debug.Log("Inicio do Jogo");
         start = true;
-        Debug.Log(start);
         startTime = Time.time;
     }
 
@@ -31,19 +30,11 @@ public class rs_Controller : BaseMGController
 
     private void LateUpdate()
     {
-        if (end && !start) return;
+        if (end || !start) return;
 
         float timer = (Time.time - startTime);
 
         if (timer > GameData.GetTime()) Lose();
-        else
-        {
-            GameObject[] objs = GameObject.FindGameObjectsWithTag("Log");
-            if (objs.Length == 0)
-            {
-                Win();
-            }
-        }
     }
 
     public void Lose()
@@ -52,7 +43,7 @@ public class rs_Controller : BaseMGController
         EndMicrogame();
     }
 
-    private void Win()
+    public void Win()
     {
         end = true;
         WinMicrogame();

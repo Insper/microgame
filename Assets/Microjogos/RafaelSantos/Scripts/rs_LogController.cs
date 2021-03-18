@@ -11,6 +11,12 @@ public class rs_LogController : MonoBehaviour
 
     public bool machadado = false;
 
+    void Start()
+    {
+        float x = Random.Range(0f, 1f);
+        if (x <= 0.5) transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+    }
+
     private void Hit(int lado)
     {
         transform.position -= new Vector3(0f, 2f, 0f);
