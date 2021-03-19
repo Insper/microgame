@@ -12,18 +12,25 @@ public class rs_Controller : BaseMGController {
 
     protected override void StartMicrogame() {
         //Debug.Log("Inicio do Jogo");
+        GameManager.Text.text = "Cut the tree";
         start = true;
         startTime = Time.time;
     }
 
-    protected override void WinMicrogame() {
-        Debug.Log("Jogador Ganhou");
+    protected override void EndMicrogame() {
+        // Mensagens de vítoria ou derrota
+        if (GameData.lost)
+        {
+            GameManager.Text.text = "Você perdeu!";
+        }
+        else
+        {
+            GameManager.Text.text = "Você ganhou!";
+        }
+
     }
 
-    protected override void EndMicrogame() {
-        Debug.Log("Jogador Perdeu");
-        //GameData.lost = true;
-    }
+    protected override void Microgame() { }
 
     private void LateUpdate() {
         if (end || !start)
@@ -37,11 +44,11 @@ public class rs_Controller : BaseMGController {
 
     public void Lose() {
         end = true;
-        EndMicrogame();
+        GameData.lost = true;
     }
 
     public void Win() {
         end = true;
-        WinMicrogame();
+        GameData.lost = false;
     }
 }
