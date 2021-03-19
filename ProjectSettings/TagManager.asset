@@ -6,6 +6,7 @@ TagManager:
   tags:
   - faller
   - floor
+  - catcher
   layers:
   - Default
   - TransparentFX

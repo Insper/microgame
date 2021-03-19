@@ -9,8 +9,19 @@ public class MGController : BaseMGController
 
     public GameObject faller;
 
+    public bool pega = true;
+
+    void Start(){
+        if (Random.Range(0f, 1f) > 0.4f){
+            pega = false;
+        }
+    }
+
     protected override void EndMicrogame()
     {
+
+        faller.GetComponent<Collider2D>().enabled = false;
+
         if(GameData.lost)
         {
             GameManager.Text.text = "PUTS!";
@@ -25,7 +36,8 @@ public class MGController : BaseMGController
     protected override void StartMicrogame()
     {
         // Mensagem inicial
-        GameManager.Text.text = "Catch!";
+        if (pega) GameManager.Text.text = "Catch!";
+        else GameManager.Text.text = "Don't!";
 
     }
 
@@ -41,11 +53,5 @@ public class MGController : BaseMGController
 
     }
     
-    void OnTriggerEnter2D(Collider2D col){
-        if (col.tag == "faller") {
-            GameData.lost = true;
-            Debug.Log("ouch");
-        }
-
-    }
+    
 }
