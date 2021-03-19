@@ -7,6 +7,8 @@ public class DragonEnemyBehaviour : MonoBehaviour
     private float minH, maxH;
     public GameObject fireball;
 
+    public PellizzonController controller;
+
     private float interval; // dificuldade 1: 1.0f; dificuldade 2: 0.5f; dificuldade 3: 0.25f; 
     void Start()
     {
@@ -19,12 +21,27 @@ public class DragonEnemyBehaviour : MonoBehaviour
         maxH = cam.transform.position.y + heightCamera / 2;
         Timer = Time.time + .5f;
 
-        interval = 1.0f;
+        if (GameData.level >= 10)
+        {
+            interval = 0.25f;
+        }
+        else if (GameData.level < 5)
+        {
+            interval = 1.0f;
+
+        }
+        else
+        {
+            interval = 0.5f;
+        }
     }
 
     public AudioClip fireballSFX;
     void Update()
     {
+        if (!controller.startGame) return;
+        if (GameData.lost) return;
+
         float boundY = fireball.GetComponent<CircleCollider2D>().radius;
         if (Timer < Time.time)
         {

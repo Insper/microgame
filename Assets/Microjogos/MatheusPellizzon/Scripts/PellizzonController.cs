@@ -6,33 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class PellizzonController : BaseMGController
 {
-
+    public bool startGame = false;
     protected override void EndMicrogame()
     {
         if (GameData.lost)
         {
-
+            GameManager.Text.text = "Você perdeu!";
         }
         else
         {
-
+            GameManager.Text.text = "Você ganhou!";
         }
     }
 
     protected override void StartMicrogame()
     {
-        Debug.Log("Não Implementada Start");
+        GameManager.Text.text = "Defenda a princesa!";
     }
 
     protected override void Microgame()
     {
-        Debug.Log("Não Implementada Win");
+        startGame = true;
+        GameData.lost = false;
     }
-
-    private void LateUpdate()
-    {
-        if (GameData.level % 2 == 0) GameData.lost = true;
-    }
-
-
 }

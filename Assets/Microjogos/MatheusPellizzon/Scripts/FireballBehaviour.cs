@@ -13,6 +13,11 @@ public class FireballBehaviour : MonoBehaviour
 
     void Update()
     {
+        if (GameData.lost)
+        {
+            Destroy(gameObject);
+            return;
+        }
         transform.position += direction * Time.deltaTime * speed;
     }
 

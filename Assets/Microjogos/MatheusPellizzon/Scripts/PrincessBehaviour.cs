@@ -8,6 +8,8 @@ public class PrincessBehaviour : MonoBehaviour
     private float minH, maxH;
     Vector3 dir;
     private float speed = 10.0f;
+    public PellizzonController controller;
+
     void Start()
     {
         //https://answers.unity.com/questions/230190/how-to-get-the-width-and-height-of-a-orthographic.html
@@ -23,6 +25,9 @@ public class PrincessBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!controller.startGame) return;
+        if (GameData.lost) return;
+
         Vector2 positionVP = Camera.main.WorldToViewportPoint(transform.position);
 
         if (positionVP.y >= 0.85)
@@ -41,5 +46,6 @@ public class PrincessBehaviour : MonoBehaviour
     {
         Destroy(gameObject);
         GameData.lost = true;
+        controller.startGame = false;
     }
 }
