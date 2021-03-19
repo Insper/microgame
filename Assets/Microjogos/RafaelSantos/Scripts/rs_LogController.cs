@@ -21,7 +21,7 @@ public class rs_LogController : MonoBehaviour {
 
         if (machadado || transform.position.y > -4)
             return;
-        Destroy(gameObject, 0.2f);
+        Destroy(gameObject, 1f);
 
         transform.position += new Vector3(0f, 2f, 0f);
 

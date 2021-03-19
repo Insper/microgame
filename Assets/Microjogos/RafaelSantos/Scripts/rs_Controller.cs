@@ -13,8 +13,6 @@ public class rs_Controller : BaseMGController {
     protected override void StartMicrogame() {
         //Debug.Log("Inicio do Jogo");
         GameManager.Text.text = "Cut the tree";
-        start = true;
-        startTime = Time.time;
     }
 
     protected override void EndMicrogame() {
@@ -30,7 +28,11 @@ public class rs_Controller : BaseMGController {
 
     }
 
-    protected override void Microgame() { }
+    protected override void Microgame() {
+        start = true;
+        GameData.lost = true;
+        startTime = Time.time;
+    }
 
     private void LateUpdate() {
         if (end || !start)
