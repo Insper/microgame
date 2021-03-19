@@ -9,8 +9,14 @@ public class PellizzonController : BaseMGController
 
     protected override void EndMicrogame()
     {
-        GameData.lost = true;
-        Debug.Log("Não Implementada End");
+        if (GameData.lost)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     protected override void StartMicrogame()
@@ -18,9 +24,8 @@ public class PellizzonController : BaseMGController
         Debug.Log("Não Implementada Start");
     }
 
-    protected override void WinMicrogame()
+    protected override void Microgame()
     {
-        GameData.lost = false;
         Debug.Log("Não Implementada Win");
     }
 

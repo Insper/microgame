@@ -40,5 +40,6 @@ public class PrincessBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         Destroy(gameObject);
+        GameData.lost = true;
     }
 }
