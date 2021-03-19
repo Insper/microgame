@@ -7,6 +7,9 @@ public class rs_Copa : MonoBehaviour {
     [SerializeField] private rs_Controller controller;
 
     void Update() {
+        if (controller.end)
+            return;
+
         if (transform.position.y < 1f)
         {
             if (!controller.end)
