@@ -1,25 +1,47 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class FrogController : MonoBehaviour
+
+public class FrogController : BaseMGController
 {
-
+    Animator animator;
     public Rigidbody2D rb;
+    public bool isDead = false;
+
 
     // Update is called once per frame
+    protected override void EndMicrogame()
+    {
+        // Mensagens de vítoria ou derrota
+        if (GameData.lost)
+        {
+            GameManager.Text.text = "Você perdeu!";
+        }
+        else
+        {
+            GameManager.Text.text = "Você ganhou!";
+        }
+
+    }
+    protected override void StartMicrogame()
+    {
+        // Mensagem inicial
+        GameManager.Text.text = "Atravessa o sapinho!";
+        animator = gameObject.GetComponent<Animator>();
+
+    }
+
+    protected override void Microgame()
+    {
+        GameData.lost = true;
+    }
     void Update()
     {
-        // float yInput = Input.GetAxisRaw("Vertical");
-        // float xInput = Input.GetAxisRaw("Horizontal");
-        // Thrust(xInput, yInput);
-        // if (yInput != 0 || xInput != 0)
-        // {
-        //     animator.SetFloat("Velocity", 1.0f);
-        // }
-        // else
-        // {
-        //     animator.SetFloat("Velocity", 0.0f);
-        // }
+        if (isDead)
+        {
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -37,6 +59,7 @@ public class FrogController : MonoBehaviour
         {
             rb.MovePosition(rb.position + Vector2.down);
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -44,7 +67,15 @@ public class FrogController : MonoBehaviour
         if (col.tag == "Car")
         {
             Debug.Log("WE LOST!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            isDead = true;
+            animator.SetTrigger("isDead");
+        }
+
+        if (col.tag == "finish")
+        {
+            GameData.lost = false;
         }
     }
+
+
 }

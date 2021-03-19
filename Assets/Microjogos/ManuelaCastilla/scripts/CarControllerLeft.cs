@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class CarController : MonoBehaviour
+public class CarControllerLeft : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float minSpeed = 1f;
@@ -13,21 +13,21 @@ public class CarController : MonoBehaviour
         Debug.Log(GameData.level);
         if (GameData.level > 4)
         {
-            speed = Random.Range(5f, 6f);
+            speed = Random.Range(4f, 5f);
         }
         if (GameData.level > 2)
         {
-            speed = Random.Range(4f, 5f);
+            speed = Random.Range(3f, 4f);
         }
         else
         {
-            speed = Random.Range(3f, 4f);
+            speed = Random.Range(2f, 3f);
         }
     }
     void FixedUpdate()
     {
 
-        Vector2 foward = new Vector2(transform.right.x, transform.right.y);
+        Vector2 foward = new Vector2(-transform.right.x, transform.right.y);
         rb.MovePosition(rb.position + foward * Time.fixedDeltaTime * speed);
     }
 }

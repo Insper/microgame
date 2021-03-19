@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6547942738661702382}
   - component: {fileID: 6547942738661702383}
   - component: {fileID: 6547942738661702368}
-  - component: {fileID: 6547942738661702369}
+  - component: {fileID: 2342850860153301979}
   m_Layer: 0
   m_Name: bluecar 1
   m_TagString: Car
@@ -131,7 +131,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6547942738661702369
+--- !u!114 &2342850860153301979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,10 +140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6547942738661702370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0ea70c809f2d724998e22cef37a880e, type: 3}
+  m_Script: {fileID: 11500000, guid: 589d5adbe45706f4c847b348c7bce239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6547942738661702368}
-  minSpeed: 8
-  maxSpeed: 12
+  minSpeed: 1
+  maxSpeed: 3
   speed: 1
