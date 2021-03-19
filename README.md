@@ -19,32 +19,22 @@ microgame
 |   |       GameManager.cs
 |   |
 |   +---Microjogos
-|   |   +---LucianoSoares
+|   |   +---<!CRIE UMA PASTA COM SEU NOME!>
 |   |   |   +---scenes
 |   |   |   \---scripts
 |   |   |
-|   |   +---PedroEmil
-|   |   |   +---scenes
-|   |   |   |       phepf_Cena01.unity
-|   |   |   \---scripts
-|   |   |           phepf_Controller.cs
-|   |   |
-|   |   \---WillianLima
-|   |       +---scenes
-|   |       \---scripts
-|   |
 |   +---Resources
 |   |       Canvas.prefab
 |   |       GameManager.prefab
-|   |       Main Camera.prefab
 |   \---Scenes
-|           EndGame.unity
-|           StartGame.unity
+|           MainScene.unity
 +---Packages
 \---ProjectSettings
 ```
 
 Este projeto conta com três classes base, **que não devem ser alteradas**.
+
+A cena inicial/final já vem configurada com o ID 0 no build settings. Não altere a ordem pois será usada para iniciar e finalizar o jogo como um todo.
 
 **GameData.cs** Controla os status do jogo.
 
@@ -53,11 +43,11 @@ Este projeto conta com três classes base, **que não devem ser alteradas**.
 **BaseMGController.cs** Classe abstrata que devera ser herdada pelo controlador do seu microgame. Responsavel por instanciar o GameManager bem como registrar e remover os eventos definidos por ele.
 
 Conta também com 3 Métodos que devem ser implementados:
-> **StartMicrogame()** Após carregada a cena de seu microgame esse método será chamado para iniciar de fato seu jogo.
+> **StartMicrogame()** Após carregada a cena de seu microgame esse método será chamado para iniciar seu jogo (você pode passar instruções).
 >
-> **WinMicrogame()** Ao final do tempo de execução esse método é chamado para o feedback de finalização bem succedida do jogo.
+> **Microgame()** Ao final da intrução esse método é chamado para executar o jogo principal.
 >
-> **EndMicrogame()** Ao final do tempo de execução esse método é chamado para o feedback de finalização mal succedida do jogo.
+> **EndMicrogame()** Ao final do tempo de execução esse método é chamado para o feedback de finalização bem ou mal succedida do jogo.
 
 Exemplo de classe Controller do microgame
 
@@ -69,19 +59,19 @@ public class NomeController : BaseMGController
         Debug.Log("Inicio do Jogo");
     }
 
-    protected override void WinMicrogame()
+    protected override void Microgame()
     {
-        Debug.Log("Jogador Ganhou");
+        Debug.Log("Jogo Principal");
     }
 
     protected override void EndMicrogame()
     {
-        Debug.Log("Jogador Perdeu");
+        Debug.Log("Jogo Acabou");
     }
 
     private void LateUpdate()
     {
-        //Logica do meu jogo
+        //Logica do seu jogo
     }
 
 }
@@ -95,7 +85,7 @@ Existem também 2 *prefabs* importantes na pasta ressources:
 
 ### Entrega (Pull Request)
 
-Para que seu pull request seja aceito, e consequentemente entregue você deverá criar uma pasta com o formato `NomeSobrenome` dentro de Microjogos. E todas suas adições ao projeto devem estar contidas nesta pasta.
+Para que seu pull request seja aceito, e consequentemente entregue você deverá criar uma pasta com o formato `NomeSobrenome` dentro da pasta Microjogos. E todas suas adições ao projeto devem estar contidas nesta pasta.
 
 Para os assets que for criar adicione um prefixo com as iniciais de seu nome, para evitar colisão de nomes com colegas.
 

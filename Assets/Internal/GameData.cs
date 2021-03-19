@@ -2,6 +2,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/* ----------------------------------------------------------------- //
+// Esse código não deve ser alterado, caso precise ser feito algum   //
+// ajuste, entrar em contato com o professor da disciplina.          //
+// ----------------------------------------------------------------- */
+
 // Class para gerenciar 
 public class GameData
 {
@@ -19,13 +24,19 @@ public class GameData
     // caso jogador perca uma partida essa variável se torna verdade temporariamente
     public static bool lost = false;
 
+    // Método usado para iniciar e re-iniciar os dados
+    public static void reset(int lives) {
+        GameData.lives = lives;
+        GameData.level = 0;
+    }
 
     public static bool CanLoadScene(int buildIndex)
     {
         GameData.DebugLog($"[GameData] last loaded scenes {lastScenes.ToString()}");
         if (lastScenes.Contains(buildIndex)) return false;
         lastScenes.Insert(0, buildIndex);
-        if (lastScenes.Count > Mathf.Min(SceneManager.sceneCountInBuildSettings - 3, 4))
+
+        if (lastScenes.Count > Mathf.Min(SceneManager.sceneCountInBuildSettings - 2, 3))
         {
             lastScenes.RemoveAt(lastScenes.Count - 1);
         }
@@ -48,7 +59,5 @@ public class GameData
         }
         
     }
-
-
 
 }
