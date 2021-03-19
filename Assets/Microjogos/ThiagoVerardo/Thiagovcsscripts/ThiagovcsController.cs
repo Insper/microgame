@@ -18,7 +18,8 @@ public class ThiagovcsController : BaseMGController
     public Animator anim;
     private float barSpeed;
     private float barPrecision;
-
+    public AudioSource audioSource;
+    public AudioClip clockTickingSFX;
     protected override void EndMicrogame()
     {
         // Mensagens de vítoria ou derrota
@@ -55,6 +56,7 @@ public class ThiagovcsController : BaseMGController
 
         slider.gameObject.SetActive(false);
         panel.gameObject.SetActive(false);
+        audioSource.clip = clockTickingSFX;
 
     }
 
@@ -67,7 +69,9 @@ public class ThiagovcsController : BaseMGController
         slider.gameObject.SetActive(true);
         panel.gameObject.SetActive(true);
         startTime = Time.time;
+        audioSource.Play();
     }
+
     private void Update()
     {
         if(i <= 0){
@@ -77,11 +81,13 @@ public class ThiagovcsController : BaseMGController
                     anim.SetTrigger("Win");
                     GameData.lost = false;
                     i = 1;
+                    audioSource.Stop();
                 }
                 else{
                     GameData.lost = true;
                     anim.SetTrigger("Lose");
                     i = 1;
+                    audioSource.Stop();
                 }
                 
             }
