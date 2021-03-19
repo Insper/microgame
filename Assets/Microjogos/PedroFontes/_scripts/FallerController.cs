@@ -16,7 +16,6 @@ public class FallerController : MonoBehaviour
             GameData.lost = true;
         }
 
-        Debug.Log(col.tag);
     }
 
 }

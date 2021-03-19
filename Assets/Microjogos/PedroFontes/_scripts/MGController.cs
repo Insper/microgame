@@ -10,9 +10,14 @@ public class MGController : BaseMGController
     public GameObject faller;
 
     public bool pega = true;
+    float sepa;
 
     void Start(){
-        if (Random.Range(0f, 1f) > 0.4f){
+        sepa = Random.Range(0f, 1f);
+        
+        Debug.Log(sepa);
+
+        if (sepa < 0.5f){
             pega = false;
         }
     }
