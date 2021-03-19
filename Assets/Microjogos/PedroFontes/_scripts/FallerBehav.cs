@@ -16,11 +16,5 @@ public class FallerBehav : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider col){
-        if (col.tag == "floor") {
-            GameData.lost = true;
-        }
-
-        Debug.Log("ouch");
-    }
+    
 }

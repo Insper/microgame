@@ -17,7 +17,7 @@ public class MGController : BaseMGController
         }
         else
         {
-            GameManager.Text.text = "Você ganhou!";
+            GameManager.Text.text = "NICE!";
         }
         
     }
@@ -41,4 +41,11 @@ public class MGController : BaseMGController
 
     }
     
+    void OnTriggerEnter2D(Collider2D col){
+        if (col.tag == "faller") {
+            GameData.lost = true;
+            Debug.Log("ouch");
+        }
+
+    }
 }
