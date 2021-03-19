@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DefenderPlayerMovement : MonoBehaviour
+public class DefenderPlayerMovement_Pell : MonoBehaviour
 {
 
     Vector3[] positions;

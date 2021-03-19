@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireballBehaviour : MonoBehaviour
+public class FireballBehaviour_Pell : MonoBehaviour
 {
     private Vector3 direction;
     private float speed = 10.0f;

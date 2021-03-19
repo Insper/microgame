@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PrincessBehaviour : MonoBehaviour
+public class PrincessBehaviour_Pell : MonoBehaviour
 {
     private Camera cam;
     private float minH, maxH;

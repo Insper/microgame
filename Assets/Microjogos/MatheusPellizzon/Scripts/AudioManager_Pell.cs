@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public class AudioManager : MonoBehaviour
+public class AudioManager_Pell : MonoBehaviour
 {
     [SerializeField]
     private AudioSource sfxSource;
@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     private AudioSource ambienceSource;
     [SerializeField]
     private AudioClip music;
-    private static AudioManager _instance;
+    private static AudioManager_Pell _instance;
     void Awake()
     {
         _instance = this;

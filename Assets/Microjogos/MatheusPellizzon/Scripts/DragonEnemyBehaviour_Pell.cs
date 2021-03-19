@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 
-public class DragonEnemyBehaviour : MonoBehaviour
+public class DragonEnemyBehaviour_Pell : MonoBehaviour
 {
     private float Timer;
     private Camera cam;
     private float minH, maxH;
     public GameObject fireball;
-
     public PellizzonController controller;
 
     private float interval; // dificuldade 1: 1.0f; dificuldade 2: 0.5f; dificuldade 3: 0.25f; 
@@ -51,7 +50,7 @@ public class DragonEnemyBehaviour : MonoBehaviour
             Quaternion rotation = enemy.transform.rotation;
             Vector3 spawnPos = enemyPos;
             Instantiate(fireball, spawnPos, rotation);
-            AudioManager.PlaySFX(fireballSFX);
+            AudioManager_Pell.PlaySFX(fireballSFX);
             Timer = Time.time + interval;
         }
 
