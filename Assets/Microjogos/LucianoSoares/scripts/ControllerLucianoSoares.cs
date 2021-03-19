@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Controller principal do jogo
 public class ControllerLucianoSoares : BaseMGController
 {
 
