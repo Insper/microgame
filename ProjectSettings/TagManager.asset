@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Buttons
+  - arrows
+  - arrowRight
+  - arrowLeft
+  - arrowUp
   layers:
   - Default
   - TransparentFX
@@ -39,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: fundo
+    uniqueID: 3035981551
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

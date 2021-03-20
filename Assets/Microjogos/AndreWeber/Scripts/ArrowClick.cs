@@ -4,39 +4,26 @@ using UnityEngine;
 
 public class ArrowClick : MonoBehaviour
 {
-    public bool pressed;
+    public bool active;
     public KeyCode key_;
+    public GameObject DeathParticle;
+    public bool next;
     // Start is called before the first frame update
     void Start()
     {
+        active = false;
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(key_)){
-            if(pressed){
-                gameObject.SetActive(false);
-            }
-        }
+        //Fazer ganhar ou perder
+        
         
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Buttons") {
-            pressed = true;
-            
-        }
 
-    }
-
-    private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.tag == "Buttons") {
-            pressed = false;
-            
-        }
-
-    }
 }
