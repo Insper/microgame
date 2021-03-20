@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Jordan
+  - PlayerWin
   layers:
   - Default
   - TransparentFX
@@ -38,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG2
+    uniqueID: 3786377927
+    locked: 0
+  - name: BG1
+    uniqueID: 3753347615
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
