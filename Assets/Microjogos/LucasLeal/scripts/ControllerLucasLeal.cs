@@ -15,16 +15,31 @@ public class ControllerLucasLeal : BaseMGController
     public GameObject dontPressbutton;
     private GameObject button;
     private GameObject text;
-    public Camera cam;
+    public GameObject RedbuttonBG;
+    public GameObject GreenbuttonBG;
+    
     private bool buttonPressed;
     private bool apertarFlag;
     private bool naoApertarFlag;
+    
+    public Camera cam;
     public Color colorRed = Color.red;
     public Color colorGreen = Color.green;
+
     // Exemplo de finalização de jogo
     protected override void EndMicrogame()
     {
         // Mensagens de vítoria ou derrota
+        if(buttonPressed==true){
+            if(naoApertarFlag==true){
+                GameData.lost = true;
+                }
+            }
+        if(apertarFlag==true){
+            if(buttonPressed==false){
+                GameData.lost = true;
+                }
+            } 
         if(GameData.lost)
         {
             GameManager.Text.text = "Você perdeu!";
@@ -45,6 +60,10 @@ public class ControllerLucasLeal : BaseMGController
         float but = Random.Range(0.0f,2.0f);
         float tex = Random.Range(0.0f,2.0f);
 
+        RedbuttonBG.SetActive(false);
+        GreenbuttonBG.SetActive(false);
+
+        
         if(tex > 1){
             text = pressButton;
             dontPressbutton.SetActive(false);
@@ -60,7 +79,7 @@ public class ControllerLucasLeal : BaseMGController
         if(but > 1){
             button = Greenbutton;
             Redbutton.SetActive(false);
-            cam.backgroundColor = colorRed;
+            
         }else{
             button = Redbutton;
             Greenbutton.SetActive(false);
@@ -68,24 +87,47 @@ public class ControllerLucasLeal : BaseMGController
         // Mensagem inicial
         GameManager.Text.text = "PRESS SPACE!";
         
-        // Raquete é escalada conforme o nível
+        // Botao é escalado conforme o nível
         if(GameData.level > 4)
         {
-           button.transform.localScale = new Vector3(3.0f, 3.0f, 1);
-           text.transform.localScale = new Vector3(2.7f, 2.7f, 1);
+            float corBG = Random.Range(0.0f,2.0f);
+            Debug.Log("random");
+            if(corBG>1){
+
+                RedbuttonBG.SetActive(false);
+                GreenbuttonBG.SetActive(true);
+            }else{
+                RedbuttonBG.SetActive(true);
+                GreenbuttonBG.SetActive(false);
+            }
+
         }
         else if(GameData.level > 2)
         {
-            button.transform.localScale = new Vector3(2.5f, 2.5f, 1);
-            text.transform.localScale = new Vector3(2.2f, 2.2f, 1);
+            Debug.Log("fixedBG");
+
+            if(tex>1){
+                RedbuttonBG.SetActive(true);   
+            }else{
+                GreenbuttonBG.SetActive(true);
+            }
+
         }
         else 
         {
-            button.transform.localScale = new Vector3(2, 2, 1);
-            text.transform.localScale = new Vector3(1.7f, 1.7f, 1);
+            Debug.Log("normal");
+
+            float cor = Random.Range(0.0f,2.0f);
+
+            if(cor>1){
+            cam.backgroundColor = colorRed;
+        }else{
+            cam.backgroundColor = colorGreen;
         }
 
-        // Bola é desativada enquanto partida não começa
+        }
+
+        // Botao é desativado enquanto partida não começa
         button.SetActive(false);
         text.SetActive(false);
         
@@ -95,40 +137,23 @@ public class ControllerLucasLeal : BaseMGController
     // Exemplo de jogo principal
     protected override void Microgame()
     {
-        // Bola é ativada em posição aleatória e gravidade faz ela cair
-        // float pos = Random.Range(-6.0f, 6.0f);
-
-        // button.transform.position += new Vector3(pos, pos, 0);
+        // 10,6
+        float posx = Random.Range(-7.0f, 7.0f);
+        float posy = Random.Range(-4.0f, 4.0f);
+        button.transform.position += new Vector3(posx, posy, 0);
         button.SetActive(true);
-        // text.transform.position += new Vector3(pos, pos, 0);
+        text.transform.position += new Vector3(posx, posy, 0);
         text.SetActive(true);
     }
 
-   
 
     // Método chamado continuamente a cada quadro
     private void Update()
     {
-
     	if(Input.GetAxisRaw("Jump") != 0)
        {
            buttonPressed = true;
        }
-
-        if(buttonPressed==true){
-            if(naoApertarFlag==true){
-                // Debug.Log($"BOTAO APERTADO E NAO DEVERIA APERTAR");
-                GameData.lost = true;
-        }
+        
     }
-        Debug.Log(GameData.GetTime());
-        if(buttonPressed==false){
-            if(apertarFlag==true){
-                // Debug.Log($"BOTAO NAO APERTADO E DEVERIA APERTAR");
-                GameData.lost = true;
-            
-            }
-    }
-    
-}
 }
