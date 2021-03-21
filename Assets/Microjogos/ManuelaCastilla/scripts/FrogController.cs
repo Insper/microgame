@@ -43,6 +43,11 @@ public class FrogController : BaseMGController
             return;
         }
 
+        if (GameData.lost == false)
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             rb.MovePosition(rb.position + Vector2.right);
