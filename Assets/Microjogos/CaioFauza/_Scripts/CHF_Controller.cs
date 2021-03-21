@@ -10,7 +10,7 @@ public class CHF_Controller : BaseMGController
     
     protected override void StartMicrogame()
     {
-        GameManager.Text.text = "Don't collide!";
+        GameManager.Text.text = "Desvie da comida!";
         body = GetComponent<Rigidbody2D>();
         textLevel = GameObject.Find("Level").GetComponent<Text>();
     }
@@ -21,7 +21,7 @@ public class CHF_Controller : BaseMGController
 
     protected override void EndMicrogame()
     {
-        GameManager.Text.text =  GameData.lost ? "You lose!" : "You win!";
+        GameManager.Text.text =  GameData.lost ? "Você perdeu!" : "Você ganhou!";
     }
 
     void FixedUpdate()
@@ -33,16 +33,16 @@ public class CHF_Controller : BaseMGController
         if(viewportPosition.y < 0 || viewportPosition.y > 1) yInput *= -1;
 
         int speed = 10;
-        textLevel.text = $"Difficulty level: 1";
+        textLevel.text = $"Nível de dificuldade: 1";
 
         if(GameData.level > 3)
         {
             speed = 5;
-            textLevel.text = $"Difficulty level: 2";
+            textLevel.text = $"Nível de dificuldade: 2";
         } else if(GameData.level > 6)
         {
             speed = 2;
-            textLevel.text = $"Difficulty level: 3";
+            textLevel.text = $"Nível de dificuldade: 3";
         }
 
         body.MovePosition(body.position + new Vector2(xInput*speed, yInput*speed) * Time.fixedDeltaTime);
@@ -53,7 +53,6 @@ public class CHF_Controller : BaseMGController
         if (collision.CompareTag("Food"))
         {   
             GameData.lost = true;
-            EndMicrogame();
         }
     }
 }
