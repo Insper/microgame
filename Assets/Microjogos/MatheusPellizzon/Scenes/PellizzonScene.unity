@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5a29b9937ed4042815d8f5148f54fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiLocation: 0
+  uiLocation: 1
   startGame: 0
 --- !u!4 &1409548177
 Transform:
