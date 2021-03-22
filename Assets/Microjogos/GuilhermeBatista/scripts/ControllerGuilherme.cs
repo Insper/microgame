@@ -41,7 +41,7 @@ public class ControllerGuilherme : BaseMGController {
         // camaleao.GetComponent<SpriteRenderer>().color = new Color32(255 , 255 , 255, 1);
 
         // Mensagem inicial
-        GameManager.Text.text = "Camufle o camaleão!";
+        GameManager.Text.text = "Camufle o camaleão! (Espaço)";
         if (GameData.level >= 0) {
             bgColors.Add(new Color32(200 , 247 , 52, 255));
             bgColors.Add(new Color32(212 , 137 , 44 , 255));
