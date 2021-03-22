@@ -8,25 +8,18 @@ public class ControllerGuilherme : BaseMGController {
 
     // Objetos a serem gerenciados
     public GameObject camaleao;
-    // public GameObject camera;
+    public GameObject camera;
     public int corIdx = 0;
 
     public List<Color> bgColors = new List<Color>();
 
-    // # D4892C
-    // # EB3DA8
-    // #2C47D4
-    // #15F580
-    // #9E6860
-    // # E0EBBE
-    // # EBB0A8
-    // #8FB4EB
-    // #687E9E
-
     // Exemplo de finalização de jogo
     protected override void EndMicrogame() {
+        Color camaleaoColor = camaleao.GetComponent<SpriteRenderer>().color;
+        Color bgColor = camera.GetComponent<Camera>().backgroundColor;
+
         // Mensagens de vítoria ou derrota
-        if (GameData.lost) {
+        if (bgColor != camaleaoColor) {
             GameManager.Text.text = "Você perdeu!";
         }
         else {
@@ -58,7 +51,7 @@ public class ControllerGuilherme : BaseMGController {
             bgColors.Add(new Color32(143 , 180 , 235 , 255));
             bgColors.Add(new Color32(104 , 126 , 158 , 255));
         }
-
+        camera.GetComponent<Camera>().backgroundColor = bgColors[bgColors.Count-1];
     }
 
     // Exemplo de jogo principal
@@ -73,7 +66,7 @@ public class ControllerGuilherme : BaseMGController {
             if (corIdx >= bgColors.Count) {
                 corIdx = 1;
             }
-            Color currColor = bgColors[corIdx];
+
             camaleao.GetComponent<SpriteRenderer>().color = bgColors[corIdx];
         }
 
