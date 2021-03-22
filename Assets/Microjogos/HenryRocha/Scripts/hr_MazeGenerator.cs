@@ -1,4 +1,19 @@
-﻿using System.Collections;
+﻿// =========================================================================================
+// Esse código foi retirado do tutorial:
+// https://www.youtube.com/watch?v=ya1HyptE5uc
+// "Maze Generation Unity Tutorial"
+// Também existe o repositório do tutorial:
+// https://github.com/gamedolphin/youtube_unity_maze/blob/master/Assets/Scripts/MazeGenerator.cs
+// 
+// O Algoritmo usado para gerar os labirintos é o Recursive Backtracker.
+// A implementação é baseada em uma matriz de 2 dimensões. Cada elemento da matriz contém
+// um struct WallState.
+// O WallState representa quais paredes existem em um determinado elemento, além de guardar
+// se aquele elemento já foi visitado.
+// 
+// =========================================================================================
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;

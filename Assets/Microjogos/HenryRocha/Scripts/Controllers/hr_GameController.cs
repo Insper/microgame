@@ -8,18 +8,22 @@ public class hr_GameController : BaseMGController
     {
         Debug.Log("Inicio do Jogo");
 
+        // Mensagem inicial.
         GameManager.Text.text = "Chegue até a bola verde!";
     }
 
     protected override void Microgame()
     {
-        // Make the default state.
-        GameData.lost = true;
         Debug.Log("Jogo Principal");
+
+        // Set the game's default state, which is to lose.
+        GameData.lost = true;
     }
 
     protected override void EndMicrogame()
     {
+        Debug.Log("Fim de Acabou.");
+        
         if (GameData.lost)
         {
             GameManager.Text.text = "Você perdeu!";
