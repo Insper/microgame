@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - plate
-  - bun1
-  - bun2
-  - patty
-  - cheese
+  - BD_bun1
+  - BD_bun2
+  - BD_patty
+  - BD_cheese
+  - BD_plate
   layers:
   - Default
   - TransparentFX

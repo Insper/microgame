@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 183556740}
   m_Layer: 0
   m_Name: Cheese
-  m_TagString: cheese
+  m_TagString: BD_cheese
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.85
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 1571134739}
   m_Layer: 0
   m_Name: Burger
-  m_TagString: patty
+  m_TagString: BD_patty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -491,7 +491,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.85
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 1621889499}
   m_Layer: 0
   m_Name: TopBun
-  m_TagString: bun2
+  m_TagString: BD_bun2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -687,7 +687,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.85
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 1681396626}
   m_Layer: 0
   m_Name: Player
-  m_TagString: plate
+  m_TagString: BD_plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -795,8 +795,10 @@ MonoBehaviour:
   burger: {fileID: 1571134732}
   cheese: {fileID: 183556733}
   bun2: {fileID: 1621889496}
+  compare: {fileID: 0}
   ingredients: []
   timer: 0
+  plateOffset: 0
   delay: 1
   plateSpeed: 10
 --- !u!212 &1681396623
@@ -927,7 +929,7 @@ GameObject:
   - component: {fileID: 2050553261}
   m_Layer: 0
   m_Name: BottomBun
-  m_TagString: bun1
+  m_TagString: BD_bun1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1011,7 +1013,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.85
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

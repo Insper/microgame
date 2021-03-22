@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerController : BaseMGController
+public class BD_PlayerController : BaseMGController
 {
     public GameObject plate;
     public GameObject bun1, burger, cheese, bun2;
     public GameObject compare;
     public List<GameObject> ingredients = new List<GameObject>();
-    public float timer, delay, plateOffset;
+    public float timer, plateOffset;
+    public float delay = 1.2f;
 
     public float plateSpeed = 10;
     int inputX;
@@ -19,11 +20,7 @@ public class PlayerController : BaseMGController
     void Start()
     {
         perfect = true;
-
         compare = bun1;
-
-        timer = 0f;
-        delay = 1.2f;
 
         ingredients.Add(bun1);
         ingredients.Add(burger);
@@ -43,7 +40,7 @@ public class PlayerController : BaseMGController
                 {
                     if (Mathf.Abs(go.transform.position.x - compare.transform.position.x) > 0.5f)
                     {
-                        Debug.Log("The difference between " + compare.name + " and " + go.name + " is " + Mathf.Abs(go.transform.position.x - compare.transform.position.x));
+                        // Debug.Log("The difference between " + compare.name + " and " + go.name + " is " + Mathf.Abs(go.transform.position.x - compare.transform.position.x));
                         perfect = false;
                         break;
                     }
@@ -79,11 +76,12 @@ public class PlayerController : BaseMGController
         // Debug.Log("Dropping bun1");
 
         bun1.SetActive(true);
+        timer = 0f;
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "bun1")
+        if (col.tag == "BD_bun1")
         {
             // Debug.Log("bun1 collected");
             col.gameObject.transform.parent = plate.transform;
