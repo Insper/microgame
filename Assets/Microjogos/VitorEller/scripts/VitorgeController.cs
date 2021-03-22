@@ -13,21 +13,19 @@ public class VitorgeController : BaseMGController
         GameObject target = GameObject.FindGameObjectWithTag("VitorgeTarget");
         if (target) {
             GameData.lost = true;
+            GameManager.Text.text = "Você perdeu!";
+        } else {
+            GameManager.Text.text = "Você ganhou!";
         }
     }
 
     protected override void StartMicrogame()
     {
+        GameManager.Text.text = "Atire para\ndestruir o prato!";
     }
 
     protected override void Microgame()
     {
-        GameManager.Text.text = GameData.GetTime().ToString();
-    }
-
-    private void LateUpdate()
-    {
-        if (GameData.level %2 == 0) GameData.lost = true;
     }
 
     
