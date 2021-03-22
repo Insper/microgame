@@ -8,6 +8,7 @@ public class Controller : BaseMGController
 {
 
     // Sprites a serem gerenciados
+    // Crédito das imagens da roleta : https://urdutechtutorials.blogspot.com/2018/07/how-to-make-wheel-of-fortune-in-unity.html
 
     // Exemplo de finalização de jogo
     protected override void EndMicrogame()
