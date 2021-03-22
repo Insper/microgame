@@ -17,7 +17,7 @@ public class NinjaRunController : BaseMGController
     {
         // Mensagem inicial
         GameManager.Text.color = Color.black;
-        GameManager.Text.text = "Desvie!";
+        GameManager.Text.text = "Space = Jump \n\n Arrow Down = Slide";
 
         if (GameData.level > 4)
         {
@@ -59,7 +59,6 @@ public class NinjaRunController : BaseMGController
 
     private void LateUpdate()
     {
-        Debug.Log(GameData.level);
         if (ninja.activeInHierarchy)
         {
             win = true;
