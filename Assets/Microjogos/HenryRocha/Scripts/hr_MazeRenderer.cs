@@ -26,11 +26,17 @@ public class hr_MazeRenderer : MonoBehaviour
     private Transform objectivePrefab = null;
 
     [SerializeField]
-    private Transform playerPrefab = null;
+    private GameObject playerPrefab = null;
+
+    [SerializeField]
+    private hr_GameController controller;
 
     // Start is called before the first frame update
     void Start()
     {
+        int level = controller.GetLevel();
+        width = Mathf.Clamp(level + 2, 3, 5);
+        height = Mathf.Clamp(level + 2, 3, 5);
         var maze = hr_MazeGenerator.Generate(width, height);
         Draw(maze);
     }
@@ -98,9 +104,13 @@ public class hr_MazeRenderer : MonoBehaviour
 
                 if (i == 0 && j == 0)
                 {
-                    var player = Instantiate(playerPrefab, transform) as Transform;
-                    player.position = position + new Vector3(size / 2, size / 2, 0);
-                    player.localScale = new Vector3(size / 2, size / 2, player.localScale.z);
+                    GameObject player = Instantiate(playerPrefab, transform);
+
+                    Transform playerTransform = player.GetComponent<Transform>();
+                    player.GetComponent<hr_PlayerController>().controller = controller;
+
+                    playerTransform.position = position + new Vector3(size / 2, size / 2, 0);
+                    playerTransform.localScale = new Vector3(size / 2, size / 2, playerTransform.localScale.z);
                 }
             }
         }

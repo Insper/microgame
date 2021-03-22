@@ -150,17 +150,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45422ff1f9140c643bd67ade39203b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 3
-  height: 3
-  size: 2.5
+  width: 10
+  height: 10
+  size: 1.75
   wallPrefab: {fileID: 8457175415481184585, guid: 80f655e2676a54442b4b2fa91aff9bd4,
     type: 3}
   floorPrefab: {fileID: 7565722669045897664, guid: 1398aec70417b4841b69ba853c7579db,
     type: 3}
   objectivePrefab: {fileID: 5243144464165231810, guid: 253c675a360fe38429820ec372688cf0,
     type: 3}
-  playerPrefab: {fileID: 1636942504353117212, guid: 3c7b04a169fcc4b42a435b116d2c1977,
+  playerPrefab: {fileID: 4530538206924914043, guid: 3c7b04a169fcc4b42a435b116d2c1977,
     type: 3}
+  controller: {fileID: 1839807160}
 --- !u!4 &109708538
 Transform:
   m_ObjectHideFlags: 0

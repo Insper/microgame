@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3471620391099520290}
   m_Layer: 0
   m_Name: BasicPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0ac22127891a4448fa0e68c5156227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!61 &-7926046227186823198
 BoxCollider2D:
   m_ObjectHideFlags: 0
