@@ -47,12 +47,12 @@ public class NinjaRunController : BaseMGController
         if (win)
         {
             GameData.lost = false;
-            GameManager.Text.text = "Você ganhou!";
+            GameManager.Text.text = "Você ganhou!!!";
         }
         else
         {
             GameData.lost = true;
-            GameManager.Text.text = "Você perdeu!";
+            GameManager.Text.text = "Você perdeu :(";
         }
         GameManager.Text.color = Color.white;
     }
