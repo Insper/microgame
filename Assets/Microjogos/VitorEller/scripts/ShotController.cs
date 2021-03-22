@@ -5,16 +5,18 @@ using UnityEngine;
 public class ShotController : SteerableBehaviour
 {
 
+    private int level;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        level = GameData.level/10;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Thrust(2,1);
+        Thrust(2*(level+1),level);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
