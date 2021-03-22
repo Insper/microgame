@@ -7,6 +7,8 @@ public class hr_GameController : BaseMGController
     protected override void StartMicrogame()
     {
         Debug.Log("Inicio do Jogo");
+
+        GameManager.Text.text = "Chegue até a bola verde!";
     }
 
     protected override void Microgame()
@@ -16,14 +18,9 @@ public class hr_GameController : BaseMGController
         Debug.Log("Jogo Principal");
     }
 
-    // protected override void EndMicrogame()
-    // {
-    //     Debug.Log("Jogo Acabou");
-    // }
-
     protected override void EndMicrogame()
     {
-        if(GameData.lost)
+        if (GameData.lost)
         {
             GameManager.Text.text = "Você perdeu!";
         }
@@ -39,10 +36,5 @@ public class hr_GameController : BaseMGController
 
     public int GetLevel() {
         return GameData.level;
-    }
-
-    private void LateUpdate()
-    {
-        // Logica do seu jogo
     }
 }

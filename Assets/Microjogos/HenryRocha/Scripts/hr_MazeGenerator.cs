@@ -6,7 +6,7 @@ using System;
 [Flags]
 public enum WallState
 {
-    LEFT = 1,
+    LEFT = 1, // 0000 0001
     RIGHT = 2,
     UP = 4,
     DOWN = 8,
@@ -47,7 +47,7 @@ public static class hr_MazeGenerator
         var positionStack = new Stack<Position>();
         var position = new Position { X = rng.Next(0, width), Y = rng.Next(0, height) };
 
-        maze[position.X, position.Y] |= WallState.VISITED;  // 1000 1111
+        maze[position.X, position.Y] |= WallState.VISITED;
         positionStack.Push(position);
 
         while (positionStack.Count > 0)

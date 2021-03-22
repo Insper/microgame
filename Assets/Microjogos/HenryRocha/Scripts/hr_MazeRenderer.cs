@@ -35,9 +35,27 @@ public class hr_MazeRenderer : MonoBehaviour
     void Start()
     {
         int level = controller.GetLevel();
+
         width = Mathf.Clamp(level + 2, 3, 5);
         height = Mathf.Clamp(level + 2, 3, 5);
         var maze = hr_MazeGenerator.Generate(width, height);
+
+        switch (level)
+        {
+            case 0:
+                size = 2.5f;
+                break;
+            case 1:
+                size = 2.5f;
+                break;
+            case 2:
+                size = 1.75f;
+                break;
+            default:
+                size = 1.5f;
+                break;
+        }
+
         Draw(maze);
     }
 
