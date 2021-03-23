@@ -141,34 +141,32 @@ public class hr_MazeRenderer : MonoBehaviour
                     }
                 }
 
-                // Draw the objective.
-                // Position of the objective is always at the top-right corner.
-                if (i == width - 1 && j == height - 1)
-                {
-                    var objective = Instantiate(objectivePrefab, transform) as Transform;
-
-                    objective.position = position + new Vector3(size / 2, size / 2, 0);
-                    objective.localScale = new Vector3(size / 2, size / 2, objective.localScale.z);
-                }
-
-                // Draw the player.
-                // Position of the player is always at the bottom-left corner.
-                if (i == 0 && j == 0)
-                {
-                    GameObject player = Instantiate(playerPrefab, transform);
-
-                    // Pass the controller to the player's object.
-                    // This is needed because it's not possible to pass a reference of an
-                    // object to a prefab (The player is a prefab).
-                    player.GetComponent<hr_PlayerController>().controller = controller;
-
-                    // We need the player's transform to position it correctly.
-                    Transform playerTransform = player.GetComponent<Transform>();
-
-                    playerTransform.position = position + new Vector3(size / 2, size / 2, 0);
-                    playerTransform.localScale = new Vector3(size / 2, size / 2, playerTransform.localScale.z);
-                }
             }
         }
+        
+        // Maze position.
+        Vector3 mazePosition = new Vector3(transform.position.x - width * size / 2, transform.position.y - height * size / 2, 0);
+
+        // Draw the objective.
+        // Position of the objective is always at the top-right corner.
+        var objective = Instantiate(objectivePrefab, transform) as Transform;
+
+        objective.position = mazePosition + new Vector3(size / 2 + (width - 1) * size, size / 2 + (height - 1) * size, 0);
+        objective.localScale = new Vector3(size / 2, size / 2, objective.localScale.z);
+
+        // Draw the player.
+        // Position of the player is always at the bottom-left corner.
+        GameObject player = Instantiate(playerPrefab, transform);
+
+        // Pass the controller to the player's object.
+        // This is needed because it's not possible to pass a reference of an
+        // object to a prefab (The player is a prefab).
+        player.GetComponent<hr_PlayerController>().controller = controller;
+
+        // We need the player's transform to position it correctly.
+        Transform playerTransform = player.GetComponent<Transform>();
+
+        playerTransform.position = mazePosition + new Vector3(size / 2 + (0) * size, size / 2 + (0) * size, 0);
+        playerTransform.localScale = new Vector3(size / 2, size / 2, playerTransform.localScale.z);
     }
 }
