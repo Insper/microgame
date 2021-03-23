@@ -17,8 +17,6 @@ public class gabrielfz_PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Debug.Log($"Time: {GameData.GetTime()}");
-        Debug.Log($"Velocity: {velocity}");
         move_player();
     }
 
