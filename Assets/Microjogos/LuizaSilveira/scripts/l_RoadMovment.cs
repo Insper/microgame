@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadMovment : MonoBehaviour
+public class l_RoadMovment : MonoBehaviour
 {
     public Renderer renderer;
     public float vel;

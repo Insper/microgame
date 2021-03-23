@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleMovment : MonoBehaviour
+public class l_ObstacleMovment : MonoBehaviour
 {
     public float vel;
     // Start is called before the first frame update
