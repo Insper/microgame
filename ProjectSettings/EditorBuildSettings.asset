@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Microjogos/GabrielZezze/scenes/gabrielfz_PlayScene.unity
     guid: 449527803b112894494d6cb2a3a78c41
+  - enabled: 1
+    path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
+    guid: cf07f4aa84c86c0488f506f1bdd2826e
   m_configObjects: {}
