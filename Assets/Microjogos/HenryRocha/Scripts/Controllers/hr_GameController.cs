@@ -34,6 +34,10 @@ public class hr_GameController : BaseMGController
         }
     }
 
+    public bool GetGameData() {
+        return GameData.lost;
+    }
+
     public void SetGameDataLost(bool lost) {
         GameData.lost = lost;
     }

@@ -20,7 +20,7 @@ public class hr_PlayerController : MonoBehaviour
         float inputY = Input.GetAxis("Vertical");
 
         // Change the player's position.
-        transform.position += new Vector3(inputX, inputY, 0) * Time.deltaTime * speed;
+        if (controller.GetGameData() == true) transform.position += new Vector3(inputX, inputY, 0) * Time.deltaTime * speed;
     }
 
     /// <summary>
@@ -32,7 +32,8 @@ public class hr_PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Objective")
         {
-            Debug.Log("Player hit the objective.");
+            Debug.Log("Player hit the objective. Destroying the objective and the GameData to 'false'.");
+            Destroy(other.gameObject);
             controller.SetGameDataLost(false);
         }
     }
