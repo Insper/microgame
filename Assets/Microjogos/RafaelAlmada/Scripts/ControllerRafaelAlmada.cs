@@ -9,9 +9,10 @@ public class ControllerRafaelAlmada : BaseMGController {
     public GameObject[] pecas_nao_jogaveis;
 
     private Vector3 objectivePos;
+    private int randomRot;
 
     protected override void StartMicrogame() {
-        GameManager.Text.text = "Encaixe a peça\napertando espaço!";
+        GameManager.Text.text = "Encaixe a peça!";
     }
 
     protected override void Microgame() {
@@ -24,19 +25,29 @@ public class ControllerRafaelAlmada : BaseMGController {
 
     private void CreateObjective(GameObject piece) {
         float randomX = Random.Range(-1f, 1f);
-        objectivePos = new Vector3(5f*randomX, -2.5f, transform.position.z);
-        int randomRot = Random.Range(0, 3);
+        objectivePos = new Vector3(5f*randomX, -3f, transform.position.z);
+        if (piece.tag == "Square") {
+            randomRot = 0;
+        } else {
+            randomRot = Random.Range(0, 3);
+        }
         Instantiate(piece, objectivePos, Quaternion.Euler(0f, 0f, 90f*randomRot));
     }
 
     protected override void EndMicrogame() {
         float playerX = GameObject.FindWithTag("Player").transform.position.x;
         float playerY = GameObject.FindWithTag("Player").transform.position.y;
-        if (Mathf.Abs(playerX - objectivePos.x) >= 0.25f && Mathf.Abs(playerY - objectivePos.y) >= 0.25f) {
-            GameData.lost = true;
-        } else {
-            GameData.lost = false;
-        }
+        GameData.lost = true;
+        Debug.Log($"Rot Player Z: {GameObject.FindWithTag("Player").transform.rotation.eulerAngles.z}");
+        Debug.Log($"Rot Z aue deveria ser: {90f*randomRot}");
+        Debug.Log($"Dist X: {Mathf.Abs(playerX - objectivePos.x)}");
+        Debug.Log($"Dist Y: {Mathf.Abs(playerY - objectivePos.y)}");
+        if (Mathf.Abs(playerX - objectivePos.x) < 0.5f && Mathf.Abs(playerY - objectivePos.y) < 0.5f) {
+            if (GameObject.FindWithTag("Player").transform.rotation.eulerAngles.z == 90f*randomRot || 
+                GameObject.FindWithTag("Player").transform.rotation.eulerAngles.z == 90f*(randomRot/2)) {
+                GameData.lost = false;
+            }
+        } 
         // Mensagens de vítoria ou derrota
         if(GameData.lost) {
             GameManager.Text.text = "Você perdeu!";
