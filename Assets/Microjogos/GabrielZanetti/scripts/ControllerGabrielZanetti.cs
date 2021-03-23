@@ -26,6 +26,8 @@ public class ControllerGabrielZanetti : BaseMGController
     public int n_alvos_ativos;
     public float angulo;
     public float passo_angulo;
+
+    public AudioClip shootSFX;
     
 
     public float distancia;
@@ -118,6 +120,7 @@ public class ControllerGabrielZanetti : BaseMGController
         if (n_tiros > 0) 
         {
             n_tiros--;
+            AudioManager.PlaySFX(shootSFX);
             Destroy(balas[n_tiros]);
             Instantiate(tiro, cano.transform.position, Quaternion.identity);
         }
