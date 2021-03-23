@@ -42,13 +42,13 @@ public class SnakeController : BaseMGController
         tr = GetComponent<TrailRenderer>();
         tr.material = new Material(Shader.Find("Sprites/Default"));
         
-        // Raquete é escalada conforme o nível
-        if(GameData.level > 4)
+        
+        if(GameData.level > 10)
         {
             level_dif++;
             velocidade += 1.0f;
         }
-        else if(GameData.level > 2)
+        else if(GameData.level > 5)
         {
             velocidade += 1.0f;
             level_dif++;
