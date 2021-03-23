@@ -53,15 +53,19 @@ public class ControllerGuilherme : BaseMGController {
             bgColors.Add(new Color32(235 , 61 , 168 , 255));
             bgColors.Add(new Color32(44 , 71 , 212 , 255));
             bgColors.Add(new Color32(21 , 245 , 128 , 255));
+            bgColors.Add(new Color32(250 , 250 , 110 , 255));
+            bgColors.Add(new Color32(11 , 113 , 126 , 255));
         }
         if (GameData.level > 4) {
             bgColors.Add(new Color32(158 , 104 , 96 , 255));
-            bgColors.Add(new Color32(224 , 235 , 190 , 255));
+            bgColors.Add(new Color32(159 , 96 , 90, 255));
+            bgColors.Add(new Color32(255 , 0 , 0 , 255));
 
         }
         if (GameData.level > 8) {
             bgColors.Add(new Color32(143 , 180 , 235 , 255));
             bgColors.Add(new Color32(104 , 126 , 158 , 255));
+            bgColors.Add(new Color32(218 , 0 , 255 , 255));
         }
         bgColors = ShuffleMe(bgColors);
         
