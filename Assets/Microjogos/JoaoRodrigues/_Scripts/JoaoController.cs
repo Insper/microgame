@@ -1,6 +1,11 @@
 ﻿// Arquitetura de código baseada no exemplo do professosr Luciano Soares.
 // Disponível em https://github.com/Insper/microgame/tree/main/Assets/Microjogos/LucianoSoares/scripts
 
+//Artes
+//Maça: Dave Newton https://www.devnewton.fr/
+//Árvore: https://www.seekpng.com/ipng/u2q8y3t4e6t4r5o0_19-pixel-vector-tree-huge-freebie-download-for/
+//Newton: https://www.pngegg.com/en/png-tsezd
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +16,6 @@ public class JoaoController : BaseMGController
 {
     public GameObject cabeca;
     public GameObject maca;
-    private Rigidbody2D rb2d;
 
     [Range(1, 20)]
     public float velocidade;
@@ -22,8 +26,7 @@ public class JoaoController : BaseMGController
         // Mensagem inicial
         GameManager.Text.text = "Ajude Newton a descobrir a gravidade!";
         
-        if(GameData.level > 4)
-        {
+        if(GameData.level > 4){
             maca.GetComponent<Rigidbody2D>().gravityScale = 2.0f;
         }
         else if(GameData.level > 2)
@@ -54,12 +57,9 @@ public class JoaoController : BaseMGController
     protected override void EndMicrogame()
     {
         // Mensagens de vitória ou derrota
-        if(GameData.lost)
-{
+        if(GameData.lost){
             GameManager.Text.text = "O que faremos sem a gravidade?";
-        }
-        else
-        {
+        }else{
             GameManager.Text.text = "Agora a gravidade existe!!";
         }
         
@@ -78,7 +78,7 @@ public class JoaoController : BaseMGController
             // Se a maca está perdida é pintada de vermelho
             maca.GetComponent<SpriteRenderer>().color = Color.red;
             
-            // Por padrão se supoões que jogador ganho, caso contrário se informa que perdeu.
+            // Por padrão se supõe que jogador ganhou, caso contrário se informa que perdeu.
             GameData.lost = true;
         }
 
