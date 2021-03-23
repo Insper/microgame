@@ -8,7 +8,8 @@ public class ControllerGuilherme : BaseMGController {
 
     // Objetos a serem gerenciados
     public GameObject camaleao;
-    public GameObject camera;
+    public static System.Random random = new System.Random();
+    public GameObject cameraScreen;
     public int corIdx = 0;
 
     public List<Color> bgColors = new List<Color>();
@@ -16,7 +17,7 @@ public class ControllerGuilherme : BaseMGController {
     // Exemplo de finalização de jogo
     protected override void EndMicrogame() {
         Color camaleaoColor = camaleao.GetComponent<SpriteRenderer>().color;
-        Color bgColor = camera.GetComponent<Camera>().backgroundColor;
+        Color bgColor = cameraScreen.GetComponent<Camera>().backgroundColor;
 
         // Mensagens de vítoria ou derrota
         if (bgColor != camaleaoColor) {
@@ -27,7 +28,18 @@ public class ControllerGuilherme : BaseMGController {
         }
 
     }
+    public List<Color> ShuffleMe(List<Color> list) {
 
+        for (int i = list.Count - 1; i > 1; i--) {
+            int rnd = random.Next(i + 1);
+
+            Color value = list[rnd];
+            list[rnd] = list[i];
+            list[i] = value;
+        }
+
+        return list;
+    }
     // Exemplo de inicialização de jogo
     protected override void StartMicrogame() {
         // camaleao.GetComponent<SpriteRenderer>().color = new Color(0,0,0);
@@ -36,7 +48,7 @@ public class ControllerGuilherme : BaseMGController {
         // Mensagem inicial
         GameManager.Text.text = "Camufle o camaleão! (Espaço)";
         if (GameData.level >= 0) {
-            bgColors.Add(new Color32(200 , 247 , 52, 255));
+            bgColors.Add(new Color32(200 , 247 , 52 , 255));
             bgColors.Add(new Color32(212 , 137 , 44 , 255));
             bgColors.Add(new Color32(235 , 61 , 168 , 255));
             bgColors.Add(new Color32(44 , 71 , 212 , 255));
@@ -51,7 +63,9 @@ public class ControllerGuilherme : BaseMGController {
             bgColors.Add(new Color32(143 , 180 , 235 , 255));
             bgColors.Add(new Color32(104 , 126 , 158 , 255));
         }
-        camera.GetComponent<Camera>().backgroundColor = bgColors[bgColors.Count-1];
+        bgColors = ShuffleMe(bgColors);
+        
+        cameraScreen.GetComponent<Camera>().backgroundColor = bgColors[bgColors.Count - 1];
     }
 
     // Exemplo de jogo principal
