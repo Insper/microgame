@@ -22,7 +22,7 @@ public class hr_GameController : BaseMGController
 
     protected override void EndMicrogame()
     {
-        Debug.Log("Fim de Acabou.");
+        Debug.Log("Fim de Jogo.");
         
         if (GameData.lost)
         {
