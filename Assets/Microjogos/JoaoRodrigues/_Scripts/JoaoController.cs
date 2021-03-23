@@ -11,6 +11,7 @@ public class JoaoController : BaseMGController
 {
     public GameObject cabeca;
     public GameObject maca;
+    private Rigidbody2D rb2d;
 
     [Range(1, 20)]
     public float velocidade;
@@ -20,6 +21,19 @@ public class JoaoController : BaseMGController
     {
         // Mensagem inicial
         GameManager.Text.text = "Ajude Newton a descobrir a gravidade!";
+        
+        if(GameData.level > 4)
+        {
+            maca.GetComponent<Rigidbody2D>().gravityScale = 2.0f;
+        }
+        else if(GameData.level > 2)
+        {
+            maca.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+        }
+        else 
+        {
+            maca.GetComponent<Rigidbody2D>().gravityScale = 0.5f;
+        }
 
         //Maçã é desativada enquanto partida não começa
         maca.SetActive(false);
@@ -29,8 +43,9 @@ public class JoaoController : BaseMGController
     protected override void Microgame(){
         // maca é ativada em posição aleatória e gravidade faz ela cair
         float pos = Random.Range(-6.0f, 6.0f);
-        float alt = Random.Range(2.0f, 5.0f);
+        float alt = Random.Range(3.0f, 5.0f);
         maca.transform.position += new Vector3(pos, alt, 0);
+        
 
         maca.SetActive(true);
         
@@ -40,7 +55,7 @@ public class JoaoController : BaseMGController
     {
         // Mensagens de vitória ou derrota
         if(GameData.lost)
-        {
+{
             GameManager.Text.text = "O que faremos sem a gravidade?";
         }
         else
