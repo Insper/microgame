@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 public class CannonBallBehaviour : MonoBehaviour
 {
     public double velocity;
-    Vector3 direction;
-    public GameObject cannon;
     public float angle;
+    public GameObject cannon;
+
+    Vector3 direction;
+    GameObject texto;
     ChargeBarController ComponenteCanhao;
     float lastFrameSec;
     float arrasto;
     bool landed;
-    // Start is called before the first frame update
+
     void Start()
     {
+        texto = GameObject.FindGameObjectsWithTag("Mensagem")[0];
         landed = false;
         lastFrameSec = Time.time;
         ComponenteCanhao = cannon.GetComponent<ChargeBarController>();
@@ -33,11 +37,16 @@ public class CannonBallBehaviour : MonoBehaviour
         return false;
     }
 
-    // Update is called once per frame
+    void Destroi()
+    {
+        texto.GetComponent<Text>().text = "You Lost!";
+        Destroy(gameObject);
+    }
+
     void Update()
     {
         if(landed) return;
-        if(isOut()) Destroy(gameObject);
+        if(isOut()) Destroi();
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.GetComponent<Rigidbody2D>().velocity.x - arrasto * Time.deltaTime,gameObject.GetComponent<Rigidbody2D>().velocity.y - arrasto * Time.deltaTime);
         velocity -= arrasto * Time.deltaTime;
     }
@@ -47,6 +56,7 @@ public class CannonBallBehaviour : MonoBehaviour
         if(col.gameObject.CompareTag("Floor"))
         {
             if(landed) return;
+            texto.GetComponent<Text>().text = "You Lost!";
             Destroy(gameObject);
         }
         if(col.gameObject.CompareTag("Target"))
@@ -56,7 +66,7 @@ public class CannonBallBehaviour : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f,0.0f);
             velocity = 0.0f;
             direction = new Vector3(0.0f,0.0f).normalized;
-            Debug.Log(direction + " " + velocity);
+            texto.GetComponent<Text>().text = "You Win!";
         }
     }
 }
