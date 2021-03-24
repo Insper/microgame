@@ -1,0 +1,644 @@
+fileFormatVersion: 2
+guid: 09c36e8a5fff1f54da2573c94cc5fd54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7301462559871969138
+    second: 156-1562821_edge-clipart_0
+  - first:
+      213: -5906242994960895462
+    second: 156-1562821_edge-clipart_1
+  - first:
+      213: -2438775516446933117
+    second: 156-1562821_edge-clipart_2
+  - first:
+      213: 4771553876443769411
+    second: 156-1562821_edge-clipart_3
+  - first:
+      213: 8161854409202487738
+    second: 156-1562821_edge-clipart_4
+  - first:
+      213: 6133321864273013127
+    second: 156-1562821_edge-clipart_5
+  - first:
+      213: 2409052635184142098
+    second: 156-1562821_edge-clipart_6
+  - first:
+      213: -8034042531402796023
+    second: 156-1562821_edge-clipart_7
+  - first:
+      213: -7526619740082735916
+    second: 156-1562821_edge-clipart_8
+  - first:
+      213: -6521561079178461113
+    second: 156-1562821_edge-clipart_9
+  - first:
+      213: 4718407354557233094
+    second: 156-1562821_edge-clipart_10
+  - first:
+      213: 8212616509319109776
+    second: 156-1562821_edge-clipart_11
+  - first:
+      213: 7238516830550465520
+    second: 156-1562821_edge-clipart_12
+  - first:
+      213: 1561672691594862033
+    second: 156-1562821_edge-clipart_13
+  - first:
+      213: 5870058411722706716
+    second: 156-1562821_edge-clipart_14
+  - first:
+      213: 3200600018508751433
+    second: 156-1562821_edge-clipart_15
+  - first:
+      213: 8671471188418277817
+    second: 156-1562821_edge-clipart_16
+  - first:
+      213: 5635091418527528984
+    second: 156-1562821_edge-clipart_17
+  - first:
+      213: -2460951764355980659
+    second: 156-1562821_edge-clipart_18
+  - first:
+      213: -7519257387594553262
+    second: 156-1562821_edge-clipart_19
+  - first:
+      213: -2286356693040495763
+    second: 156-1562821_edge-clipart_20
+  - first:
+      213: -7619728761441523477
+    second: 156-1562821_edge-clipart_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277abfd6381045560800000000000000
+      internalID: 7301462559871969138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 567.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a127738e94fc80ea0800000000000000
+      internalID: -5906242994960895462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 567.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fb247c69ab72ed0800000000000000
+      internalID: -2438775516446933117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 567.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34aa11848f6f73240800000000000000
+      internalID: 4771553876443769411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 567.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab158f0875bb44170800000000000000
+      internalID: 8161854409202487738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78921256dbfed1550800000000000000
+      internalID: 6133321864273013127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 426.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2179e55ab9cae6120800000000000000
+      internalID: 2409052635184142098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 426.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9043b5542e8518090800000000000000
+      internalID: -8034042531402796023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 426.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4fce069331c8790800000000000000
+      internalID: -7526619740082735916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 426.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7400e8e40c2ce75a0800000000000000
+      internalID: -6521561079178461113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c779f16d762b7140800000000000000
+      internalID: 4718407354557233094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 285.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c5972f33319f170800000000000000
+      internalID: 8212616509319109776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 285.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb95a1c4b0647460800000000000000
+      internalID: 7238516830550465520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 285.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd90f5f90d2ca510800000000000000
+      internalID: 1561672691594862033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 285.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f86894603a67150800000000000000
+      internalID: 5870058411722706716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942a25362c0da6c20800000000000000
+      internalID: 3200600018508751433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 144.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1b4b93a11475870800000000000000
+      internalID: 8671471188418277817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 144.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8187f260acdd33e40800000000000000
+      internalID: 5635091418527528984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 144.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82e034b861f8ddd0800000000000000
+      internalID: -2460951764355980659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_19
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 144.2
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258e1b5ae3b36a790800000000000000
+      internalID: -7519257387594553262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.199997
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d630c7983ba3540e0800000000000000
+      internalID: -2286356693040495763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 156-1562821_edge-clipart_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3.199997
+        width: 115.4
+        height: 141.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be863710019414690800000000000000
+      internalID: -7619728761441523477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
