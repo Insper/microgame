@@ -25,7 +25,6 @@ public class rs_Controller : BaseMGController {
         {
             GameManager.Text.text = "Você ganhou!";
         }
-
     }
 
     protected override void Microgame() {
