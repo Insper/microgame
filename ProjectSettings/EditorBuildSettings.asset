@@ -8,10 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fb8e40a5d69f824ca9655bc2db075bc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Microjogos/LucianoSoares/scenes/CenaLucianoSoares.unity
     guid: 213561b8039b64b96af06ed195fcdef4
+  - enabled: 0
+    path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
+    guid: cf07f4aa84c86c0488f506f1bdd2826e
+  - enabled: 1
+    path: Assets/Microjogos/GabrielaCaruso/scenes/CenaGabrielaCaruso.unity
+    guid: a7bcc234c98a64dd8ba7f693a3fbcb43
+  - enabled: 1
+    path: Assets/Microjogos/RafaelSantos/Scenes/rs_Lumberjack.unity
+    guid: 6a18f05ecb73593469890b8d6c54c04a
   - enabled: 1
     path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
     guid: cf07f4aa84c86c0488f506f1bdd2826e
+  - enabled: 1
+    path: Assets/Microjogos/HenryRocha/Scenes/GameScene.unity
+    guid: 03503ec457e20a64dbbea3ac150f06ee
   m_configObjects: {}
