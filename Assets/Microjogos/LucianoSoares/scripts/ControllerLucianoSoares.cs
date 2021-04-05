@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+// TESTE
+
+// Controller principal do jogo
 public class ControllerLucianoSoares : BaseMGController
 {
 
@@ -35,15 +39,15 @@ public class ControllerLucianoSoares : BaseMGController
         // Raquete é escalada conforme o nível
         if(GameData.level > 4)
         {
-            raquete.transform.localScale = new Vector3(1, 1, 1);
+            raquete.transform.localScale = new Vector3(1, 1, 1); // pequena
         }
         else if(GameData.level > 2)
         {
-            raquete.transform.localScale = new Vector3(2, 1, 1);
+            raquete.transform.localScale = new Vector3(2, 1, 1); // média
         }
         else 
         {
-            raquete.transform.localScale = new Vector3(4, 1, 1);
+            raquete.transform.localScale = new Vector3(4, 1, 1); //grande
         }
 
         // Bola é desativada enquanto partida não começa
