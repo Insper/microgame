@@ -5,6 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - bola
+  - VitorgeShot
+  - VitorgeTarget
+  - VitorgePlayer
+  - Asteroid
+  - Food
+  - Jordan
+  - PlayerWin
+  - Log
+  - Car
+  - finish
+  - Princess
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,7 +26,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - BackgroundImage
   - 
   - 
   - 
@@ -39,6 +51,16 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 334066705
+  - name: BG2
+    uniqueID: 3786377927
+    locked: 0
+  - name: BG1
+    uniqueID: 3753347615
+  - name: Background
+    uniqueID: 413155759
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
