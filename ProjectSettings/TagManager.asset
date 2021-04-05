@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Jordan
+  - PlayerWin
   - Log
   - Car
   - finish
@@ -43,6 +45,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG2
+    uniqueID: 3786377927
+    locked: 0
+  - name: BG1
+    uniqueID: 3753347615
   - name: Background
     uniqueID: 413155759
     locked: 0
