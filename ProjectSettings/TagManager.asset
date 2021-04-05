@@ -6,6 +6,27 @@ TagManager:
   tags:
   - Obstacle
   - Goal
+  - WRSafeZone
+  - WRPlayer
+  - WREnemy
+  - BD_bun1
+  - BD_bun2
+  - BD_patty
+  - BD_cheese
+  - BD_plate
+  - bola
+  - VitorgeShot
+  - VitorgeTarget
+  - VitorgePlayer
+  - Asteroid
+  - Food
+  - Jordan
+  - PlayerWin
+  - Log
+  - Car
+  - finish
+  - Princess
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +36,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - BackgroundImage
   - 
   - 
   - 
@@ -40,6 +61,19 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 334066705
+  - name: BG2
+    uniqueID: 3786377927
+    locked: 0
+  - name: BG1
+    uniqueID: 3753347615
+  - name: Background
+    uniqueID: 413155759
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: main
+    uniqueID: 219090803
     locked: 0
