@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Jordan
   - PlayerWin
+  - Log
+  - Car
+  - finish
+  - Princess
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -45,6 +50,8 @@ TagManager:
     locked: 0
   - name: BG1
     uniqueID: 3753347615
+  - name: Background
+    uniqueID: 413155759
     locked: 0
   - name: Default
     uniqueID: 0
