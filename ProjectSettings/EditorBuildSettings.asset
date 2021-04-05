@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
     guid: cf07f4aa84c86c0488f506f1bdd2826e
+  - enabled: 1
+    path: Assets/Microjogos/HenryRocha/Scenes/GameScene.unity
+    guid: 03503ec457e20a64dbbea3ac150f06ee
   m_configObjects: {}
