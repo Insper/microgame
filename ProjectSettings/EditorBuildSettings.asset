@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Microjogos/RafaelSantos/Scenes/rs_Lumberjack.unity
     guid: 6a18f05ecb73593469890b8d6c54c04a
+  - enabled: 1
+    path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
+    guid: cf07f4aa84c86c0488f506f1bdd2826e
   m_configObjects: {}
