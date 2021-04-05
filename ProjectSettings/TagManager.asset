@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - VitorgeShot
+  - VitorgeTarget
+  - VitorgePlayer
   - Asteroid
   - Food
   - Jordan
@@ -22,7 +25,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - BackgroundImage
   - 
   - 
   - 
