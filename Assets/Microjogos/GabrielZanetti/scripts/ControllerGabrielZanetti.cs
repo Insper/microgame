@@ -120,7 +120,7 @@ public class ControllerGabrielZanetti : BaseMGController
         if (n_tiros > 0) 
         {
             n_tiros--;
-            AudioManager.PlaySFX(shootSFX);
+            GZ_AudioManager.PlaySFX(shootSFX);
             Destroy(balas[n_tiros]);
             Instantiate(tiro, cano.transform.position, Quaternion.identity);
         }
