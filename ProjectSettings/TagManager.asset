@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - WRSafeZone
+  - WRPlayer
+  - WREnemy
   - BD_bun1
   - BD_bun2
   - BD_patty
