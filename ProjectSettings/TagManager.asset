@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - bloco
+  - diamante
   - UFO
   - Objective
   - Obstacle
