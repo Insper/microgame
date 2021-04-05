@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - faller
+  - floor
+  - catcher
   - Collectable
   - bloco
   - diamante
