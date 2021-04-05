@@ -135,6 +135,7 @@
     },
     "com.unity.purchasing": {
       "version": "2.2.2",
+
       "depth": 0,
       "source": "registry",
       "dependencies": {
