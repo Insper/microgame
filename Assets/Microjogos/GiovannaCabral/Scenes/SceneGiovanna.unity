@@ -554,12 +554,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fec0ddf4a4d91d41b32a0f4fad732d0, type: 3}
---- !u!1 &1786393905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 521840650945092691, guid: 0fec0ddf4a4d91d41b32a0f4fad732d0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1424805846}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1811322922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -662,8 +656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiLocation: 0
-  platform: {fileID: 1786393905}
-  player: {fileID: 1860273123}
+  platform: {fileID: 0}
+  player: {fileID: 0}
 --- !u!50 &1860273125
 Rigidbody2D:
   serializedVersion: 4

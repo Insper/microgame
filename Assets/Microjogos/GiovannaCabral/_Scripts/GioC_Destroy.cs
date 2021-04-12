@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class GioC_Destroy : MonoBehaviour
 {
     public GameObject player;
     public GameObject platform;

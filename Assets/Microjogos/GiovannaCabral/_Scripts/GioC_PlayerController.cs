@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : BaseMGController
+public class GioC_PlayerController : BaseMGController
 {
     private Rigidbody2D rb;
     private float moveInput;
