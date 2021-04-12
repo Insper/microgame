@@ -33,7 +33,7 @@ public class ControllerGabrielNoal : BaseMGController
     // Exemplo de inicialização de jogo
     protected override void StartMicrogame()
     {
-        PlayerController PlayerScript = player.GetComponent<PlayerController>();
+        PlayerControllerGabrielNoal PlayerScript = player.GetComponent<PlayerControllerGabrielNoal>();
 
         // Mensagem inicial
         GameManager.Text.text = "Acerte o alvo!";
