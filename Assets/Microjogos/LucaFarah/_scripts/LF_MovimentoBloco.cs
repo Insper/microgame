@@ -89,7 +89,7 @@ public class LF_MovimentoBloco : BaseMGController
             }
         }
         if(jumpNumber == 3 && !destruiu ){
-            GameData.lost = true;
+            GameData.lost = false;
             GameManager.Text.text = "Você ganhou!";
         }   
     }

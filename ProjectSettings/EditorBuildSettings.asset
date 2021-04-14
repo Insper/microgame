@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 9fb8e40a5d69f824ca9655bc2db075bc
   - enabled: 1
-    path: Assets/Microjogos/MichelJoseMoraes/Scenes/CenaMJM.unity
-    guid: 7c33c789dffafa945a02e697741c0fa3
+    path: Assets/Microjogos/EvandroRomeiro/Scenes/Scene.unity
+    guid: 6ee84850977a1f14db374882c3677361
   m_configObjects: {}

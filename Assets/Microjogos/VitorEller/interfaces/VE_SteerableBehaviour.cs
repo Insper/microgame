@@ -8,7 +8,8 @@ public abstract class VE_SteerableBehaviour : MonoBehaviour
 {
     //public float verticalForce;
     //public float horizontalForce;
-    public ThrustData td;
+    public VE_ThrustData td;
+
 
     private Rigidbody2D rb;
 

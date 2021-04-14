@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VE_TruckController : SteerableBehaviour
+public class VE_TruckController : VE_SteerableBehaviour
 {
 
     public GameObject shoot;

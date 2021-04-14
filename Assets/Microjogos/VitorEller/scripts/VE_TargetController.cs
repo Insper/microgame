@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VE_TargetController : SteerableBehaviour
+public class VE_TargetController : VE_SteerableBehaviour
 {
 
     private int level;

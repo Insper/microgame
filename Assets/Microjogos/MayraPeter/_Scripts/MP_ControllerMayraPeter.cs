@@ -60,7 +60,6 @@ public class MP_ControllerMayraPeter : BaseMGController
         // Bola é ativada em posição aleatória e gravidade faz ela cair
         float pos = Random.Range(-6.0f, 6.0f);
         object1.transform.position += new Vector3(pos, 3, 0);
-
         object1.SetActive(true);
         
     }
