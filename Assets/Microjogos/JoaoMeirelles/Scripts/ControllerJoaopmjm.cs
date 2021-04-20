@@ -49,9 +49,7 @@ public class ControllerJoaopmjm : BaseMGController
         charge = 0;
         angleCannon = Random.Range(-20.0f,-75.0f);
         Cannon = Instantiate(Cannon, new Vector3(-10,-5,0), Quaternion.AngleAxis(angleCannon, Vector3.forward));
-        
     }
-
     protected void Shoot()
     {
         Vector3 bicoPos = Cannon.transform.position;
@@ -64,17 +62,21 @@ public class ControllerJoaopmjm : BaseMGController
     {
         Destroy(go);
     }
-
     protected void spawnTarget(float pos)
     {
         Target = Instantiate(Target, new Vector3(pos,-5f,0.0f),Quaternion.identity) as GameObject;  // instatiate the object
     }
-
     protected void targetSize(float size)
     {
         Target.transform.localScale = new Vector3(size, 0.5f, 1.0f);
     }
 
+    protected void initScene()
+    {
+        SpawnFloor();
+        SpawnCannon();
+        spawnTarget(pos);
+    }
     protected override void StartMicrogame()
     {
         // Mensagem inicial
@@ -84,23 +86,17 @@ public class ControllerJoaopmjm : BaseMGController
         // Raquete é escalada conforme o nível
         if(GameData.level > 4)
         {
-            SpawnFloor();
-            SpawnCannon();
-            spawnTarget(pos);
+            initScene();
             targetSize(1.0f);
         }
         else if(GameData.level > 2)
         {
-            SpawnFloor();
-            SpawnCannon();
-            spawnTarget(pos);
+            initScene();
             targetSize(2.0f);
         }
         else 
         {
-            SpawnFloor();
-            SpawnCannon();
-            spawnTarget(pos);
+            initScene();
             targetSize(3.0f);
         }
     }
