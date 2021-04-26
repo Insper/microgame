@@ -112,6 +112,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Backspace)) SceneManager.LoadScene(0);
+    }
+
     // Inicia e define o número de vidas do jogador
     private void StartGame() {
         GameData.reset(vidas);
@@ -182,7 +187,7 @@ public class GameManager : MonoBehaviour
         do
         {
             int max = SceneManager.sceneCountInBuildSettings;
-            nextScene = Random.Range(1, max);
+            nextScene = Random.Range(2, max);
         } while (!GameData.CanLoadScene(nextScene));
 
         GameData.DebugLog("[GameManager] Will load next scene");
@@ -205,7 +210,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         GameData.DebugLog("[GameManager] Will load end game scene");
-        SceneManager.LoadScene(0); //Cena para o fim do jogo deve ter id 0 no build settings
+        SceneManager.LoadScene(1); //Cena para o fim do jogo deve ter id 0 no build settings
     }
 
 }

@@ -6,9 +6,138 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/CenaCorrecao.unity
+    guid: e532473d36df587409097d4027511141
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fb8e40a5d69f824ca9655bc2db075bc
   - enabled: 1
     path: Assets/Microjogos/GabrielNoal/scenes/CenaGabrielNoal.unity
     guid: 09ff93f4af87c8d42b49384eeeb1d731
+  - enabled: 1
+    path: Assets/Microjogos/BrunoDomingues/Scenes/BD_BurgerStack.unity
+    guid: 1192951a7843e4540b21f34d98a46851
+  - enabled: 1
+    path: Assets/Microjogos/CaioFauza/Scenes/CaioFauzaScene.unity
+    guid: dacef49268851b34f86aea26e7a8d2a6
+  - enabled: 1
+    path: Assets/Microjogos/BeatrizMie/scenes/CenaBeatrizMie.unity
+    guid: 6d9cbda8ce395084892f9b358e547fa0
+  - enabled: 1
+    path: Assets/Microjogos/EmanuelleMoco/CenaEmanuelleMoco.unity
+    guid: 77bed6f33b4946048adb8b2609634fb2
+  - enabled: 1
+    path: Assets/Microjogos/PedroFontes/scenes/CenaFontes.unity
+    guid: 882d1c3f46adc914b8aee18a60cf876c
+  - enabled: 1
+    path: Assets/Microjogos/GabrielaCaruso/scenes/CenaGabrielaCaruso.unity
+    guid: a7bcc234c98a64dd8ba7f693a3fbcb43
+  - enabled: 1
+    path: Assets/Microjogos/GabrielDuarte/scenes/CenaGabrielDuarte.unity
+    guid: 17a55d1bb43af234ca18cf9ddee613a0
+  - enabled: 1
+    path: Assets/Microjogos/GabrielZanetti/scenes/CenaGabrielZanetti.unity
+    guid: 839ee791c72a8a64f8b62802a3d7e498
+  - enabled: 1
+    path: Assets/Microjogos/LeonardoMendes/scenes/CenaLeonardoMendes.unity
+    guid: e57f37ed809f71c4797b24599938b813
+  - enabled: 1
+    path: Assets/Microjogos/LucasLeal/scenes/CenaLucasLeal.unity
+    guid: c31d3ab73c3ff1945a58fabc5d3e8610
+  - enabled: 1
+    path: Assets/Microjogos/LucasMuchaluat/scenes/CenaLucasMuchaluat.unity
+    guid: 715343216882e5a41acb6a79e74b8376
+  - enabled: 1
+    path: Assets/Microjogos/LucianoSoares/scenes/CenaLucianoSoares.unity
+    guid: 213561b8039b64b96af06ed195fcdef4
+  - enabled: 1
+    path: Assets/Microjogos/LuizaSilveira/scenes/CenaLuizaSilveira.unity
+    guid: 2981ceee1608d3446b269f190be11f35
+  - enabled: 1
+    path: Assets/Microjogos/LuizTeixeira/scenes/CenaLuizTeixeira.unity
+    guid: 1e20e50e1afd44a37a5481aab497f42b
+  - enabled: 1
+    path: Assets/Microjogos/ManuelaCastilla/scenes/CenaManuela.unity
+    guid: 049d3ef5edc9c9846803cbe25f7143e7
+  - enabled: 1
+    path: Assets/Microjogos/MichelJoseMoraes/Scenes/CenaMJM.unity
+    guid: 7c33c789dffafa945a02e697741c0fa3
+  - enabled: 1
+    path: Assets/Microjogos/PedroDaher/scenes/CenaPedroDaher.unity
+    guid: 3234832e7393843e7b20bca4547a1e62
+  - enabled: 1
+    path: Assets/Microjogos/PedroEmil/scenes/CenaPedroEmil.unity
+    guid: ff8fba737a80fc84d8256994e8c4f0dd
+  - enabled: 1
+    path: Assets/Microjogos/RafaelAlmada/Scenes/CenaRafaelAlmada.unity
+    guid: c99351fc6e40149ada606e3102601cc2
+  - enabled: 1
+    path: Assets/Microjogos/RogerPina/scenes/CenaRogerPina.unity
+    guid: c0bf0f8df11151f43ae07f0d6f890a01
+  - enabled: 1
+    path: Assets/Microjogos/VitorEller/scenes/CenaVitorEller.unity
+    guid: 67768c999f6694f849694006e07ed312
+  - enabled: 1
+    path: Assets/Microjogos/MariaEduarda/scenes/cobrinha.unity
+    guid: 5dbe2391cb52c4e4d9a15e1aba935b79
+  - enabled: 1
+    path: Assets/Microjogos/WarlenRodrigues/scenes/cross-the-road.unity
+    guid: dc851e390c448364cbb28b4fcaf8512c
+  - enabled: 1
+    path: Assets/Microjogos/ThomasQueiroz/Scenes/DDR4.unity
+    guid: b5c6b6819f95a32448dfe741abceba63
+  - enabled: 1
+    path: Assets/Microjogos/PedroRamos/Sprites/Ninja Files/Demo.unity
+    guid: 3b5de055f1dae3e4da024175a2b6f605
+  - enabled: 1
+    path: Assets/Microjogos/GabrielZezze/scenes/gabrielfz_PlayScene.unity
+    guid: 449527803b112894494d6cb2a3a78c41
+  - enabled: 1
+    path: Assets/Microjogos/JoaoRodrigues/Scenes/Gravidade.unity
+    guid: 5869d1715687e9b48b17c9c35e4c95d6
+  - enabled: 1
+    path: Assets/Microjogos/GustavoMolina/Scenes/Gustavo Molina.unity
+    guid: 41c497bd55238064689ea454f405c905
+  - enabled: 1
+    path: Assets/Microjogos/GustavoBraga/Scenes/GustavoBragaScene.unity
+    guid: 474d2a55701a39d4bb7da41ff018f67c
+  - enabled: 1
+    path: Assets/Microjogos/HenryRocha/Scenes/hr_GameScene.unity
+    guid: 03503ec457e20a64dbbea3ac150f06ee
+  - enabled: 1
+    path: Assets/Microjogos/LucaFarah/scenes/LucaScene.unity
+    guid: cab2df725001ede4a85e119ce96115c4
+  - enabled: 1
+    path: Assets/Microjogos/MayraPeter/Scenes/MayraScene.unity
+    guid: 8dc34d12a1a2da94aa171d2b89970960
+  - enabled: 1
+    path: Assets/Microjogos/JoaoMeirelles/Scenes/MyScene.unity
+    guid: 18355effa6dc93a4397a082718eacab4
+  - enabled: 1
+    path: Assets/Microjogos/PedroRamos/Scenes/NinjaRunScene.unity
+    guid: 229c0b51f9a9d824b8a20b2f1b27b5fd
+  - enabled: 1
+    path: Assets/Microjogos/PedroCosta/Scenes/PedroCostaMainScene.unity
+    guid: 6e4b4a295e3864b25b81aa3f058a9050
+  - enabled: 1
+    path: Assets/Microjogos/PedroPauloMendoncaTelho/scenes/PedroPauloScene.unity
+    guid: 1b136193e682be847ab3100eaf82bf20
+  - enabled: 1
+    path: Assets/Microjogos/MatheusPellizzon/Scenes/PellizzonScene.unity
+    guid: 5e3fe03cede3fd546b5eb6a3357281c7
+  - enabled: 1
+    path: Assets/Microjogos/RafaelSantos/Scenes/rs_Lumberjack.unity
+    guid: 6a18f05ecb73593469890b8d6c54c04a
+  - enabled: 1
+    path: Assets/Microjogos/EvandroRomeiro/Scenes/Scene.unity
+    guid: 6ee84850977a1f14db374882c3677361
+  - enabled: 1
+    path: Assets/Microjogos/GiovannaCabral/Scenes/SceneGiovanna.unity
+    guid: 7bd20bdcf70786b45adf4bd4a976efad
+  - enabled: 1
+    path: Assets/Microjogos/ThiagoVerardo/Thiagovcsscenes/ThiagovcsCena.unity
+    guid: b1afa2769f5088748a718b1b8f38a823
+  - enabled: 1
+    path: Assets/Microjogos/WillianLima/scenes/Willianrsl_scene.unity
+    guid: f17c71aacaf5dc94195a00406859021c
   m_configObjects: {}
