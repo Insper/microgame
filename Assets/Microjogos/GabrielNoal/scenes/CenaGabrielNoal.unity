@@ -312,14 +312,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1281111655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c204f62f8d8e944f9815a3dc8085e3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 482570e528362984092874f4668f0fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1317798631}
+  waypoint: {fileID: 1317798631}
   Arrow: {fileID: 3270359107321912107, guid: ebda9802907beec4e970ba3f17097123, type: 3}
   Bow: {fileID: 206936307}
-  direction: {x: 0, y: 0}
+  speed: 0
   force: 1500
   Target: {fileID: 902643510}
   shootDelay: 1
