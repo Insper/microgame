@@ -4,6 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+
+  - Buttons
+  - arrows
+  - arrowRight
+  - arrowLeft
+  - arrowUp
+
   - faller
   - floor
   - catcher
@@ -35,6 +42,7 @@ TagManager:
   - finish
   - Princess
   - Enemy
+
   layers:
   - Default
   - TransparentFX
@@ -72,6 +80,10 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+
+  - name: fundo
+    uniqueID: 3035981551
+
   - name: background
     uniqueID: 334066705
   - name: BG2
@@ -81,10 +93,15 @@ TagManager:
     uniqueID: 3753347615
   - name: Background
     uniqueID: 413155759
+
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+
+  - name: arrowsLayer
+    uniqueID: 3248756221
+
   - name: Background
     uniqueID: 1836851645
     locked: 0
@@ -98,4 +115,5 @@ TagManager:
     uniqueID: 2473979281
   - name: main
     uniqueID: 219090803
+
     locked: 0
