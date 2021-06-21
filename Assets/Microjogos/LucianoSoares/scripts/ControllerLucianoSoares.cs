@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ControllerLucianoSoares : BaseMGController {
+// Controller principal do jogo
+public class ControllerLucianoSoares : BaseMGController
+{
+
 
     // Objetos a serem gerenciados
     public GameObject raquete;
@@ -28,14 +31,19 @@ public class ControllerLucianoSoares : BaseMGController {
         GameManager.Text.text = "Não deixe a bola cair!";
 
         // Raquete é escalada conforme o nível
-        if (GameData.level > 4) {
-            raquete.transform.localScale = new Vector3(1 , 1 , 1);
+
+        if(GameData.level > 4)
+        {
+            raquete.transform.localScale = new Vector3(1, 1, 1); // pequena
         }
-        else if (GameData.level > 2) {
-            raquete.transform.localScale = new Vector3(2 , 1 , 1);
+        else if(GameData.level > 2)
+        {
+            raquete.transform.localScale = new Vector3(2, 1, 1); // média
         }
-        else {
-            raquete.transform.localScale = new Vector3(4 , 1 , 1);
+        else 
+        {
+            raquete.transform.localScale = new Vector3(4, 1, 1); //grande
+
         }
 
         // Bola é desativada enquanto partida não começa
