@@ -61,3 +61,6 @@ crashlytics-build.properties
 # Info de versão
 ProjectSettings/ProjectVersion.txt
 ProjectSettings/BuildEditorSettings.txt
+
+Dangerfile
+Gemfile*
