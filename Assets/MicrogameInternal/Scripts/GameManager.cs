@@ -21,6 +21,8 @@ namespace MicrogameInternal {
 
         private readonly float[] _timeProgression  = {10.0f, 8.0f, 6.0f, 4.0f, 2.0f, 1.0f}; 
         private int _activeLevel;
+
+        public int ActiveLevel {get => _activeLevel;}
         
         private float _startTime;
         public float RunningTime;
