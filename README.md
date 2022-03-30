@@ -13,19 +13,18 @@ microgame
 |
 +---Assets
 |   |
-|   +---Internal
-|   |       BaseMGController.cs
-|   |       GameData.cs
+|   +---MicrogrameInternal
+|   |       CountdownTimer.cs
+|   |       Teste.cs
 |   |       GameManager.cs
 |   |
-|   +---Microjogos
-|   |   +---<!CRIE UMA PASTA COM SEU NOME!>
-|   |   |   +---scenes
-|   |   |   \---scripts
-|   |   |
+|   +---<!CRIE UMA PASTA COM SEU NOME E SOBRENOME!>
+|   |   +---scenes
+|   |   \---scripts
+|   |
 |   +---Resources
-|   |       Canvas.prefab
-|   |       GameManager.prefab
+|   |       countdownUI.prefab
+|   |
 |   \---Scenes
 |           MainScene.unity
 +---Packages
@@ -35,8 +34,6 @@ microgame
 Este projeto conta com três classes base, **que não devem ser alteradas**.
 
 A cena inicial/final já vem configurada com o ID 0 no build settings. Não altere a ordem pois será usada para iniciar e finalizar o jogo como um todo.
-
-**GameData.cs** Controla os status do jogo.
 
 **GameManager.cs** Gerência o jogo como um todo, responsável pelas trocas de cenas e finalização do mesmo.
 
