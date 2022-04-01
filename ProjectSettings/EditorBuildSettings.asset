@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Emil/ClickTheDot.unity
     guid: 07050dbc135215e459b17abe7f20c4a8
+  - enabled: 1
+    path: Assets/LucianoSoares/ColocarBola.unity
+    guid: ab3ed2c9dca86a241ac47133c5b89998
   m_configObjects: {}
