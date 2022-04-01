@@ -41,7 +41,6 @@ namespace LucianoSoares {
 
             // Se não chegou, perdeu
             if(!_buraco.GetComponent<Chegou>().chegou) {
-
                 gm.GameLost(); 
             } 
 
