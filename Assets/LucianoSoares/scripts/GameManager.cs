@@ -9,9 +9,10 @@ namespace LucianoSoares {
         public GameObject instructions;  // Textou das instruçõees
 
 
-        public GameObject bola;
-        public GameObject buraco;
-        public GameObject[] paredes;
+        public GameObject bola;  // Prefab da bola
+        public GameObject buraco;  // Prefab do buraco
+        private GameObject _buraco;  // objeto instanciado de buraco
+        public GameObject[] paredes;  // Prefab das paredes
 
         private int _level;
         
@@ -30,17 +31,20 @@ namespace LucianoSoares {
 
             // Cria objetos na cena
             Instantiate(bola);
-            Instantiate(buraco);
+            _buraco = Instantiate(buraco);
             Instantiate(paredes[_level]);
 
             gm.StartTimer(); 
         }
 
         void EndCheck() {
+
             // Se não chegou, perdeu
-            if(!buraco.GetComponent<Chegou>().chegou) {
+            if(!_buraco.GetComponent<Chegou>().chegou) {
+
                 gm.GameLost(); 
-            }
+            } 
+
         }
     }
 }
