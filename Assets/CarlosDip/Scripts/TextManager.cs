@@ -95,15 +95,15 @@ namespace Dip {
         }
 
         public void button0(){
-            validate_input(button0_word.real);
+            validate_input(button0_word);
         }
 
         public void button1(){
-            validate_input(button1_word.real);
+            validate_input(button1_word);
         }
         
         public void button2(){
-            validate_input(button2_word.real);
+            validate_input(button2_word);
         }
         
         public void button3(){
