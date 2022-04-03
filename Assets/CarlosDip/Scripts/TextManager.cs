@@ -30,6 +30,7 @@ namespace Dip {
         public Text Option0,Option1,Option2,Option3;
         private List<Word> word_list = new List<Word>();
         private Anagram button0_word, button1_word, button2_word, button3_word;
+        public AudioSource ding;
         private bool victory = false;
         private MicrogameInternal.GameManager gm;
 
@@ -38,11 +39,30 @@ namespace Dip {
             gm = MicrogameInternal.GameManager.GetInstance();
             init_words();
             Generate_Challenge();
+            Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+            gm.StartTimer();
+        }
+
+        void EndCheck(){
+            // If player hasn't won by end of time, they lose.
+            if(!this.victory) gm.GameLost();
         }
 
         Word select_word(){
-            // TODO: Implemente dificulty
-            int index = Random.Range(0,this.word_list.Count);
+            int difficulty = gm.ActiveLevel;
+            int index;
+            if (difficulty <= 2){
+                index = Random.Range(0,5); // [0-4] = Easy
+            } else if(difficulty <= 3) {
+                index = Random.Range(5,10); // [5-9] = Easy-Medium
+            } else if(difficulty <= 4) {
+                index = Random.Range(10,16); // [10-15] = Medium
+            } else if( difficulty <= 6) {
+                index = Random.Range(16,this.word_list.Count); // [16-20] = Hard
+            } else {
+                // Should not happen, just in case
+                index = Random.Range(0,this.word_list.Count);
+            }
             return this.word_list[index];
         }
 
@@ -60,28 +80,33 @@ namespace Dip {
         }
 
         void init_words(){
-            // generated using pyhton
-            word_list.Add(construct_anagramed_word("taco", "cato", "ttoa", "actt", "otaa"));
-            word_list.Add(construct_anagramed_word("tubo", "btuo", "ttob", "ottb", "utto"));
-            word_list.Add(construct_anagramed_word("pano", "napo", "poaa", "aano", "anpp"));
-            word_list.Add(construct_anagramed_word("pena", "pnae", "aaen", "nppa", "pann"));
-            word_list.Add(construct_anagramed_word("rede", "eder", "eedd", "eree", "reee"));
-            word_list.Add(construct_anagramed_word("abaco", "abaoc", "cabaa", "oobac", "bacoo"));
-            word_list.Add(construct_anagramed_word("arroz", "oarrz", "rrooz", "aaorz", "aaror"));
-            word_list.Add(construct_anagramed_word("palco", "aplco", "opaac", "pcloo", "cappo"));
-            word_list.Add(construct_anagramed_word("ritmo", "rotmi", "oiimr", "ttimo", "riomm"));
-            word_list.Add(construct_anagramed_word("sopro", "soopr", "ppsro", "rsopp", "roppo"));
-            word_list.Add(construct_anagramed_word("banana", "aanbna", "nbaaaa", "bnnaaa", "abnaaa"));
-            word_list.Add(construct_anagramed_word("moinho", "minoho", "moniio", "ommnhi", "iinhmo"));
-            word_list.Add(construct_anagramed_word("cortar", "coatrr", "rcortt", "caorrr", "ortacc"));
-            word_list.Add(construct_anagramed_word("espada", "easpda", "speeda", "aessad", "sppead"));
-            word_list.Add(construct_anagramed_word("mantra", "mntara", "aaantr", "mmnara", "mmntar"));
-            word_list.Add(construct_anagramed_word("alcool", "aloocl", "llccoa", "aoccol", "aclool"));
-            word_list.Add(construct_anagramed_word("rebarba", "rbaerba", "rerabba", "rebbraa", "eeaarbr"));
-            word_list.Add(construct_anagramed_word("nitidez", "neitidz", "niizdee", "ittidzn", "eiidtzn"));
-            word_list.Add(construct_anagramed_word("torrente", "troreent", "eerrntet", "trreeoet", "otrreeet"));
-            word_list.Add(construct_anagramed_word("escaldar", "ecsldaar", "earssdac", "eddalcsr", "eacdallr"));
-            word_list.Add(construct_anagramed_word("explosivo", "xpolesivo", "oolpesivo", "eeposixlo", "eollxsivo"));
+            // Generated using python
+            
+            // Easy [0-4]
+                word_list.Add(construct_anagramed_word("taco", "cato", "ttoa", "actt", "otaa"));
+                word_list.Add(construct_anagramed_word("tubo", "btuo", "ttob", "ottb", "utto"));
+                word_list.Add(construct_anagramed_word("pano", "napo", "poaa", "aano", "anpp"));
+                word_list.Add(construct_anagramed_word("pena", "pnae", "aaen", "nppa", "pann"));
+                word_list.Add(construct_anagramed_word("rede", "eder", "eedd", "eree", "reee"));
+            // Easy-Medium [5-9]
+                word_list.Add(construct_anagramed_word("abaco", "abaoc", "cabaa", "oobac", "bacoo"));
+                word_list.Add(construct_anagramed_word("arroz", "oarrz", "rrooz", "aaorz", "aaror"));
+                word_list.Add(construct_anagramed_word("palco", "aplco", "opaac", "pcloo", "cappo"));
+                word_list.Add(construct_anagramed_word("ritmo", "rotmi", "oiimr", "ttimo", "riomm"));
+                word_list.Add(construct_anagramed_word("sopro", "soopr", "ppsro", "rsopp", "roppo"));
+            // Medium [10-15]
+                word_list.Add(construct_anagramed_word("banana", "aanbna", "nbaaaa", "bnnaaa", "abnaaa"));
+                word_list.Add(construct_anagramed_word("moinho", "minoho", "moniio", "ommnhi", "iinhmo"));
+                word_list.Add(construct_anagramed_word("cortar", "coatrr", "rcortt", "caorrr", "ortacc"));
+                word_list.Add(construct_anagramed_word("espada", "easpda", "speeda", "aessad", "sppead"));
+                word_list.Add(construct_anagramed_word("mantra", "mntara", "aaantr", "mmnara", "mmntar"));
+                word_list.Add(construct_anagramed_word("alcool", "aloocl", "llccoa", "aoccol", "aclool"));
+            // Hard [16-20]
+                word_list.Add(construct_anagramed_word("rebarba", "rbaerba", "rerabba", "rebbraa", "eeaarbr"));
+                word_list.Add(construct_anagramed_word("nitidez", "neitidz", "niizdee", "ittidzn", "eiidtzn"));
+                word_list.Add(construct_anagramed_word("torrente", "troreent", "eerrntet", "trreeoet", "otrreeet"));
+                word_list.Add(construct_anagramed_word("escaldar", "ecsldaar", "earssdac", "eddalcsr", "eacdallr"));
+                word_list.Add(construct_anagramed_word("explosivo", "xpolesivo", "oolpesivo", "eeposixlo", "eollxsivo"));
         }
 
         private Word construct_anagramed_word(string word, string a1, string a2, string a3, string a4){
@@ -113,6 +138,7 @@ namespace Dip {
         void validate_input(Anagram anag){
             if(this.victory) return;
             if(anag.real){
+                ding.Play();
                 Debug.Log("Correct!");
                 this.victory = true;
             } else {
