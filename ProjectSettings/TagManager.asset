@@ -9,6 +9,7 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Enemy
   layers:
   - Default
   - TransparentFX
