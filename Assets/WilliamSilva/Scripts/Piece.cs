@@ -12,20 +12,38 @@ namespace WilliamSilva
 {
     public class Piece : MonoBehaviour
     {
+        private MicrogameInternal.GameManager gm;
+
         public WilliamSilva.Board board { get; private set; }
         public WilliamSilva.TetrominoData data { get; private set; }
         public Vector3Int[] cells { get; private set; }
         public Vector3Int position { get; private set; }
         public int rotationIndex { get; private set; }
 
-        public float stepDelay = 1f;
-        public float lockDelay = 0.5f;
+        public float stepDelay;
+        public float lockDelay = 0.25f;
 
         private float stepTime;
         private float lockTime;
 
+        public void Start()
+        {
+            gm = MicrogameInternal.GameManager.GetInstance();
+            if (gm.ActiveLevel == 0) {
+                stepDelay = 1f;
+                print("LEVEL 1\n");
+            } else if (gm.ActiveLevel == 1) {
+                stepDelay = 0.5f;
+                print("LEVEL 2\n");
+            } else if(gm.ActiveLevel == 2) {
+                stepDelay = 0.25f;
+                print("LEVEL 3\n");
+            }
+        }
+
         public void Initialize(WilliamSilva.Board board, Vector3Int position, WilliamSilva.TetrominoData data)
         {
+
             this.board = board;
             this.position = position;
             this.data = data;

@@ -10,6 +10,10 @@ Source Code: https://github.com/zigurous/unity-tetris-tutorial
 namespace WilliamSilva {
     public class Board : MonoBehaviour
     {
+        private MicrogameInternal.GameManager gm;
+
+        bool gameOver_ = false;
+
         public Tilemap tilemap { get; private set; }
         public WilliamSilva.Piece activePiece { get; private set; }
         public WilliamSilva.TetrominoData[] tetrominoes;
@@ -27,6 +31,7 @@ namespace WilliamSilva {
 
         private void Awake()
         {
+        
             this.tilemap = GetComponentInChildren<Tilemap>();
             this.activePiece = GetComponentInChildren<WilliamSilva.Piece>();
 
@@ -38,6 +43,9 @@ namespace WilliamSilva {
 
         private void Start()
         {
+            gm = MicrogameInternal.GameManager.GetInstance();
+            gm.StartTimer();
+            Invoke(nameof(EndGame), gm.MaxTime-0.1f);
             SpawnPiece();
         }
 
@@ -52,13 +60,23 @@ namespace WilliamSilva {
                 Set(this.activePiece);
             } else {
                 GameOver();
+                gameOver_ = true;
             }
 
         }
 
+        private void EndGame()
+        {
+            if(gameOver_)
+            {
+                GameOver();
+            }
+        }
+
         private void GameOver()
         {
-            this.tilemap.ClearAllTiles();
+            gm.GameLost();
+            // this.tilemap.ClearAllTiles();
             // Here I can do my things
         }
 
