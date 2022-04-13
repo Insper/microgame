@@ -17,11 +17,13 @@ namespace AnaClaraCarneiro {
         // Update is called once per frame
         void Update()
         {
-            
+            // if (transform.position.y <= -6.0f && GameObject.Find("Meteor(Clone)")){
+            //     Destroy(meteoros);
+            // }
         }
 
         void Spaw(){
-            Instantiate(meteoros, new Vector3(Random.Range(-6,6),10,0), Quaternion.identity);
+            Instantiate(meteoros, new Vector3(Random.Range(-6,6),6,0), Quaternion.identity);
         }
     }
 }
