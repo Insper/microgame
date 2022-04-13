@@ -88,10 +88,10 @@ namespace MicrogameInternal {
             int maxTries = 5;
             int tryCount = 0;
             do {
-                nextScene = Random.Range(1, SceneManager.sceneCountInBuildSettings+1);
-                Debug.Log(nextScene);
+                nextScene = Random.Range(1, SceneManager.sceneCountInBuildSettings);
 
             } while (_presentedGames.Contains(nextScene) && tryCount++ < maxTries);
+            Debug.Log("Próximo microgame: " + SceneUtility.GetScenePathByBuildIndex(nextScene));
             _presentedGames.Add(nextScene);
             SceneManager.LoadScene(nextScene);
         }
@@ -102,6 +102,7 @@ namespace MicrogameInternal {
         /// </summary>
         public void GameLost() {
             _lifes--;
+            Debug.Log("Perdeu uma vida (vidas restantes = " + _lifes + " )");
             if (_lifes > 0) NextGame();
             else SceneManager.LoadScene(0);
         }

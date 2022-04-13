@@ -13,75 +13,43 @@ microgame
 |
 +---Assets
 |   |
-|   +---Internal
-|   |       BaseMGController.cs
-|   |       GameData.cs
+|   +---MicrogrameInternal
+|   |       CountdownTimer.cs
+|   |       Teste.cs
+|   |       Inicio.cs
 |   |       GameManager.cs
 |   |
-|   +---Microjogos
-|   |   +---<!CRIE UMA PASTA COM SEU NOME!>
-|   |   |   +---scenes
-|   |   |   \---scripts
-|   |   |
+|   +---<!CRIE UMA PASTA COM SEU NOME E SOBRENOME!>
+|   |   +---scenes
+|   |   \---scripts
+|   |
 |   +---Resources
-|   |       Canvas.prefab
-|   |       GameManager.prefab
+|   |       countdownUI.prefab
+|   |
 |   \---Scenes
 |           MainScene.unity
+|
 +---Packages
 \---ProjectSettings
 ```
 
-Este projeto conta com três classes base, **que não devem ser alteradas**.
+Este projeto conta com classes base, **que não devem ser alteradas**.
 
 A cena inicial/final já vem configurada com o ID 0 no build settings. Não altere a ordem pois será usada para iniciar e finalizar o jogo como um todo.
 
-**GameData.cs** Controla os status do jogo.
-
 **GameManager.cs** Gerência o jogo como um todo, responsável pelas trocas de cenas e finalização do mesmo.
 
-**BaseMGController.cs** Classe abstrata que devera ser herdada pelo controlador do seu microgame. Responsavel por instanciar o GameManager bem como registrar e remover os eventos definidos por ele.
+**CountdownTimer.cs** Classe que faz a animação da barra de tempo.
 
-Conta também com 3 Métodos que devem ser implementados:
-> **StartMicrogame()** Após carregada a cena de seu microgame esse método será chamado para iniciar seu jogo (você pode passar instruções).
->
-> **Microgame()** Ao final da intrução esse método é chamado para executar o jogo principal.
->
-> **EndMicrogame()** Ao final do tempo de execução esse método é chamado para o feedback de finalização bem ou mal succedida do jogo.
+**Inicio.cs** Classe para iniciar o jogo na cena principal.
+
+**Teste.cs** Classe para realizar testes dos jogos.
+
+no GameManager você conta com:
+> **ActiveLevel** O nível da fase que você se encontra.
+> **GameLost()** Ao final do tempo de execução esse método é chamado para o feedback de finalização mal succedida do jogo.
 
 Exemplo de classe Controller do microgame
-
-```csharp
-public class NomeController : BaseMGController
-{
-    protected override void StartMicrogame()
-    {
-        Debug.Log("Inicio do Jogo");
-    }
-
-    protected override void Microgame()
-    {
-        Debug.Log("Jogo Principal");
-    }
-
-    protected override void EndMicrogame()
-    {
-        Debug.Log("Jogo Acabou");
-    }
-
-    private void LateUpdate()
-    {
-        //Logica do seu jogo
-    }
-
-}
-```
-
-Existem também 2 *prefabs* importantes na pasta ressources:
-
-**Canvas** onde residem os sliders que funcionam como barra de tempo.
-
-**GameManager** é o GameObject em que reside o Script do GameManager, ele é instanciado automaticamente pelo awake do `BaseMGController`.
 
 ### Entrega (Pull Request)
 
@@ -91,12 +59,17 @@ Para os assets que for criar adicione um prefixo com as iniciais de seu nome, pa
 
 Exemplo
 ```
-Microjogos
-|   +---PedroEmil
+Assets
+|   +---Emil
 |   |   +---scenes
 |   |   |       phepf_Cena01.unity
 |   |   \---scripts
 |   |           phepf_Controller.cs
+|   +---LucianoSoares
+|   |   +---scenes
+|   |   \---scripts
+|   |
+
 ```
 
 Pull requests fora desse formato **Não serão aceitos**
