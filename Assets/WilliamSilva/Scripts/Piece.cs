@@ -83,8 +83,18 @@ public class Piece : MonoBehaviour
 
     private void Rotate(int direction)
     {
-        this.rotationIndex += Wrap(this.rotationIndex + direction, 0, 4);
+        int originalRotationIndex = this.rotationIndex;
+        this.rotationIndex = Wrap(this.rotationIndex + direction, 0, 4);
 
+        ApplyRotation(direction);
+
+        if (!TestWallKicks(this.rotationIndex, direction)){
+            this.rotationIndex = originalRotationIndex;
+            ApplyRotation(-direction);
+        }
+    }
+
+    private void ApplyRotation(int direction){
         for (int i = 0; i < this.cells.Length; i++)
         {
             Vector3 cell = this.cells[i];
@@ -104,9 +114,35 @@ public class Piece : MonoBehaviour
                     y = Mathf.RoundToInt((cell.x * Data.RotationMatrix[2] * direction) + (cell.y * Data.RotationMatrix[3] * direction));
                     break;
             }
-
             this.cells[i] = new Vector3Int(x, y, 0);
         }
+    }
+
+     private bool TestWallKicks(int rotationIndex, int rotationDirection)
+    {
+        int wallKickIndex = GetWallKickIndex(rotationIndex, rotationDirection);
+
+        for (int i = 0; i < data.wallKicks.GetLength(1); i++)
+        {
+            Vector2Int translation = data.wallKicks[wallKickIndex, i];
+
+            if (Move(translation)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int GetWallKickIndex(int rotationIndex, int rotationDirection)
+    {
+        int wallKickIndex = rotationIndex * 2;
+
+        if (rotationDirection < 0) {
+            wallKickIndex--;
+        }
+
+        return Wrap(wallKickIndex, 0, data.wallKicks.GetLength(0));
     }
 
     private int Wrap(int input, int min, int max)
