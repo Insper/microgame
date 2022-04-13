@@ -33,10 +33,10 @@ namespace WilliamSilva
                 stepDelay = 1f;
                 print("LEVEL 1\n");
             } else if (gm.ActiveLevel == 1) {
-                stepDelay = 0.5f;
+                stepDelay = 0.25f;
                 print("LEVEL 2\n");
             } else if(gm.ActiveLevel == 2) {
-                stepDelay = 0.25f;
+                stepDelay = 0.1f;
                 print("LEVEL 3\n");
             }
         }
