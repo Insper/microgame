@@ -38,13 +38,13 @@ namespace GabriellaCukier {
             // gm.ChangeState(GameManager.GameState.PAUSE);
             // }
 
-            Debug.Log("Collider bound Minimum : " + lb.m_Min);
-            Debug.Log("Collider bound Maximum : " + lb.m_Max);
+            // Debug.Log("Collider bound Minimum : " + lb.m_Min);
+            // Debug.Log("Collider bound Maximum : " + lb.m_Max);
         }
 
 
         private void OnParticleCollision(GameObject other){
-            Debug.Log("collision");
+            // Debug.Log("collision");
             // anim.SetTrigger("Sink");
             if (!(transform.position.x > lb.m_Min.x && transform.position.x < lb.m_Max.x))
                 gm.GameLost();

@@ -9,40 +9,22 @@ namespace GabriellaCukier {
     {
     public GameObject Cloud;
     public GameObject Sun;
-
     public GameObject GO;
-    //   GameManager gm;
-
     private MicrogameInternal.GameManager gm;
-
-            // [SerializeField]private GameObject _instructions;
-
-
 
     void Start()
     {
-        //   gm = GameManager.GetInstance();
-        //   GameManager.changeStateDelegate += Construir;
-        // gm = MicrogameInternal.GameManager.GetInstance();
-        // Invoke(nameof(Begin), 0.5f);
         Construir();  
-        Debug.Log("start");
+        // Debug.Log("start");
     }
 
 
 
     void Construir() {
-        Debug.Log("Construir");
-        //    Debug.Log($"waspaused{gm.waspaused}");
-
-        
-        //    if (gm.gameState == GameManager.GameState.GAME && !(gm.waspaused)) {
-
+        // Debug.Log("Construir");
             foreach (Transform child in transform) {
                 GameObject.Destroy(child.gameObject);
             }
-
-            //   if (gm.level == 1){
                 int j=4;
                 for(int i = 0; i < 6; i++) {
                     if (i!=4){
@@ -53,13 +35,6 @@ namespace GabriellaCukier {
                         GO = Instantiate (Sun, posicao, Quaternion.identity, transform) as GameObject ;
                     }
                 }
-            //   }else if (gm.level ==2){
-                    
-            //   }else {
-                
-            //   }
-        
-        //   gm.waspaused=false;
     }
 
     void Update()
