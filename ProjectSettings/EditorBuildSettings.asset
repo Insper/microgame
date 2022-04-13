@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/MicrogameInternal/MainMenu.unity
     guid: 6c766c42c43ce5e4e85386291d99402c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Emil/ClickTheDot.unity
     guid: 07050dbc135215e459b17abe7f20c4a8
-  - enabled: 0
+  - enabled: 1
     path: Assets/LucianoSoares/ColocarBola.unity
     guid: ab3ed2c9dca86a241ac47133c5b89998
   - enabled: 1
