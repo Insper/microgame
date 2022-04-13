@@ -21,7 +21,7 @@ namespace WilliamSilva
         public int rotationIndex { get; private set; }
 
         public float stepDelay;
-        public float lockDelay = 0.25f;
+        public float lockDelay = 0.1f;
 
         private float stepTime;
         private float lockTime;
@@ -30,13 +30,13 @@ namespace WilliamSilva
         {
             gm = MicrogameInternal.GameManager.GetInstance();
             if (gm.ActiveLevel == 0) {
-                stepDelay = 1f;
+                stepDelay = 0.25f;
                 print("LEVEL 1\n");
             } else if (gm.ActiveLevel == 1) {
-                stepDelay = 0.25f;
+                stepDelay = 0.1f;
                 print("LEVEL 2\n");
             } else if(gm.ActiveLevel == 2) {
-                stepDelay = 0.1f;
+                stepDelay = 0.05f;
                 print("LEVEL 3\n");
             }
         }
@@ -67,9 +67,7 @@ namespace WilliamSilva
 
             this.lockTime += Time.deltaTime;
 
-            if(Input.GetKeyDown(KeyCode.PageDown)){
-                Rotate(-1);
-            } else if (Input.GetKeyDown(KeyCode.PageUp)){
+            if(Input.GetKeyDown(KeyCode.UpArrow)){
                 Rotate(1);
             }
 
