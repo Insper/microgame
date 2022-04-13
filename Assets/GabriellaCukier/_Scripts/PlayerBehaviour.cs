@@ -7,9 +7,9 @@ namespace GabriellaCukier {
 
     public class PlayerBehaviour : MonoBehaviour
     {
-        // [SerializeField]private GameObject _instructions;
-        public float velocidade;
+        public GameObject instructions;  // Textou das instruçõees        public float velocidade;
         private Animator anim;
+        public float velocidade;
         private MicrogameInternal.GameManager gm;
         private GabriellaCukier.LightBorders lb;
         void Start()
@@ -17,19 +17,25 @@ namespace GabriellaCukier {
             gm = MicrogameInternal.GameManager.GetInstance();
             lb =  GameObject.FindObjectOfType<GabriellaCukier.LightBorders>();
             anim = GetComponent<Animator>();
-            gm.StartTimer(); 
 
 
             // aumenta a velocidade conforme avançam os níveis
-            if (gm.ActiveLevel >=20){
+            if (gm.ActiveLevel >=4){
+                velocidade = 8;  
+            }else if (gm.ActiveLevel >= 1){
                 velocidade = 7;  
-            }else if (gm.ActiveLevel >= 10){
-                velocidade = 6;  
             }else{
-                velocidade = 5;  
+                velocidade = 6;  
             }
             Debug.Log($"Velocidade Player: {velocidade}");
+
+            Invoke(nameof(Begin), 0.5f);
         }
+
+            void Begin() {
+                instructions.SetActive(false);  // Tira tela de instruções
+                gm.StartTimer(); 
+            }
 
         void Update()
         {

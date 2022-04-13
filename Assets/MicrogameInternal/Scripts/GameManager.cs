@@ -40,7 +40,7 @@ namespace MicrogameInternal {
             _presentedGames = new List<int>();
             _gameCount = 0;
             _gameCountToNextLevel = 5;
-            _activeLevel = 0;
+            _activeLevel =5;
         }
 
         private void ResetSceneList() {
@@ -88,7 +88,7 @@ namespace MicrogameInternal {
             int maxTries = 5;
             int tryCount = 0;
             do {
-                nextScene = Random.Range(1, SceneManager.sceneCountInBuildSettings+1);
+                nextScene = Random.Range(1, SceneManager.sceneCountInBuildSettings);
                 Debug.Log(nextScene);
 
             } while (_presentedGames.Contains(nextScene) && tryCount++ < maxTries);

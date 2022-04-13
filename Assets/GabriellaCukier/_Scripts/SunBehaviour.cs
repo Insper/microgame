@@ -17,11 +17,11 @@ namespace GabriellaCukier {
 
             // níveis de dificuldade
             if (gm.ActiveLevel >=20){
-                velocidade = 5;  
+                velocidade = 6;  
             }else if (gm.ActiveLevel >= 10){
-                velocidade = 3;  
+                velocidade = 4;  
             }else{
-                velocidade = 2;  
+                velocidade = 3;  
             }
 
             Debug.Log($"Velocidade Sun: {velocidade}");
