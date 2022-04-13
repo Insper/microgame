@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameState GameState;
+    public Text WL;
+    public GameObject EnemyGun;
+    public bool Failed = false;
 
     void Awake()
     {
@@ -18,6 +21,15 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ChangeState(GameState.Countdown);
+    }
+
+    IEnumerator Fail()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (GameManager.Instance.GameState == GameState.Shoot)
+        {
+            GameManager.Instance.ChangeState(GameState.Fail);
+        }
     }
 
     public void ChangeState(GameState newState)
@@ -31,12 +43,16 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Shoot:
                 Debug.Log("shoot state");
+                WL.text = "";
+                StartCoroutine(Fail());
                 break;
             case GameState.Fail:
-                Debug.Log("Fail state");
+                EnemyGun.SetActive(true);
+                Failed = true;
+                WL.text = "FAIL!!";
                 break;
             case GameState.Win:
-                Debug.Log("Win state");
+                WL.text = "WIN!!";
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);

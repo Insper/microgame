@@ -16,13 +16,22 @@ public class Countdown : MonoBehaviour
     {
         float timer = Random.Range(0.5f, 2.0f);
         yield return new WaitForSeconds(timer);
-        number.text = "2!";
+        if (GameManager.Instance.Failed == false)
+        {
+            number.text = "2!";
+        }
         timer = Random.Range(0.5f, 2.0f);
         yield return new WaitForSeconds(timer);
-        number.text = "1!";
+        if (GameManager.Instance.Failed == false)
+        {
+            number.text = "1!";
+        }
         timer = Random.Range(0.5f, 2.0f);
         yield return new WaitForSeconds(timer);
-        number.text = "GO!";
-        GameManager.Instance.ChangeState(GameState.Shoot);
+        if (GameManager.Instance.Failed == false)
+        {   
+            number.text = "GO!";
+            GameManager.Instance.ChangeState(GameState.Shoot);
+        }
     }
 }
