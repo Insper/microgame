@@ -11,7 +11,7 @@ namespace GabriellaCukier {
         public Collider m_Collider;
         public Vector3 m_Center;
         public Vector3 m_Size, m_Min, m_Max;
-        // Start is called before the first frame update
+
         public void Start()
         {
             m_Collider = GetComponent<Collider>();

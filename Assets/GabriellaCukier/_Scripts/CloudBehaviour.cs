@@ -19,15 +19,12 @@ namespace GabriellaCukier {
         void Update()
         {
             transform.position += direcao * Time.deltaTime * velocidade;
-
-
             int screen_width=8;
             if (transform.position.x <= -screen_width){
                 transform.position = new Vector3(screen_width, transform.position.y, transform.position.z);
             } else if (transform.position.x >=screen_width){
                 transform.position = new Vector3(-screen_width, transform.position.y, transform.position.z);
             }
-
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
