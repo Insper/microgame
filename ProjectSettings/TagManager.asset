@@ -9,6 +9,9 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Triangulo
+  - Circulo
+  - Quadrado
   layers:
   - Default
   - TransparentFX

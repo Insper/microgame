@@ -19,19 +19,30 @@ namespace JoaoAndrade {
 
         private string[] _possibleStrings = {"AZUL", "VERMELHO", "VERDE",  "AMARELO", "PRETO", "BRANCO", "ROSA"};
 
-        private string[] _possibleShapes = {"Triangulo", "Circulo"};
+        private string[] _possibleShapes = {"Triangulo", "Circulo", "Quadrado"};
         private Color[] _possibleColors = {Color.blue, Color.red, Color.green, Color.yellow, Color.black, Color.white, Color.magenta};
 
         public Text colorText;
 
         public Text shapeText;
 
+        private int _level;
+
         
         void Start() {
             gm = MicrogameInternal.GameManager.GetInstance();
+            if(gm.ActiveLevel == 0){
+                _level = 2;
+            }
+            else if (gm.ActiveLevel == 1){
+                _level = 1;
+            }
+            else{
+                _level = 0;
+            }
             Debug.Log(gm.ActiveLevel);
-            colorText.text = _possibleStrings[Random.Range(0,_possibleStrings.Length)].ToString();
-            shapeText.text = _possibleShapes[Random.Range(0,_possibleShapes.Length)].ToString();
+            colorText.text = _possibleStrings[Random.Range(0,_possibleStrings.Length )].ToString();
+            shapeText.text = _possibleShapes[Random.Range(0,_possibleShapes.Length - _level)].ToString();
             colorText.color = _possibleColors[Random.Range(0,_possibleColors.Length)];
             shapeText.color =  Color.white;
             _instructionsTarget.SetActive(false);
@@ -53,9 +64,6 @@ namespace JoaoAndrade {
                 gm.NextGame();
 
             }
-            // Debug.Log(target.GetComponent<Renderer>().material.color);
-            // Debug.Log(colorText.color);
-
              
         }
 
