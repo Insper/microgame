@@ -9,6 +9,10 @@ namespace AnaClaraCarneiro {
         private Animator animator;
         private Vector3 direction;
         private Rigidbody2D rb;
+
+        private GameObject meteoro;
+        private GameObject meteoro_clone;
+
         int facingLeft = 0;
         // Start is called before the first frame update
         void Start()
@@ -22,8 +26,6 @@ namespace AnaClaraCarneiro {
         {
             HandleAnimation();
             HandleMovement();
-            // direction = new Vector3(Input.GetAxis("Horizontal"), 0).normalized;
-            // transform.position += new Vector3(Input.GetAxis("Horizontal")*velocity,0,0);
 
             if (transform.position.x <= -8.4f){
                 transform.position = new Vector3(-8.4f, -3.5f, 0);
@@ -35,8 +37,14 @@ namespace AnaClaraCarneiro {
             
         }
 
-        void OnCollisionEnter(){
-            Destroy(gameObject);
+        void OnCollisionEnter2D(Collision2D collision){
+            meteoro = GameObject.Find("Meteor");
+            meteoro_clone = GameObject.Find("Meteor(Clone)");
+            
+            if(collision.gameObject == meteoro || collision.gameObject == meteoro_clone)
+            {
+                collision.gameObject.SetActive(false);
+            }
         }
 
         private void HandleMovement()

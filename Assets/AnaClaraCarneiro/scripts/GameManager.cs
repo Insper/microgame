@@ -5,12 +5,16 @@ using UnityEngine;
 namespace AnaClaraCarneiro {
     public class GameManager : MonoBehaviour
     {
-        public GameObject instructions;  // Textou das instruçõees
+        public GameObject instructions;
         private MicrogameInternal.GameManager gm;
         private int _level;
 
+        public GameObject dino;
+        public GameObject meteoro;
+        private GameObject _meteoro;
+        public GameObject vulcao;
 
-        // Start is called before the first frame update
+
         void Start()
         {
             gm = MicrogameInternal.GameManager.GetInstance();
@@ -20,14 +24,19 @@ namespace AnaClaraCarneiro {
 
         void Begin() {
             instructions.SetActive(false);
-            // Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+            vulcao.SetActive(true);
+            Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+            Instantiate(dino);
+            _meteoro = Instantiate(meteoro);
+
             gm.StartTimer(); 
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+        void EndCheck() {
+            if(_meteoro.GetComponent<Meteoros>().perdeu) {
+                print("entrei");
+                gm.GameLost(); 
+            }    
         }
     }
 }
