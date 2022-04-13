@@ -32,6 +32,7 @@ namespace Dip {
         private Anagram button0_word, button1_word, button2_word, button3_word;
         public AudioSource ding;
         private bool victory = false;
+        public Canvas buttons;
         private MicrogameInternal.GameManager gm;
 
         // Start is called before the first frame update
@@ -141,8 +142,12 @@ namespace Dip {
                 ding.Play();
                 Debug.Log("Correct!");
                 this.victory = true;
+                buttons.gameObject.SetActive(false);
+                Goal.text = "Muito bem!";
             } else {
+                // Perdeu, vai pro GameLost
                 MicrogameInternal.GameManager.GetInstance().GameLost();
+
             }
         }
 
