@@ -8,9 +8,12 @@ namespace Vergara{
 
         private MicrogameInternal.GameManager gm;
         private int[] _progression = {2, 3, 5, 4, 3, 2}; 
+        private int _level;
+
         // Start is called before the first frame update
         void Start(){
             gm = MicrogameInternal.GameManager.GetInstance();    
+            _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
             //spawna os dinos
             // spawna o ovo da vez        
         }
