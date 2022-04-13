@@ -7,7 +7,6 @@ namespace AnaClaraCarneiro {
     {
         public GameObject instructions;
         private MicrogameInternal.GameManager gm;
-        private int _level;
 
         public GameObject dino;
         public GameObject meteoro;
@@ -18,7 +17,6 @@ namespace AnaClaraCarneiro {
         void Start()
         {
             gm = MicrogameInternal.GameManager.GetInstance();
-            _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
             Invoke(nameof(Begin), 0.5f);
         }
 
@@ -34,7 +32,6 @@ namespace AnaClaraCarneiro {
 
         void EndCheck() {
             if(_meteoro.GetComponent<Meteoros>().perdeu) {
-                print("entrei");
                 gm.GameLost(); 
             }    
         }

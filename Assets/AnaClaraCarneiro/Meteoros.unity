@@ -141,7 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2419666414208e74db9e36fa507860dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 2
   meteoros: {fileID: 9119688711600339424, guid: a144c300b0f56ae4caa9895cff1ae6e3,
     type: 3}
   perdeu: 0
@@ -677,4 +676,5 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 2193604900395387306, guid: a144c300b0f56ae4caa9895cff1ae6e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a144c300b0f56ae4caa9895cff1ae6e3, type: 3}
