@@ -13,42 +13,43 @@ microgame
 |
 +---Assets
 |   |
-|   +---MicrogameInternal
-|   |   MainMenu.unity
-|   |   |   +---Sprites
-|   |   |       timer.png
-|   |   |   \---Scripts
-|   |   |       CountdownTimer.cs
-|   |   |       Teste.cs
-|   |   |       GameManager.cs
+|   +---MicrogrameInternal
+|   |       CountdownTimer.cs
+|   |       Teste.cs
+|   |       Inicio.cs
+|   |       GameManager.cs
 |   |
-|   +---Microjogos
-|   |   +---<!CRIE UMA PASTA COM SEU NOME!>
-|   |   |   +---scenes
-|   |   |   \---scripts
-|   |   |
+|   +---<!CRIE UMA PASTA COM SEU NOME E SOBRENOME!>
+|   |   +---scenes
+|   |   \---scripts
+|   |
 |   +---Resources
-|   |       Canvas.prefab
-|   |       GameManager.prefab
+|   |       countdownUI.prefab
+|   |
 |   \---Scenes
 |           MainScene.unity
+|
 +---Packages
 \---ProjectSettings
 ```
 
-Este projeto conta com três classes base, **que não devem ser alteradas**.
+Este projeto conta com classes base, **que não devem ser alteradas**.
 
 A cena inicial/final já vem configurada com o ID 0 no build settings. Não altere a ordem pois será usada para iniciar e finalizar o jogo como um todo.
 
-**ConuntdownTimer.cs** Controla a UI e tempo de jogo.
-
 **GameManager.cs** Gerência o jogo como um todo, responsável pelas trocas de cenas e finalização do mesmo.
 
-**Teste.cs** Utilize essa classe para testar seu game loop. Insira em qualquer GameObject da sua cena e você terá acesso aos menus de contexto (TesteInicio e TesteJogoPerdido).
+**CountdownTimer.cs** Classe que faz a animação da barra de tempo.
 
-Existem também 1 *prefab* importante na pasta ressources:
+**Inicio.cs** Classe para iniciar o jogo na cena principal.
 
-**countDownUI** onde residem os sliders que funcionam como barra de tempo.
+**Teste.cs** Classe para realizar testes dos jogos.
+
+no GameManager você conta com:
+> **ActiveLevel** O nível da fase que você se encontra.
+> **GameLost()** Ao final do tempo de execução esse método é chamado para o feedback de finalização mal succedida do jogo.
+
+Exemplo de classe Controller do microgame
 
 ### Entrega (Pull Request)
 
@@ -59,11 +60,16 @@ Para os assets que for criar adicione um prefixo com as iniciais de seu nome, pa
 Exemplo
 ```
 Assets
-|   +---PedroEmil
+|   +---Emil
 |   |   +---scenes
 |   |   |       phepf_Cena01.unity
 |   |   \---scripts
 |   |           phepf_Controller.cs
+|   +---LucianoSoares
+|   |   +---scenes
+|   |   \---scripts
+|   |
+
 ```
 
 Pull requests fora desse formato **Não serão aceitos**
