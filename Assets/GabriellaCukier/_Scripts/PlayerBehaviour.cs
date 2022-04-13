@@ -14,12 +14,13 @@ namespace GabriellaCukier {
         
 
         private MicrogameInternal.GameManager gm;
-
+        private GabriellaCukier.LightBorders lb;
         void Start()
         {
-        // gm = GameManager.GetInstance(); 
         gm = MicrogameInternal.GameManager.GetInstance();
+        lb =  GameObject.FindObjectOfType<GabriellaCukier.LightBorders>();
         anim = GetComponent<Animator>();
+        gm.StartTimer(); 
         }
 
         void Update()
@@ -36,29 +37,17 @@ namespace GabriellaCukier {
             // if(Input.GetKeyDown(KeyCode.Escape) && gm.gameState == GameManager.GameState.GAME) {
             // gm.ChangeState(GameManager.GameState.PAUSE);
             // }
+
+            Debug.Log("Collider bound Minimum : " + lb.m_Min);
+            Debug.Log("Collider bound Maximum : " + lb.m_Max);
         }
-
-
-        public void TakeDamage()
-        {
-            // Destroy(gameObject);     
-        }
-
-        //  private void OnTriggerEnter2D(Collider2D collision)
-        // {
-        //     if (collision.CompareTag("Enemy"))
-        //     {
-        //         TakeDamage();
-        //     //    transform.position = (transform.position - Vector3.right);
-        //     Debug.Log("INIMIGO");
-        //     }
-        // }
 
 
         private void OnParticleCollision(GameObject other){
             Debug.Log("collision");
             // anim.SetTrigger("Sink");
-            gm.GameLost();
+            if (!(transform.position.x > lb.m_Min.x && transform.position.x < lb.m_Max.x))
+                gm.GameLost();
         }
 
     }
