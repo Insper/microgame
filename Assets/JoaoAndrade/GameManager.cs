@@ -12,6 +12,8 @@ namespace JoaoAndrade {
         private SpriteRenderer spriteRenderer;
         [SerializeField]private GameObject _instructions;
         [SerializeField]private GameObject _instructionsTarget;
+
+        [SerializeField]private GameObject _youWon;
         private int[] _progression = {2, 3, 5, 4, 3, 2};
         private int[] _bprogression = {1, 1, 2, 3, 5, 5};
 
@@ -28,6 +30,10 @@ namespace JoaoAndrade {
 
         private int _level;
 
+        public GameObject[] triangulos;
+        public GameObject[] circulos;
+        public GameObject[] quadrados;
+
         
         void Start() {
             gm = MicrogameInternal.GameManager.GetInstance();
@@ -40,12 +46,12 @@ namespace JoaoAndrade {
             else{
                 _level = 0;
             }
-            Debug.Log(gm.ActiveLevel);
             colorText.text = _possibleStrings[Random.Range(0,_possibleStrings.Length )].ToString();
             shapeText.text = _possibleShapes[Random.Range(0,_possibleShapes.Length - _level)].ToString();
             colorText.color = _possibleColors[Random.Range(0,_possibleColors.Length)];
             shapeText.color =  Color.white;
             _instructionsTarget.SetActive(false);
+            _youWon.SetActive(false);
             Invoke(nameof(Begin), 1.0f);
         }
 
@@ -54,15 +60,24 @@ namespace JoaoAndrade {
         public void DestroyTarget(Target target){
             if(target.GetComponent<Renderer>().material.color != colorText.color || target.tag != shapeText.text){
                 Destroy(target.gameObject);
-                Debug.Log("Diferente");
                 gm.GameLost();
             }
             else{
                 _won = true;
                 Destroy(target.gameObject);
-                Debug.Log("Igual");
-                gm.NextGame();
-
+                triangulos = GameObject.FindGameObjectsWithTag("Triangulo");
+                foreach(GameObject triangulo in triangulos){
+                    triangulo.SetActive(false);
+                }
+                circulos = GameObject.FindGameObjectsWithTag("Circulo");
+                foreach(GameObject circulo in circulos){
+                    circulo.SetActive(false);
+                }
+                quadrados = GameObject.FindGameObjectsWithTag("Quadrado");
+                foreach(GameObject quadrado in quadrados){
+                    quadrado.SetActive(false);
+                }
+                _youWon.SetActive(true);
             }
              
         }
