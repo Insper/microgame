@@ -18,6 +18,8 @@ namespace MarceloMiguel {
         void Start() {
             gm = MicrogameInternal.GameManager.GetInstance();
             _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
+            Debug.Log(_level);
+            EnemyPool.GetComponent<EnemyPool>().Construir(_level);
             Invoke(nameof(Begin), 0.5f);                         
         }
 

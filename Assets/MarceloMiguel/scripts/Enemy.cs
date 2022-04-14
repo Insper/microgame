@@ -2,23 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+namespace MarceloMiguel{
 
-    // Update is called once per frame
-    void Update()
+    public class Enemy : MonoBehaviour
     {
-        
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("entrou aquisad");
-        Destroy(gameObject);
+        // Start is called before the first frame update
+        void Start()
+        {
+            
+        }
 
+        // Update is called once per frame
+        void Update()
+        {
+            
+        }
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            Destroy(gameObject);
+
+        }
     }
 }

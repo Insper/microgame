@@ -2,27 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootPlayer : MonoBehaviour
-{
-    public Transform firePoint;
-    public GameObject bulletPrefab;
-    // Start is called before the first frame update
-    void Start()
-    {
+namespace MarceloMiguel{
         
-    }
-
-    // Update is called once per frame
-    void Update()
+    public class ShootPlayer : MonoBehaviour
     {
-        if(Input.GetMouseButtonDown(0)){
+        public Transform firePoint;
+        public GameObject bulletPrefab;
+        // Start is called before the first frame update
+        void Start()
+        {
             
-            Shoot();
         }
-        
+
+        // Update is called once per frame
+        void Update()
+        {
+            if(Input.GetMouseButtonDown(0)){
+                
+                Shoot();
+            }
+            
+        }
+
+        void Shoot(){
+            Instantiate(bulletPrefab,firePoint.position,firePoint.rotation);
+        }
     }
 
-    void Shoot(){
-        Instantiate(bulletPrefab,firePoint.position,firePoint.rotation);
-    }
 }
