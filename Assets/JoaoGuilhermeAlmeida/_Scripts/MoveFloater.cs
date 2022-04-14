@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace JoaoGuilhermeAlmeida {
+namespace JoaoGuilhermeAlmeida
+{
     public class MoveFloater : MonoBehaviour
     {
         private Rigidbody2D rb;
@@ -14,20 +15,17 @@ namespace JoaoGuilhermeAlmeida {
         // Start is called before the first frame update
         void Start()
         {
-            
+
         }
 
         // Update is called once per frame
         void Update()
         {
             float inputX = Input.GetAxis("Horizontal");
-            float inputY = Input.GetAxis("Vertical");
 
-            direcao = new Vector3(inputX, inputY).normalized;
 
-            transform.position += direcao * Time.deltaTime * speed;
+            transform.position += new Vector3(inputX, 0, 0) * Time.deltaTime * speed;
 
-            
         }
     }
 }

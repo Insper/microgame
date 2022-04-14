@@ -11,12 +11,18 @@ namespace JoaoGuilhermeAlmeida
         public bool saved;
 
 
+        public GameObject ArmSpawner;
+
+
+
+
+
 
         // Start is called before the first frame update
         void Start()
         {
             saved = false;
-            // gm = GameObject.Find("MainCamera").GetComponent<GameManager>();
+            ArmSpawner = GameObject.Find("ArmSpawner");
         }
 
         // Update is called once per frame
@@ -27,8 +33,11 @@ namespace JoaoGuilhermeAlmeida
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     Destroy(gameObject);
+                    ArmSpawner.GetComponent<ArmSpawner>().amount_saved++;
                 }
             }
+
+
         }
 
         void OnTriggerEnter2D(Collider2D col)

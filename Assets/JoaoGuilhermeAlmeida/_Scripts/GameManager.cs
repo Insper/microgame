@@ -10,6 +10,7 @@ namespace JoaoGuilhermeAlmeida
 
         public GameObject instructions;  // Textou das instruçõees
 
+        public GameObject ArmSpawner;
 
         private int _level;
 
@@ -21,8 +22,8 @@ namespace JoaoGuilhermeAlmeida
         void Start()
         {
             gm = MicrogameInternal.GameManager.GetInstance();
-            // _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
-            _level = 2;
+            _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
+            ArmSpawner = GameObject.Find("ArmSpawner");
             Invoke(nameof(Begin), 0.5f);
         }
 
@@ -38,12 +39,12 @@ namespace JoaoGuilhermeAlmeida
         void EndCheck()
         {
 
-            // // Se não chegou, perdeu
-            // if (!_buraco.GetComponent<Chegou>().chegou)
-            // {
-            print(handSaveds);
-            gm.GameLost();
-            // }
+            // Se não salvou todas as maos, perdeu
+            if (!ArmSpawner.GetComponent<ArmSpawner>().win)
+            {
+                print(handSaveds);
+                gm.GameLost();
+            }
 
         }
     }
