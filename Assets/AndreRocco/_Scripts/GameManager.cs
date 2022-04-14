@@ -4,65 +4,97 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+
+namespace AndreRocco
 {
-    public static GameManager Instance;
-    public GameState GameState;
-    public Text WL;
-    public GameObject EnemyGun;
-    public bool Failed = false;
-
-    void Awake()
+    public class GameManager : MonoBehaviour
     {
-        Instance = this;
-        ChangeState(GameState.Countdown);
-    }
+        public static GameManager Instance;
+        public GameState GameState;
+        private MicrogameInternal.GameManager gm;
+        public Text WL;
+        public GameObject EnemyGun;
+        public bool Failed = false;
+        public static float shootWindow;
 
-    void Start()
-    {
-        ChangeState(GameState.Countdown);
-    }
 
-    IEnumerator Fail()
-    {
-        yield return new WaitForSeconds(0.5f);
-        if (GameManager.Instance.GameState == GameState.Shoot)
-        {
-            GameManager.Instance.ChangeState(GameState.Fail);
+
+        void Awake()
+        { 
+            gm = MicrogameInternal.GameManager.GetInstance();
+            Instance = this;
+            ChangeState(GameState.Countdown);
+
+            Countdown.minRandom = (gm.MaxTime - 1) / 6;
+            Countdown.maxRandom = (gm.MaxTime - 1) / 3;
+
+            if (gm.ActiveLevel <= 2)
+            {
+                shootWindow = 1f;
+            }
+            else if (gm.ActiveLevel > 2 && gm.ActiveLevel <= 4)
+            {
+                shootWindow = 0.5f;
+            }
+            else if (gm.ActiveLevel > 4)
+            {
+                shootWindow = 0.25f;
+            }
+            Debug.Log(Countdown.minRandom);
+            Debug.Log(Countdown.maxRandom);
+
+            ChangeState(GameState.Countdown);
         }
-    }
 
-    public void ChangeState(GameState newState)
-    {
-        //Debug.Log(newState);
-        GameState = newState;
-        switch (newState)
+        void Start()
         {
-            case GameState.Countdown:
-                Debug.Log("countdown state");
-                break;
-            case GameState.Shoot:
-                Debug.Log("shoot state");
-                WL.text = "";
-                StartCoroutine(Fail());
-                break;
-            case GameState.Fail:
-                EnemyGun.SetActive(true);
-                Failed = true;
-                WL.text = "FAIL!!";
-                break;
-            case GameState.Win:
-                WL.text = "WIN!!";
-                break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
+            //ChangeState(GameState.Countdown);
+        }
+
+        IEnumerator Fail()
+        {
+            yield return new WaitForSeconds(shootWindow);
+            if (GameManager.Instance.GameState == GameState.Shoot)
+            {
+                GameManager.Instance.ChangeState(GameState.Fail);
+            }
+        }
+
+        public void ChangeState(GameState newState)
+        {
+            GameState = newState;
+            switch (newState)
+            {
+                case GameState.Countdown:
+                    gm.StartTimer();
+                    break;
+                case GameState.Shoot:
+                    WL.text = "";
+                    StartCoroutine(Fail());
+                    break;
+                case GameState.Fail:
+                    EnemyGun.SetActive(true);
+                    Failed = true;
+                    WL.text = "FAIL!!";
+                    gm.GameLost();
+                    break;
+                case GameState.Win:
+                    WL.text = "WIN!!";
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
+            }
         }
     }
 }
-public enum GameState
+
+namespace AndreRocco
 {
-    Countdown = 0,
-    Shoot = 1,
-    Fail = 2,
-    Win = 3
+    public enum GameState
+    {
+        Countdown = 0,
+        Shoot = 1,
+        Fail = 2,
+        Win = 3
+    }
 }

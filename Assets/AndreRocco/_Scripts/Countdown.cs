@@ -3,35 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Countdown : MonoBehaviour
+namespace AndreRocco
 {
-    public Text number;
-
-    void Start()
+    public class Countdown : MonoBehaviour
     {
-        StartCoroutine(Count());
-    }
+        public Text number;
 
-    IEnumerator Count()
-    {
-        float timer = Random.Range(0.5f, 2.0f);
-        yield return new WaitForSeconds(timer);
-        if (GameManager.Instance.Failed == false)
+        public static float minRandom;
+        public static float maxRandom;
+
+        void Start()
         {
-            number.text = "2!";
+            StartCoroutine(Count());
         }
-        timer = Random.Range(0.5f, 2.0f);
-        yield return new WaitForSeconds(timer);
-        if (GameManager.Instance.Failed == false)
+
+        IEnumerator Count()
         {
-            number.text = "1!";
-        }
-        timer = Random.Range(0.5f, 2.0f);
-        yield return new WaitForSeconds(timer);
-        if (GameManager.Instance.Failed == false)
-        {   
-            number.text = "GO!";
-            GameManager.Instance.ChangeState(GameState.Shoot);
+            float timer = Random.Range(minRandom, maxRandom);
+            yield return new WaitForSeconds(timer);
+            if (GameManager.Instance.Failed == false)
+            {
+                number.text = "2!";
+            }
+            timer = Random.Range(minRandom, maxRandom);
+            yield return new WaitForSeconds(timer);
+            if (GameManager.Instance.Failed == false)
+            {
+                number.text = "1!";
+            }
+            timer = Random.Range(minRandom, maxRandom);
+            yield return new WaitForSeconds(timer);
+            if (GameManager.Instance.Failed == false)
+            {
+                GameManager.Instance.ChangeState(GameState.Shoot);
+            }
         }
     }
 }

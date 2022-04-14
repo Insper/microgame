@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+namespace AndreRocco
 {
-    public GameObject Gun;
-    void Update()
+    public class PlayerController : MonoBehaviour
     {
-        if (GameManager.Instance.GameState == GameState.Countdown)
+        public GameObject Gun;
+        void Update()
         {
-            if (Input.GetButton("Jump"))
+            if (GameManager.Instance.GameState == GameState.Countdown)
             {
-                Gun.SetActive(true);
-                GameManager.Instance.ChangeState(GameState.Fail);
+                if (Input.GetButton("Jump"))
+                {
+                    Gun.SetActive(true);
+                    GameManager.Instance.ChangeState(GameState.Fail);
+                }
             }
-        }
 
-        if (GameManager.Instance.GameState == GameState.Shoot)
-        {
-            if (Input.GetButton("Jump"))
+            if (GameManager.Instance.GameState == GameState.Shoot)
             {
-                Gun.SetActive(true);
-                GameManager.Instance.ChangeState(GameState.Win);
+                if (Input.GetButton("Jump"))
+                {
+                    Gun.SetActive(true);
+                    GameManager.Instance.ChangeState(GameState.Win);
+                }
             }
         }
     }
