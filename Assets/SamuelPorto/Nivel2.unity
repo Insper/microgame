@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60075c4fb7a8e04980209974cc8a3e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelAtual: 
+  nivelAtual: Nivel2
 --- !u!60 &965531738
 PolygonCollider2D:
   m_ObjectHideFlags: 0

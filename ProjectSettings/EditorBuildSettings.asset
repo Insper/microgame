@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LucianoSoares/ColocarBola.unity
     guid: ab3ed2c9dca86a241ac47133c5b89998
+  - enabled: 1
+    path: Assets/SamuelPorto/Nivel1.unity
+    guid: ce022e6dc5a450c428f7e84aac7d1005
+  - enabled: 1
+    path: Assets/SamuelPorto/Nivel2.unity
+    guid: ec83682507ba3014b928a560820f22c3
   m_configObjects: {}
