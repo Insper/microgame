@@ -12,6 +12,13 @@ namespace SamuelPorto
         public GameObject inimigos;
         public CamShake cameraMexendo;
 
+        private MicrogameInternal.GameManager gm;
+
+        void Start()
+        {
+            gm = MicrogameInternal.GameManager.GetInstance();
+        }
+
         void OnCollisionEnter2D(Collision2D col)
         {
             if (col.gameObject.tag == "Player")
@@ -20,13 +27,13 @@ namespace SamuelPorto
                 StartCoroutine(EsperaCarregarCena());
                 Instantiate(particula, inimigos.transform.position, Quaternion.identity);
                 cameraMexendo.deveMexer = true;
-
             }
         }
 
         IEnumerator EsperaCarregarCena(){
             yield return new WaitForSeconds(1);
-            SceneManager.LoadScene(nivelAtual);
+            // SceneManager.LoadScene(nivelAtual);
+            gm.GameLost();
         }
     }
 }

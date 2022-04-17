@@ -6,16 +6,36 @@ namespace SamuelPorto
 {
     public class Player : MonoBehaviour
     {
+        public GameObject instructions;
+
         public float velocide;
 
         public bool podeMover = false;
 
         public Rigidbody2D rb;
 
+        private MicrogameInternal.GameManager gm;
+
+        public GameObject chegada;
+        private GameObject _chegada;
+
         // Start is called before the first frame update
         void Start()
         {
+            gm = MicrogameInternal.GameManager.GetInstance();
             rb = gameObject.GetComponent<Rigidbody2D>();
+
+            Invoke(nameof(Begin), 0.5f);
+        }
+
+        void Begin() {
+            instructions.SetActive(false);
+
+            Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+
+            _chegada = Instantiate(chegada);
+
+            gm.StartTimer();
         }
 
         // Update is called once per frame
@@ -61,6 +81,13 @@ namespace SamuelPorto
             {
                 podeMover = false;
             }
+        }
+
+        void EndCheck() {
+            // Se não chegou, perdeu
+            if(!_chegada.GetComponent<Chegada>().chegou) {
+                gm.GameLost(); 
+            } 
         }
     }
 }

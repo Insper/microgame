@@ -9,12 +9,16 @@ namespace SamuelPorto
     {
         public string cenaCarregar;
 
+        public bool chegou = false;
+
         void OnTriggerEnter2D(Collider2D col)
         {
 
             if (col.gameObject.tag == "Player")
             {
-                SceneManager.LoadScene(cenaCarregar);
+                // SceneManager.LoadScene(cenaCarregar);
+                chegou = true;
+                Destroy(col.gameObject);
             }
         }
     }

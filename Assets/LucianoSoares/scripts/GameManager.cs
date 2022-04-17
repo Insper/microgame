@@ -8,7 +8,6 @@ namespace LucianoSoares {
 
         public GameObject instructions;  // Textou das instruçõees
 
-
         public GameObject bola;  // Prefab da bola
         public GameObject buraco;  // Prefab do buraco
         private GameObject _buraco;  // objeto instanciado de buraco
