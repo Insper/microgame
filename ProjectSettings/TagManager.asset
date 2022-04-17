@@ -9,6 +9,8 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Wall
+  - Inimigo
   layers:
   - Default
   - TransparentFX
