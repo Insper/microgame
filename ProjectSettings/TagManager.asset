@@ -9,6 +9,7 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Blade
   layers:
   - Default
   - TransparentFX
