@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SamuelPorto/Nivel2.unity
     guid: ec83682507ba3014b928a560820f22c3
+  - enabled: 1
+    path: Assets/SamuelPorto/Nivel3.unity
+    guid: 44a180fb7e6728041b4e5f0d3805a393
   m_configObjects: {}
