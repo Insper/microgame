@@ -14,7 +14,7 @@ namespace AbelCavalcante {
 
 		public enum GameState {START, BEGIN, ENDGAME};
 		public GameState gameState { get; private set; }
-		
+
 		public enum Keys {UpArrow, DownArrow, LeftArrow, RightArrow, Space, W, A, S, D};
 		public Keys[] sequence { get; private set; }
 
@@ -31,6 +31,7 @@ namespace AbelCavalcante {
 		void Begin() {
 			_instructions.SetActive(false);
 			gameState = GameState.BEGIN;
+			Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
 
 			sequence_index = 0;
 			sequence = CreateNewSequence();
@@ -60,6 +61,12 @@ namespace AbelCavalcante {
 				} else {
 					gm.GameLost();
 				}
+			}
+		}
+
+		void EndCheck() {
+			if(sequence_index != sequence_size){
+				gm.GameLost(); 
 			}
 		}
 
