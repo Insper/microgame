@@ -25,20 +25,23 @@ namespace AndreRocco
             Instance = this;
             ChangeState(GameState.Countdown);
 
-            Countdown.minRandom = (gm.MaxTime - 1) / 6;
-            Countdown.maxRandom = (gm.MaxTime - 1) / 3;
+            Countdown.minRandom = (gm.MaxTime - 2) / 6;
+            Countdown.maxRandom = (gm.MaxTime - 2) / 3;
 
             if (gm.ActiveLevel <= 2)
             {
                 shootWindow = 1f;
+                Countdown.instTime = 2f;
             }
             else if (gm.ActiveLevel > 2 && gm.ActiveLevel <= 4)
             {
                 shootWindow = 0.5f;
+                Countdown.instTime = 1f;
             }
             else if (gm.ActiveLevel > 4)
             {
                 shootWindow = 0.25f;
+                Countdown.instTime = 0f;
             }
             Debug.Log(Countdown.minRandom);
             Debug.Log(Countdown.maxRandom);

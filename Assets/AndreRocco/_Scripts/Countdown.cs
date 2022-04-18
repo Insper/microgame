@@ -8,9 +8,11 @@ namespace AndreRocco
     public class Countdown : MonoBehaviour
     {
         public Text number;
+        public Text instr;
 
         public static float minRandom;
         public static float maxRandom;
+        public static float instTime;
 
         void Start()
         {
@@ -19,6 +21,11 @@ namespace AndreRocco
 
         IEnumerator Count()
         {
+            number.text = "";
+            yield return new WaitForSeconds(instTime);
+            number.text = "3!";
+            instr.text = "";
+            
             float timer = Random.Range(minRandom, maxRandom);
             yield return new WaitForSeconds(timer);
             if (GameManager.Instance.Failed == false)
