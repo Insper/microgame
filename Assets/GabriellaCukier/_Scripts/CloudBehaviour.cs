@@ -20,11 +20,11 @@ namespace GabriellaCukier {
 
             // níveis de dificuldade
             if (gm.ActiveLevel >=4){
-                velocidade = 6;  
+                velocidade = 5;  
             }else if (gm.ActiveLevel >= 1){
-                velocidade = (float)5;  
+                velocidade = (float)4;  
             }else{
-                velocidade = (float)4;
+                velocidade = (float)3;
             } 
         }
 
