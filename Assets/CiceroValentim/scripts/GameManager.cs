@@ -10,14 +10,20 @@ namespace CiceroValentim
     {
         public GameObject instructions; // Textou das instruçõees
 
-        public GameObject bola; // Prefab da bola
+        public GameObject burger; // Prefab da burger
 
-        public GameObject buraco; // Prefab do buraco
+        public GameObject lettuce; // Prefab da salada
 
-        private GameObject _buraco; // objeto instanciado de buraco
+        public GameObject tomato; // Prefab da salada
 
-        public GameObject[] paredes; // Prefab das paredes
+        public GameObject cheese; // Prefab da salada
 
+        public GameObject upperBread; // Prefab do pão de cima
+
+        public GameObject lowerBread; // Prefab do pão de baixo
+
+        // private GameObject _buraco; // objeto instanciado de buraco
+        // public GameObject[] paredes; // Prefab das paredes
         private int _level;
 
         private MicrogameInternal.GameManager gm;
