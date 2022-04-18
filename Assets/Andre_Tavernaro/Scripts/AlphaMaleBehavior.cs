@@ -13,6 +13,7 @@ namespace Andre_Tavernaro {
         public Vector3 dir;
         public static bool isAlive;
         private float count;
+        public GameObject GameOverText;
         
         void Start()
         {
@@ -54,6 +55,7 @@ namespace Andre_Tavernaro {
             if(isAlive){
                 anim.SetTrigger("Death");
             }
+            GameOverText.SetActive(true);
             isAlive = false;
         }
     }
