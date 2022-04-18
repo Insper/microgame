@@ -40,7 +40,7 @@ namespace MicrogameInternal {
             _presentedGames = new List<int>();
             _gameCount = 0;
             _gameCountToNextLevel = 5;
-            _activeLevel = 0;
+            _activeLevel = 5;
         }
 
         private void ResetSceneList() {

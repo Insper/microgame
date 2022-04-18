@@ -27,7 +27,7 @@ namespace GabriellaCukier {
             }else{
                 velocidade = 6;  
             }
-            Debug.Log($"Velocidade Player: {velocidade}");
+            // Debug.Log($"Velocidade Player: {velocidade}");
 
             Invoke(nameof(Begin), 0.5f);
         }
@@ -39,29 +39,35 @@ namespace GabriellaCukier {
 
         void Update()
         {
-            // if (gm.gameState != GameManager.GameState.GAME) return;
 
             float inputX = Input.GetAxis("Horizontal");
-            transform.position += new Vector3(inputX, 0, 0) * Time.deltaTime * velocidade;
+            float inputY = Input.GetAxis("Vertical");
+            transform.position += new Vector3(inputX, inputY, 0) * Time.deltaTime * velocidade;
+
+            if (transform.position.y <= -4.5)
+                transform.position = new Vector3(transform.position.x, (float)-4.5, transform.position.z);
+            else if (transform.position.y >=-2.75)
+                transform.position = new Vector3(transform.position.x, (float)-2.75, transform.position.z);
 
             Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
             pos.x = Mathf.Clamp((float)pos.x, (float)0.04, (float)0.96);
             transform.position = Camera.main.ViewportToWorldPoint(pos);
 
-            // if(Input.GetKeyDown(KeyCode.Escape) && gm.gameState == GameManager.GameState.GAME) {
-            // gm.ChangeState(GameManager.GameState.PAUSE);
-            // }
-
-            // Debug.Log("Collider bound Minimum : " + lb.m_Min);
-            // Debug.Log("Collider bound Maximum : " + lb.m_Max);
         }
 
 
         private void OnParticleCollision(GameObject other){
-            // Debug.Log("collision");
-            // anim.SetTrigger("Sink");
+            // Debug.Log("Choveu");
             if (!(transform.position.x > lb.m_Min.x && transform.position.x < lb.m_Max.x))
                 gm.GameLost();
+        }
+
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Enemy")){
+                gm.GameLost();
+            }
         }
 
     }

@@ -498,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cloud: {fileID: 372316873957109523, guid: 9c75a5a62634d574c8803b0531433ae3, type: 3}
   Sun: {fileID: 8579893461777141630, guid: 3ecc032838f9d9345af147f6d2a703c4, type: 3}
+  Fish: {fileID: 9058279676847082886, guid: 4e04cdd40f229e34ebe539f7e4c6b2f7, type: 3}
   GO: {fileID: 0}
 --- !u!4 &724804472
 Transform:
@@ -1453,7 +1454,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 70ba4ac119ca2b54b8583fdb370c2ba6, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

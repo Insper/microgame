@@ -7,24 +7,25 @@ namespace GabriellaCukier {
 
     public class EnemySpawner : MonoBehaviour
     {
-    public GameObject Cloud;
-    public GameObject Sun;
-    public GameObject GO;
-    private MicrogameInternal.GameManager gm;
+        public GameObject Cloud;
+        public GameObject Sun;
+        public GameObject Fish;
+        public GameObject GO;
+        private MicrogameInternal.GameManager gm;
 
-    void Start()
-    {
-        Construir();  
-        // Debug.Log("start");
-    }
+        void Start()
+        {
+            gm = MicrogameInternal.GameManager.GetInstance();
+            Construir();  
+        }
 
 
 
-    void Construir() {
-        // Debug.Log("Construir");
-            foreach (Transform child in transform) {
-                GameObject.Destroy(child.gameObject);
-            }
+        void Construir() {
+                foreach (Transform child in transform) {
+                    GameObject.Destroy(child.gameObject);
+                }
+
                 int j=4;
                 for(int i = 0; i < 6; i++) {
                     if (i!=4){
@@ -35,31 +36,27 @@ namespace GabriellaCukier {
                         GO = Instantiate (Sun, posicao, Quaternion.identity, transform) as GameObject ;
                     }
                 }
-    }
 
-    void Update()
-    {
-        //   if (transform.childCount <= 0 && gm.gameState == GameManager.GameState.GAME)
-        //   {
-        //      Debug.Log("update");
-        //       if (gm.level == 1){
-        //         gm.level += 1;
-        //         gm.pontos *= 2;
-                // Construir();
-        //         gm.levelchange = true;
-        //       }else if (gm.level == 2){
-        //         gm.level += 1;
-        //         gm.pontos *= 2;
-        //         Construir();
-        //         gm.levelchange = true;
-        //       }
-        //       else {
-        //         gm.ChangeState(GameManager.GameState.ENDGAME);
-        //         gm.level = 1;
-        //         gm.levelchange = true;
-        //       }   
-        //   }
-    }
+
+            // Obstáculos em níveis diferentes
+                if (gm.ActiveLevel == 3){
+                    Vector3 posicaoFish = new Vector3((float)8.25, (float)-4.5);
+                    GO = Instantiate (Fish, posicaoFish, Quaternion.identity, transform) as GameObject ;
+                }else if (gm.ActiveLevel == 4){
+                    Vector3 posicaoFish = new Vector3((float)8.25, (float)-4.5);
+                    GO = Instantiate (Fish, posicaoFish, Quaternion.identity, transform) as GameObject ;
+                    Vector3 posicaoFish2 = new Vector3((float)15, (float)-3);
+                    GO = Instantiate (Fish, posicaoFish2, Quaternion.identity, transform) as GameObject ;
+                } else if (gm.ActiveLevel == 5){
+                    Vector3 posicaoFish = new Vector3((float)9, (float)-4.5);
+                    GO = Instantiate (Fish, posicaoFish, Quaternion.identity, transform) as GameObject ;
+                    Vector3 posicaoFish2 = new Vector3((float)12, (float)-3);
+                    GO = Instantiate (Fish, posicaoFish2, Quaternion.identity, transform) as GameObject ;
+                    Vector3 posicaoFish3 = new Vector3((float)2.5, (float)-3.5);
+                    GO = Instantiate (Fish, posicaoFish3, Quaternion.identity, transform) as GameObject ;
+                }
+        }
+
 
     }
 }

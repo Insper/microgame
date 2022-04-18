@@ -16,15 +16,15 @@ namespace GabriellaCukier {
             gm = MicrogameInternal.GameManager.GetInstance();
 
             // níveis de dificuldade
-            if (gm.ActiveLevel >=20){
+            if (gm.ActiveLevel >=4){
+                velocidade = 7;  
+            }else if (gm.ActiveLevel >= 1){
                 velocidade = 6;  
-            }else if (gm.ActiveLevel >= 10){
-                velocidade = 4;  
             }else{
-                velocidade = 3;  
+                velocidade = 5;  
             }
 
-            Debug.Log($"Velocidade Sun: {velocidade}");
+            // Debug.Log($"Velocidade Sun: {velocidade}");
               
         }
 
