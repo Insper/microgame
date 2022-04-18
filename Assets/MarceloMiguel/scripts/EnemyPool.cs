@@ -9,11 +9,6 @@ namespace MarceloMiguel{
         public GameObject enemyPrefab;
 
         public List<Vector3> listOfPosition;
-        // Start is called before the first frame update
-
-        // private static Random rng = new Random();  
-
-        
 
         void Start()
         {
@@ -23,10 +18,6 @@ namespace MarceloMiguel{
                 new Vector3(3.05f,-2.39f,0), new Vector3(-1.69f,-4.03f,0) 
             };
             listOfPosition = shuffle(listOfPosition);
-            // Construir();
-            
-            // Debug.Log(listOfPosition);
-        // var shuffledcards = listOfPosition.OrderBy(a => rng.Next()).ToList();
 
         }
 
@@ -44,14 +35,6 @@ namespace MarceloMiguel{
             }
             return list;
         }
-        //     for (index in range(len(container) - 1, 0, -1)):
-        //             other = random.randint(0, index)
-        //             if other == index:
-        //                 continue
-        //             container[index], container[other] = container[other], container[index]
-
-        // }
-
 
         // Update is called once per frame
         void Update()

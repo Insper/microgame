@@ -18,12 +18,12 @@ namespace MarceloMiguel {
         void Start() {
             gm = MicrogameInternal.GameManager.GetInstance();
             _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
-            Debug.Log(_level);
             EnemyPool.GetComponent<EnemyPool>().Construir(_level);
             Invoke(nameof(Begin), 0.5f);                         
         }
 
         void Begin() {
+            instructions.SetActive(false);
             // instructions.SetActive(false);  // Tira tela de instruções
             Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
 
@@ -36,7 +36,9 @@ namespace MarceloMiguel {
         }
 
         void EndCheck() {
-
+            if(EnemyPool.transform.childCount > 0) {
+                gm.GameLost();
+            } 
             // Se não chegou, perdeu
             // if(_dotHolder.transform.childCount > 0) gm.GameLost();
 

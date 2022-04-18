@@ -9,6 +9,9 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - wall
+  - enemy
+  - bullet
   layers:
   - Default
   - TransparentFX
