@@ -8,12 +8,11 @@ namespace Vergara{
         // Start is called before the first frame update
         private Rigidbody2D rb2D;
 
-            void Awake()
-            {
-                rb2D = gameObject.GetComponent<Rigidbody2D>();
+            void Awake(){
+                //rb2D = gameObject.GetComponent<Rigidbody2D>();
             }
         
-            void FixedUpdate() {
+            void FixedUpdate(){
             
                 float inputX = Input.GetAxis("Horizontal");
                 float inputY = Input.GetAxis("Vertical");

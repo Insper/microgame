@@ -9,6 +9,7 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Eggs
   layers:
   - Default
   - TransparentFX

@@ -3,7 +3,27 @@ guid: a81c63508135c4142bcfc629e13137d1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - instructions: {instanceID: 0}
+  - Blue: {fileID: 2816859806493775515, guid: 283edb22059d7e34c854939a43b45f5c, type: 3}
+  - Green: {fileID: 4647428719227277798, guid: 3806a3971e027274ba023d0d49cd90dd, type: 3}
+  - Orange: {fileID: 7932875450678999802, guid: ab6767cc1c8c3b74e8c9a809fd0eb3db,
+      type: 3}
+  - Purple: {fileID: 7954502243135309486, guid: a4830b8b8b5e57448821edd77a9c3766,
+      type: 3}
+  - Red: {fileID: 4776328654562479456, guid: 6fc3a955a051600478f0981f611cfc21, type: 3}
+  - Yellow: {fileID: 4057367999278564155, guid: bfe71e104350c7647a955519cc1f21d4,
+      type: 3}
+  - DinoBlue: {fileID: 6269116481371796633, guid: 2c745235da5843f4fae0f8ea00d9ef6a,
+      type: 3}
+  - DinoRed: {fileID: 6173390121603009905, guid: ec45ccf59e2ab094693d333c86f3fd36,
+      type: 3}
+  - DinoYellow: {fileID: 2338798364242752965, guid: c1d359bc3b178b24fa2552d2fbd70d15,
+      type: 3}
+  - DinoGreen: {fileID: 5237197895945748857, guid: 0605042378819eb42b9fb05463d9ba1f,
+      type: 3}
+  - Colisor: {fileID: 8047011442295330574, guid: d66255a9932b81f4face5fc672b8eef8,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
