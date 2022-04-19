@@ -59,15 +59,20 @@ namespace BeatrizBernardino
             gm.StartTimer();
         }
 
-        void OnBecameInvisible()
-        {
-            gm.GameLost();
-        }
+
 
         void EndCheck()
         {
             // Se caiu, perdeu
-            OnBecameInvisible();
+
+            if (_surfer.transform.position.y < -10)
+            {
+
+                gm.GameLost();
+
+
+            }
+
 
         }
     }
