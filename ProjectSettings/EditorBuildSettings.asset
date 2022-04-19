@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LucianoSoares/ColocarBola.unity
     guid: ab3ed2c9dca86a241ac47133c5b89998
+  - enabled: 1
+    path: Assets/LuisFilipeLoureiro/QuizGame.unity
+    guid: 4bebde77ac2c78546940b1dea7e7fc5e
   m_configObjects: {}
