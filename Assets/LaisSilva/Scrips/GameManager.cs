@@ -33,14 +33,13 @@ namespace LaisSilva{
             for (int i = 0; i < _progression[gm.ActiveLevel]; i++){
 
                 SobeTouperaRandom();
-                yield return new WaitForSeconds(0.6f);
+                yield return new WaitForSeconds(1.2f/(gm.ActiveLevel+1));
             }
 
         }
 
         void SobeTouperaRandom() {
                 int rand = Random.Range(0, 8);
-                print(rand);
                 touperas[rand].Animacao();
                 
                 
@@ -56,7 +55,6 @@ namespace LaisSilva{
 
         void EndCheck() {
             if (martelo.pontos<_progression[gm.ActiveLevel]){
-                
                 gm.GameLost(); 
             }
            
