@@ -1,4 +1,7 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.U2D;
 using UnityEngine;
 
@@ -8,33 +11,24 @@ namespace CiceroValentim
 {
     public class GameManager : MonoBehaviour
     {
-        public GameObject instructions; // Textou das instruçõees
+        public GameObject instructions;
 
-        public GameObject ingredients; // ingredients factory?
+        public GameObject[] ingredients;
 
-        public GameObject burger; // Prefab da burger
-
-        public GameObject lettuce; // Prefab da salada
-
-        public GameObject tomato; // Prefab da salada
-
-        public GameObject cheese; // Prefab da salada
-
-        public GameObject upperBread; // Prefab do pão de cima
-
-        public GameObject lowerBread; // Prefab do pão de baixo
-
-        private int _level;
+        public Controller controller;
 
         private MicrogameInternal.GameManager gm;
+
+        public List<GameObject> orderedBurger;
 
         // private GameObject _buraco; // objeto instanciado de buraco
         // public GameObject[] paredes; // Prefab das paredes
         void Start()
         {
             gm = MicrogameInternal.GameManager.GetInstance();
-            _level = gm.ActiveLevel <= 2 ? gm.ActiveLevel : 2;
-            Invoke(nameof(Begin), 0.5f);
+            orderedBurger = BurgerFactory.GetBurger(ingredients, gm.ActiveLevel);
+            InstantiateOrderedBurger();
+            Invoke(nameof(Begin), 1.0f);
         }
 
         void Begin()
@@ -42,20 +36,34 @@ namespace CiceroValentim
             instructions.SetActive(false); // Tira tela de instruções
             Invoke(nameof(EndCheck), gm.MaxTime - 0.1f);
 
-            // Cria objetos na cena
-            // Instantiate (bola);
-            // _buraco = Instantiate(buraco);
-            // Instantiate(paredes[_level]);
             gm.StartTimer();
+        }
+
+        void InstantiateOrderedBurger()
+        {
+            Vector3 initialPosition = new Vector3(-5, -2, 0);
+            for (int i = 0; i < orderedBurger.Count; i++)
+            {
+                GameObject gameObject =
+                    Instantiate(orderedBurger[i],
+                    initialPosition,
+                    Quaternion.identity);
+                gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
+                initialPosition += new Vector3(0, 1, 0);
+            }
+        }
+
+        public void GameLost()
+        {
+            gm.GameLost();
         }
 
         void EndCheck()
         {
-            // // Se não chegou, perdeu
-            // if (!_buraco.GetComponent<Chegou>().chegou)
-            // {
-            gm.GameLost();
-            // }
+            if (!controller.LastCheck())
+            {
+                gm.GameLost();
+            }
         }
     }
 }
