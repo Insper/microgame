@@ -10,6 +10,8 @@ namespace CiceroValentim
     {
         public GameObject instructions; // Textou das instruçõees
 
+        public GameObject ingredients; // ingredients factory?
+
         public GameObject burger; // Prefab da burger
 
         public GameObject lettuce; // Prefab da salada
@@ -22,12 +24,12 @@ namespace CiceroValentim
 
         public GameObject lowerBread; // Prefab do pão de baixo
 
-        // private GameObject _buraco; // objeto instanciado de buraco
-        // public GameObject[] paredes; // Prefab das paredes
         private int _level;
 
         private MicrogameInternal.GameManager gm;
 
+        // private GameObject _buraco; // objeto instanciado de buraco
+        // public GameObject[] paredes; // Prefab das paredes
         void Start()
         {
             gm = MicrogameInternal.GameManager.GetInstance();
