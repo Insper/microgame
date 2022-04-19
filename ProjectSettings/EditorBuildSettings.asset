@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LucianoSoares/ColocarBola.unity
     guid: ab3ed2c9dca86a241ac47133c5b89998
+  - enabled: 1
+    path: Assets/Edgardaon/Genius.unity
+    guid: 6f3d03f8fecf70141bd5b3c7f755ee63
   m_configObjects: {}
