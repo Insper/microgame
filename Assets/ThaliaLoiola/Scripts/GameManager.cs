@@ -9,7 +9,6 @@ namespace ThaliaLoiola {
         // public GameObject instructions;  // Textou das instruçõees
         [SerializeField]private GameObject _instructions;
         private GameObject _acabou;  // objeto instanciado de buraco
-        int pontuacao = 0;
         private int _level;
         public GameObject bola1;  // Prefab do buraco
         private GameObject _bola1;
@@ -42,10 +41,10 @@ namespace ThaliaLoiola {
         // }
 
         void EndCheck() {
-            Debug.Log("game lost");
 
             Destroy(_bola1);
             if (!_bola1.GetComponent<Fruit>().cortou) {
+                Debug.Log("game lost");
                 gm.GameLost();
             }
         }

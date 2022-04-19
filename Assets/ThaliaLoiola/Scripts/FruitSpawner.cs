@@ -33,8 +33,7 @@ namespace ThaliaLoiola {
                 // if passar do tamanho da tela -> destroi elas 
                 count++;
                 Debug.Log(count);
-                Destroy(spawnedFruit, 5f);
-
+                Destroy(spawnedFruit, 3f);
             }
 
             if (count == 4) {
