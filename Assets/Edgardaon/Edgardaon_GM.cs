@@ -125,14 +125,14 @@ namespace Edgardaon
                     continue;
                 else
                 {
-                    Debug.Log("Lost");
+                    //Debug.Log("Lost");
                     StartCoroutine(LostGame());
                     return;
                 }
             }
             if (input_list.Count == task_list.Count)
             {
-                Debug.Log("Ganhou");
+                //Debug.Log("Ganhou");
                 buttons.interactable = false;
                 //StartCoroutine(StartNextRound());
             }
