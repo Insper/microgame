@@ -18,7 +18,7 @@ namespace Helio {
 		private List<float> _list3 = new List<float>() {-3.8f,-2.3f,-0.8f,0.7f,2.2f,3.7f,5.2f};
         private List<float> _listU = new List<float>();
         private List<GameObject> _listPendrives = new List<GameObject>();
-	    public static bool click = true;
+	    public static bool click = false;
         Vector3 penR = new Vector3(0.0f,0.0f,0.0f);
         Vector3 penP = new Vector3(0.0f,0.0f,0.0f);
         int r;
@@ -60,10 +60,11 @@ namespace Helio {
             for (int i = 0; i < _bprogression[lvl]; i++) {
                 NewPendrive(_pendrive,lvl,true);
             }
+
             StartCoroutine(Example());
         }
         void Start(){
-            Invoke(nameof(Begin), 5.0f);
+            Invoke(nameof(Begin), 4.0f);
         }
 
         void Update(){
@@ -75,61 +76,54 @@ namespace Helio {
         IEnumerator Example()
         {
             yield return new WaitForSeconds(2f);
-            Debug.Log(_listPendrives.Count);
             
-            for (int p = 0; p < _listPendrives.Count; p++){
+            for (p = 0; p < _listPendrives.Count; p++){
+                // Debug.Log($"For p: {p}/{_listPendrives.Count}");
                 r = Random.Range(0, _listPendrives.Count);
+                // Debug.Log($"CHOSEN R: {r}");
                 // while (_listPendrives[r].transform.position.x - _listPendrives[p].transform.position.x >=1.5f){
                 //     r = Random.Range(0, _listPendrives.Count);
                 // }
-                if (_listPendrives[r].transform.position.x - _listPendrives[p].transform.position.x > 0.5f){
-                    if(r-1>=0){
-                        r -=1;
-                    }else{
-                        r +=1;
-                    }
+
+                if (r==p){
+                    r = (r-1>=0) ? r - 1 : r + 1;
+                    // Debug.Log($"CHOSEN R AFTER: {r}");
                 }
+
+                
                 
                 p1 = true;
                 p2 = true;
                 penR = _listPendrives[r].transform.position;
                 penP = _listPendrives[p].transform.position;
+                //Debug.Log($"p1: {p1} | p2: {p2}");
                 while(p1||p2){
-                    yield return new WaitForSeconds(0.2f);
+                    // Debug.Log($"in p1: {p1} | p2: {p2}");
+                    yield return new WaitForSeconds((3.5f/gm.MaxTime)-0.2f);
                     someAni(penR,penP);
                 }
-                Debug.Log(_listPendrives[r].transform.position.x);
-                Debug.Log(_listPendrives[p].transform.position.x);
+                //Debug.Log($"PRE SWAP r_{r}_{_listPendrives[r].transform.position.x}, p_{p}_{_listPendrives[p].transform.position.x}");
                 _listPendrives = Swap(_listPendrives,r,p);
-                Debug.Log(_listPendrives[r].transform.position.x);
-                Debug.Log(_listPendrives[p].transform.position.x);
-                yield return new WaitForSeconds(0.2f);
+                //Debug.Log($"POST SWAP r_{r}_{_listPendrives[r].transform.position.x}, p_{p}_{_listPendrives[p].transform.position.x}");
+                yield return new WaitForSeconds((3.5f/gm.MaxTime)-0.2f);
             }
         }
         void someAni(Vector3 pR,Vector3 pP){
-            if(pR.x>pP.x){
+            // Debug.Log($"someAni_{pR.x>pP.x}");
+            // Debug.Log($"r:{r}\tp:{p}");
+            if(pR.x > pP.x){
                 _listPendrives[r].transform.position = _listPendrives[r].transform.position - new Vector3(0.5f,0,0);
                 _listPendrives[p].transform.position = _listPendrives[p].transform.position + new Vector3(0.5f,0,0);
-                if(_listPendrives[r].transform.position.x-pP.x<=0.01f){
-                    p1 = false;
-                    _listPendrives[r].transform.position = pP;
-                }
-                if(_listPendrives[p].transform.position.x-pR.x>=-0.01f){
-                    p2 = false;
-                    _listPendrives[p].transform.position = pR;
-                }
-            }else if (pR.x<pP.x){
+            }
+            else{
                 _listPendrives[r].transform.position = _listPendrives[r].transform.position + new Vector3(0.5f,0,0);
                 _listPendrives[p].transform.position = _listPendrives[p].transform.position - new Vector3(0.5f,0,0);
-                if(_listPendrives[r].transform.position.x>=pP.x){
-                    p1 = false;
-                    _listPendrives[r].transform.position = pP;
-                }
-                if(_listPendrives[p].transform.position.x<=pR.x){
-                    p2 = false;
-                    _listPendrives[p].transform.position = pR;
-                }
             }
+
+            if(Mathf.Approximately(_listPendrives[r].transform.position.x, pP.x)) p1 = false;
+            if(Mathf.Approximately(_listPendrives[p].transform.position.x, pR.x)) p2 = false;
+            // Debug.Log($"{_listPendrives[r].transform.position.x} going to {pP.x}", _listPendrives[r]);
+            // Debug.Log($"{_listPendrives[p].transform.position.x} going to {pR.x}", _listPendrives[p]);
         }
 
         //  https://stackoverflow.com/questions/2094239/swap-two-items-in-listt
@@ -171,12 +165,12 @@ namespace Helio {
 
         void Begin() {
             // _instructions.SetActive(false);
-            if(_bad){
-                _computer.GetComponent<Computer>().ActBad();
-                Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
-            }
-            
-            gm.StartTimer();
+            // if(_bad){
+            //     _computer.GetComponent<Computer>().ActBad();
+            //     Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+            // }
+            click = true;
+           gm.StartTimer();
         }
 
         public void EndCheck() {

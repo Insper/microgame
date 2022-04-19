@@ -17,6 +17,7 @@ public class Pendrive : MonoBehaviour
     }
     // Update is called once per frame
     private void OnMouseOver() {
+        Debug.Log($"{Helio.GameManager.click}");
             if(Input.GetMouseButton(0) && _bad && Helio.GameManager.click){
                 // Debug.Log(gm.GetClick());
                 Helio.GameManager.click = false;
