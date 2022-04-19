@@ -13,17 +13,17 @@ namespace Andre_Tavernaro {
         {
             gm = MicrogameInternal.GameManager.GetInstance();
 
-            if(gm.ActiveLevel <= 7){
+            if(gm.ActiveLevel <= 2){
                 AlphaMaleBehavior.speed =  2f;
                 UmbrellaBehavior.speed = 8f;
                 UmbrellaBehavior.scale = new Vector3(1.2f,0.8f,1f);
             }
-            else if(gm.ActiveLevel > 7 && gm.ActiveLevel <= 14){
+            else if(gm.ActiveLevel > 2 && gm.ActiveLevel <= 4){
                 AlphaMaleBehavior.speed =  3f;
                 UmbrellaBehavior.speed = 9f;
                 UmbrellaBehavior.scale = new Vector3(1.1f,0.7f,1f);
             }
-            else if(gm.ActiveLevel > 14){
+            else if(gm.ActiveLevel > 4){
                 AlphaMaleBehavior.speed =  3.5f;
                 UmbrellaBehavior.speed = 9.5f;
                 UmbrellaBehavior.scale = new Vector3(1f,0.7f,1f);
