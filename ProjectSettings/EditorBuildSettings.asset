@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LucianoSoares/ColocarBola.unity
     guid: ab3ed2c9dca86a241ac47133c5b89998
+  - enabled: 1
+    path: Assets/MuriloMenezes/EndlessRunner.unity
+    guid: be9dd04ce342446fc8de65359f425caa
   m_configObjects: {}
