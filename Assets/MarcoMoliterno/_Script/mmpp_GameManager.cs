@@ -57,7 +57,7 @@ namespace Marcompp {
         }
 
         void EndCheck() {
-           if(!reached) gm.GameLost();
+           if(not reached) gm.GameLost();
         }
     }
 }
