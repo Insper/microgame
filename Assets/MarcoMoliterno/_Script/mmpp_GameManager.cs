@@ -27,6 +27,7 @@ namespace Marcompp {
             fm = mmpp_FlagManager.GetInstance();
             Invoke(nameof(Begin), 0.5f);
             LoadLevel();
+            fm.reached = false;
         }
 
 
