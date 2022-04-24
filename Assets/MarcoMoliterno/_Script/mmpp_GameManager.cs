@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 namespace Marcompp {
-    public class mmpp_GameManager : MonoBehaviour
+    public class mmpp_GameManager
     {
         [SerializeField]private GameObject _instructions;
         [SerializeField]private GameObject flag;
@@ -34,14 +34,11 @@ namespace Marcompp {
         private mmpp_GameManager()
         {
             reached = false;
-        }
-        
-        void Start() {
-            reached = false;
             gm = MicrogameInternal.GameManager.GetInstance();
             Invoke(nameof(Begin), 0.5f);
             LoadLevel();
         }
+
 
         void LoadLevel() {
             _level = gm.ActiveLevel <= 4 ? gm.ActiveLevel : 4;
@@ -57,7 +54,7 @@ namespace Marcompp {
         }
 
         void EndCheck() {
-           if(not reached) gm.GameLost();
+           if(!reached) gm.GameLost();
         }
     }
 }
