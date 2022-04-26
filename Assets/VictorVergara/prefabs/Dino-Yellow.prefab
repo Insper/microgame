@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2338798364242752963}
   - component: {fileID: 2338798364242752964}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Dino-Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6691028219476326333, guid: 32c18453ca1ddf442b2b25481d281259,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

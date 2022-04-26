@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6936751814212513257}
   - component: {fileID: -5294916523381320837}
   - component: {fileID: 8148390267174588043}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Orange
   m_TagString: Eggs
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ba0f532bedd2e0a4893335f76c416206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

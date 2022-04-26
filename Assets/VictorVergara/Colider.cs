@@ -11,6 +11,7 @@ namespace Vergara{
         public GameObject endgameObj;
         public Text endgame;  // Textou das instruçõees
         public bool CorrectPair;
+        public bool win;
         // Start is called before the first frame update
         void Start(){
             gm = MicrogameInternal.GameManager.GetInstance();
@@ -27,6 +28,7 @@ namespace Vergara{
                 if(CorrectPair){
                     Debug.Log("Certo Corno");
                     endgame.text = "Win!!";
+                    win = true;
                 }
                 else{
                     endgame.text = "Volte para as aulas de Artes!!";

@@ -92,5 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e6247e05c6b054bb148466e754eb90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endgameObj: {fileID: 0}
   endgame: {fileID: 0}
   CorrectPair: 0
