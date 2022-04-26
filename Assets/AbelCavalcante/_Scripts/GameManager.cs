@@ -71,12 +71,18 @@ namespace AbelCavalcante {
 		}
 
 		Keys[] CreateNewSequence() {
+			if (gm.MaxTime == 1) {
+				sequence_size = 2;
+			} else{
+				sequence_size = (int)(gm.MaxTime * 1.5f);
+			}
+			
 			Keys[] k = new Keys[sequence_size];
 			int max_rand = 0;
 			for (int i = 0; i < sequence_size; i++) {
-				if (gm.ActiveLevel <= 2) {
+				if (gm.ActiveLevel < 1) {
 					max_rand = Random.Range(0, 4);
-				} else if (gm.ActiveLevel <= 4) {
+				} else if (gm.ActiveLevel <= 2) {
 					max_rand = Random.Range(0, 5);
 				} else {
 					max_rand = Random.Range(0, 8);
