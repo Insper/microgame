@@ -583,7 +583,9 @@ MonoBehaviour:
   DinoGreen: {fileID: 5237197895945748857, guid: 0605042378819eb42b9fb05463d9ba1f,
     type: 3}
   Colisor: {fileID: 2457439353693866142, guid: d7449103244f91f4d8ce8da97d4afdae, type: 3}
-  coliderC: {fileID: 0}
+  coliderC: {fileID: 2457439353693866142, guid: d7449103244f91f4d8ce8da97d4afdae,
+    type: 3}
+  egg: {fileID: 0}
 --- !u!82 &1552191938
 AudioSource:
   m_ObjectHideFlags: 0
