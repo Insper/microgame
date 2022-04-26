@@ -22,7 +22,7 @@ namespace HenriqueThome {
 
         }
         void Update(){
-            transform.position += direcao * Time.deltaTime * velocidade * (gm.ActiveLevel + 1);
+            transform.position += direcao * Time.deltaTime * velocidade/2 * (gm.ActiveLevel + 1);
             Vector2 posicaoViewport = Camera.main.WorldToViewportPoint(transform.position);
 
             if( posicaoViewport.x < 0 || posicaoViewport.x > 1 )
@@ -35,16 +35,7 @@ namespace HenriqueThome {
             }
         }
         private void OnMouseOver() {
-            if (gm.ActiveLevel == 0){
-                if (Input.GetMouseButton(0)) Destroy(gameObject);
-
-            }
-            else{
-                int counter = 0;
-                if (Input.GetMouseButton(0)){counter += 1;}
-                if( counter == 2){Destroy(gameObject);}
-                
-            }
+            if (Input.GetMouseButton(0)) Destroy(gameObject);
         }
 }
 }
