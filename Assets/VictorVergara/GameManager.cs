@@ -165,7 +165,7 @@ namespace Vergara{
             }
         }
         void EndCheck() {
-            if(!(coliderC.GetComponent<Colider>().win)){
+            if(coliderC.GetComponent<Colider>().win){
                 gm.GameLost();
             }
         }
