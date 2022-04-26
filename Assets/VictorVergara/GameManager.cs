@@ -24,6 +24,7 @@ namespace Vergara{
         public GameObject Colisor;
         private int _level;
         public GameObject coliderC;
+        public GameObject egg;
         // easy blues
         // medium spotted green
         //hard purple
@@ -35,10 +36,6 @@ namespace Vergara{
             Invoke(nameof(Begin), 0.5f);
             //spawna os dinos
             // spawna o ovo da vez        
-        }
-
-        // Update is called once per frame
-        void Update(){
         }
         void Begin() {
             instructions.SetActive(false);  // Tira tela de instruções
@@ -158,7 +155,15 @@ namespace Vergara{
 
             gm.StartTimer(); 
         }
-
+        // Update is called once per frame
+        void Loop(){
+            if(coliderC.GetComponent<Colider>().win){
+                Debug.Log("Entrou");
+                egg.GetComponent<Collider2D>().enabled = false;  
+            }else{
+                Debug.Log("Entrou no errado");
+            }
+        }
         void EndCheck() {
             if(!(coliderC.GetComponent<Colider>().win)){
                 gm.GameLost();

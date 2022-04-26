@@ -29,6 +29,9 @@ namespace Vergara{
                     Debug.Log("Certo Corno");
                     endgame.text = "Win!!";
                     win = true;
+                    Debug.Log("entrou antes");
+                    col.gameObject.GetComponent<Collider2D>().enabled = false;  
+                    
                 }
                 else{
                     endgame.text = "Volte para as aulas de Artes!!";
