@@ -13,6 +13,7 @@ namespace Helio {
         private MicrogameInternal.GameManager gm;
         private int[] _bprogression = {2, 4, 5};
         private int[] _progression = {1, 1, 2};
+        private List<float> _list0 = new List<float>() {0.8f,0.92f,0.98f};
 		private List<float> _list1 = new List<float>() {-0.8f,0.7f,2.2f};
 		private List<float> _list2 = new List<float>() {-2.3f,-0.8f,0.7f,2.2f,3.7f};
 		private List<float> _list3 = new List<float>() {-3.8f,-2.3f,-0.8f,0.7f,2.2f,3.7f,5.2f};
@@ -64,7 +65,7 @@ namespace Helio {
             StartCoroutine(Example());
         }
         void Start(){
-            Invoke(nameof(Begin), 4.0f);
+            // Invoke(nameof(Begin), 6.0f);
         }
 
         void Update(){
@@ -75,7 +76,7 @@ namespace Helio {
 
         IEnumerator Example()
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(2.0f);
             
             for (p = 0; p < _listPendrives.Count; p++){
                 // Debug.Log($"For p: {p}/{_listPendrives.Count}");
@@ -97,16 +98,18 @@ namespace Helio {
                 penR = _listPendrives[r].transform.position;
                 penP = _listPendrives[p].transform.position;
                 //Debug.Log($"p1: {p1} | p2: {p2}");
+                float ti = (10.0f/gm.MaxTime);
                 while(p1||p2){
                     // Debug.Log($"in p1: {p1} | p2: {p2}");
-                    yield return new WaitForSeconds((3.5f/gm.MaxTime)-0.2f);
+                    yield return new WaitForSeconds(ti-(ti*_list0[gm.ActiveLevel]));
                     someAni(penR,penP);
                 }
                 //Debug.Log($"PRE SWAP r_{r}_{_listPendrives[r].transform.position.x}, p_{p}_{_listPendrives[p].transform.position.x}");
                 _listPendrives = Swap(_listPendrives,r,p);
                 //Debug.Log($"POST SWAP r_{r}_{_listPendrives[r].transform.position.x}, p_{p}_{_listPendrives[p].transform.position.x}");
-                yield return new WaitForSeconds((3.5f/gm.MaxTime)-0.2f);
+                yield return new WaitForSeconds(ti-(ti*_list0[gm.ActiveLevel]));
             }
+            Begin();
         }
         void someAni(Vector3 pR,Vector3 pP){
             // Debug.Log($"someAni_{pR.x>pP.x}");
