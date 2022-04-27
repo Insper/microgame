@@ -15,15 +15,9 @@ EditorBuildSettings:
     path: Assets/MicrogameInternal/MainMenu.unity
     guid: 6c766c42c43ce5e4e85386291d99402c
   - enabled: 1
-    path: Assets/GabriellaCukier/jogoGabi.unity
-    guid: 25053d9ead5c40d4b8edadd8d1df878c
-  - enabled: 1
     path: Assets/Emil/ClickTheDot.unity
     guid: 07050dbc135215e459b17abe7f20c4a8
-  - enabled: 0
-    path: Assets/Sample/Teste1 1.unity
-    guid: 617421b8967da394d9dabaa811cea7f9
-  - enabled: 0
-    path: Assets/Sample/Teste1 2.unity
-    guid: f224ba8ea9febbd4094d14df94828519
+  - enabled: 1
+    path: Assets/LucianoSoares/ColocarBola.unity
+    guid: ab3ed2c9dca86a241ac47133c5b89998
   m_configObjects: {}
