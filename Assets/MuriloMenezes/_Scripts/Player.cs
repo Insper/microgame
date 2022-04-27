@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 //Referencias: 
@@ -12,6 +13,10 @@ public class Player : MonoBehaviour
 
     public float Jump;
 
+    public Text textField;
+
+    public float counter;
+
     [SerializeField]
     bool isGrounded = false;
     public bool Fail = false;
@@ -20,7 +25,7 @@ public class Player : MonoBehaviour
 
     private MicrogameInternal.GameManager gm;
 
-    private void Awake()
+    void Start()
     {
         gm = MicrogameInternal.GameManager.GetInstance();
         rigidbody = GetComponent<Rigidbody2D>();
@@ -40,6 +45,8 @@ public class Player : MonoBehaviour
 
             }
         }
+
+        // Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
     }
 
     void Begin() {
@@ -56,6 +63,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
     
@@ -69,6 +77,10 @@ public class Player : MonoBehaviour
         {
             Fail = true;
             Destroy(this.gameObject);
+
+            textField.text = "MORREU!";
+
+            gm.GameLost();
         }
         
     }
