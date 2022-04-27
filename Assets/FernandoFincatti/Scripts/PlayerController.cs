@@ -15,11 +15,13 @@ public class PlayerController : MonoBehaviour{
     void Start(){
         _audioSource = GetComponent<AudioSource>();
         gm = MicrogameInternal.GameManager.GetInstance();
+        Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
         gm.StartTimer();
         buttonsSequencies.Add("left");
         buttonsSequencies.Add("right");
         direction = new Vector3(1.0f, 0.0f);
         desiredButtonIndex = 0;
+        
     }
 
     void Update(){
@@ -66,12 +68,17 @@ public class PlayerController : MonoBehaviour{
 
     void setForce(float sum){
         force += sum;
-        print(velocity);
         if (force >= velocity){
             force = velocity;
         }
         if (force < 0){
             force = 0.5f;
+        }
+    }
+
+    void EndCheck(){
+        if (transform.position.x < 6.0f){
+            gm.GameLost();
         }
     }
 }
