@@ -170,7 +170,7 @@ namespace Helio {
             // _instructions.SetActive(false);
             // if(_bad){
             //     _computer.GetComponent<Computer>().ActBad();
-            //     Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
+            Invoke(nameof(EndCheck), gm.MaxTime-0.1f);
             // }
             click = true;
            gm.StartTimer();
