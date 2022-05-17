@@ -17,6 +17,7 @@ TagManager:
   - Chegada
   - Floater
   - Blade
+  - Eggs
   layers:
   - Default
   - TransparentFX
