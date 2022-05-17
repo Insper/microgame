@@ -12,11 +12,22 @@ TagManager:
   - wall
   - enemy
   - bullet
+  - Triangulo
+  - Circulo
+  - Quadrado
+  - Wall
+  - Inimigo
+  - Chegada
+  - Floater
+  - Blade
+  - Eggs
+  - Enemy
+  - Sun
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background
   - Water
   - UI
   - 
