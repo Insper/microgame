@@ -9,6 +9,7 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Floater
   layers:
   - Default
   - TransparentFX
