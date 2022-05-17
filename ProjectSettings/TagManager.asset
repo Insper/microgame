@@ -9,6 +9,9 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Triangulo
+  - Circulo
+  - Quadrado
   - Wall
   - Inimigo
   - Chegada
