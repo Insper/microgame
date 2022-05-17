@@ -18,6 +18,8 @@ TagManager:
   - Floater
   - Blade
   - Eggs
+  - Enemy
+  - Sun
   layers:
   - Default
   - TransparentFX
