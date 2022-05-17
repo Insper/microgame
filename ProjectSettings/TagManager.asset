@@ -16,6 +16,7 @@ TagManager:
   - Inimigo
   - Chegada
   - Floater
+  - Blade
   layers:
   - Default
   - TransparentFX
