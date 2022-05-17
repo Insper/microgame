@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: bd26a096cf63a364ebedc7ac70bc3c22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1458022929389206183
+    second: smoke-removebg-preview_0
+  - first:
+      213: 665282811348032231
+    second: smoke-removebg-preview_1
+  - first:
+      213: -4789360331636330117
+    second: smoke-removebg-preview_2
+  - first:
+      213: 1036561530809358181
+    second: smoke-removebg-preview_3
+  - first:
+      213: -119381582977493335
+    second: smoke-removebg-preview_4
+  - first:
+      213: -2596366365974992560
+    second: smoke-removebg-preview_5
+  - first:
+      213: 5969159623172866886
+    second: smoke-removebg-preview_6
+  - first:
+      213: -1500216967776327353
+    second: smoke-removebg-preview_7
+  - first:
+      213: -1741772595058351277
+    second: smoke-removebg-preview_8
+  - first:
+      213: 6665347031941842095
+    second: smoke-removebg-preview_9
+  - first:
+      213: -6984486006984731262
+    second: smoke-removebg-preview_10
+  - first:
+      213: -6655131077156030821
+    second: smoke-removebg-preview_11
+  - first:
+      213: 2806147855131922635
+    second: smoke-removebg-preview_12
+  - first:
+      213: 8950975424356043016
+    second: smoke-removebg-preview_13
+  - first:
+      213: -4496792394018882362
+    second: smoke-removebg-preview_14
+  - first:
+      213: 1285357572399291473
+    second: smoke-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smoke-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa3e9c1120fb3410800000000000000
+      internalID: 1458022929389206183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea929d213f8b3900800000000000000
+      internalID: 665282811348032231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71387b4726c88db0800000000000000
+      internalID: -4789360331636330117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5671ab7683b926e00800000000000000
+      internalID: 1036561530809358181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a617e1351fd75ef0800000000000000
+      internalID: -119381582977493335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059e949db8ad7fbd0800000000000000
+      internalID: -2596366365974992560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643c2d22d07b6d250800000000000000
+      internalID: 5969159623172866886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 136.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749ada5cd982e2be0800000000000000
+      internalID: -1500216967776327353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35369089d0bf3d7e0800000000000000
+      internalID: -1741772595058351277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4099f9fc1108c50800000000000000
+      internalID: 6665347031941842095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2851df66bfe121f90800000000000000
+      internalID: -6984486006984731262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96b374bb8934a3a0800000000000000
+      internalID: -6655131077156030821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0dc5c4b9071f620800000000000000
+      internalID: 2806147855131922635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8094ef169b0483c70800000000000000
+      internalID: 8950975424356043016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc73d5842f2891c0800000000000000
+      internalID: -4496792394018882362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0.5
+        width: 114.125
+        height: 136.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd738e6e186d110800000000000000
+      internalID: 1285357572399291473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
