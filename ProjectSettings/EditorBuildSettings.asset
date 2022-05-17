@@ -5,22 +5,5 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/MicrogameInternal/MainMenu.unity
-    guid: 6c766c42c43ce5e4e85386291d99402c
-  - enabled: 0
-    path: Assets/Emil/ClickTheDot.unity
-    guid: 07050dbc135215e459b17abe7f20c4a8
-  - enabled: 1
-    path: Assets/WilliamSilva/Scenes/wars_Tetris.unity
-    guid: d7ae77e41fe10624bb4162571286c6b1
-  - enabled: 0
-    path: Assets/LucianoSoares/ColocarBola.unity
-    guid: ab3ed2c9dca86a241ac47133c5b89998
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/AbelCavalcante/DontMissTheKeys.unity
-    guid: 991dda4ca038a5f4187fc5cf19dd1e8d
+  
   m_configObjects: {}

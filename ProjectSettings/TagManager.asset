@@ -9,6 +9,9 @@ TagManager:
   - arrowRight
   - arrowLeft
   - arrowUp
+  - Wall
+  - Inimigo
+  - Chegada
   - Floater
   layers:
   - Default
