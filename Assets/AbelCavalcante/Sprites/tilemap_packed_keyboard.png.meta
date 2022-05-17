@@ -1,0 +1,5640 @@
+fileFormatVersion: 2
+guid: 37857c690469f8c49bd653ec0a2cdcb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6965696836844702986
+    second: tilemap_packed_keyboard_0
+  - first:
+      213: -8094821399278749533
+    second: tilemap_packed_keyboard_1
+  - first:
+      213: -2025757253179560553
+    second: tilemap_packed_keyboard_2
+  - first:
+      213: 4666855696833618384
+    second: tilemap_packed_keyboard_3
+  - first:
+      213: -4715142038678024295
+    second: tilemap_packed_keyboard_4
+  - first:
+      213: -4970532460167717382
+    second: tilemap_packed_keyboard_5
+  - first:
+      213: -9175929114089190852
+    second: tilemap_packed_keyboard_6
+  - first:
+      213: 2955914813850200869
+    second: tilemap_packed_keyboard_7
+  - first:
+      213: -4524061889515082878
+    second: tilemap_packed_keyboard_8
+  - first:
+      213: 8462298300337538892
+    second: tilemap_packed_keyboard_9
+  - first:
+      213: -6500049384171437597
+    second: tilemap_packed_keyboard_10
+  - first:
+      213: 1547836363517557418
+    second: tilemap_packed_keyboard_11
+  - first:
+      213: 7315314083933343309
+    second: tilemap_packed_keyboard_12
+  - first:
+      213: -60454675990331931
+    second: tilemap_packed_keyboard_13
+  - first:
+      213: -8284350097910488397
+    second: tilemap_packed_keyboard_14
+  - first:
+      213: 3041834902338166756
+    second: tilemap_packed_keyboard_15
+  - first:
+      213: -360849230941208744
+    second: tilemap_packed_keyboard_16
+  - first:
+      213: -171743665173429483
+    second: tilemap_packed_keyboard_17
+  - first:
+      213: -6268118508478171093
+    second: tilemap_packed_keyboard_18
+  - first:
+      213: 9063340045620399158
+    second: tilemap_packed_keyboard_19
+  - first:
+      213: -4586077190552339102
+    second: tilemap_packed_keyboard_20
+  - first:
+      213: -4034888415701094300
+    second: tilemap_packed_keyboard_21
+  - first:
+      213: -253536854861036566
+    second: tilemap_packed_keyboard_22
+  - first:
+      213: 155329622938996381
+    second: tilemap_packed_keyboard_23
+  - first:
+      213: 4571391411794464530
+    second: tilemap_packed_keyboard_24
+  - first:
+      213: 7331339774596410015
+    second: tilemap_packed_keyboard_25
+  - first:
+      213: -179328708620376638
+    second: tilemap_packed_keyboard_26
+  - first:
+      213: 152422124217958407
+    second: tilemap_packed_keyboard_27
+  - first:
+      213: -3622772809617740913
+    second: tilemap_packed_keyboard_28
+  - first:
+      213: 4533524072368637777
+    second: tilemap_packed_keyboard_29
+  - first:
+      213: 8537442006827744807
+    second: tilemap_packed_keyboard_30
+  - first:
+      213: -6190433995960936761
+    second: tilemap_packed_keyboard_31
+  - first:
+      213: 1966931666806746872
+    second: tilemap_packed_keyboard_32
+  - first:
+      213: -5210535680613756400
+    second: tilemap_packed_keyboard_33
+  - first:
+      213: 8204500537423143652
+    second: _W
+  - first:
+      213: 4099654397601928666
+    second: tilemap_packed_keyboard_35
+  - first:
+      213: 5409256339172100677
+    second: tilemap_packed_keyboard_36
+  - first:
+      213: -3889218015550562878
+    second: tilemap_packed_keyboard_37
+  - first:
+      213: 8453247537061613032
+    second: tilemap_packed_keyboard_38
+  - first:
+      213: 372727998029264147
+    second: tilemap_packed_keyboard_39
+  - first:
+      213: 4138873648577945619
+    second: tilemap_packed_keyboard_40
+  - first:
+      213: -4212195619653718063
+    second: tilemap_packed_keyboard_41
+  - first:
+      213: -5494235231861875578
+    second: tilemap_packed_keyboard_42
+  - first:
+      213: -1814028778253966828
+    second: tilemap_packed_keyboard_43
+  - first:
+      213: -7690508330264713308
+    second: tilemap_packed_keyboard_44
+  - first:
+      213: 3891181872296788778
+    second: tilemap_packed_keyboard_45
+  - first:
+      213: -8222937057621038240
+    second: tilemap_packed_keyboard_46
+  - first:
+      213: 8154246979276582182
+    second: tilemap_packed_keyboard_47
+  - first:
+      213: 2557752532761460193
+    second: _enter
+  - first:
+      213: 6393303431991322285
+    second: tilemap_packed_keyboard_49
+  - first:
+      213: 2645743616755779546
+    second: _A
+  - first:
+      213: 6600961225605997607
+    second: _S
+  - first:
+      213: 335966175108530200
+    second: _D
+  - first:
+      213: -3753350799952378847
+    second: tilemap_packed_keyboard_53
+  - first:
+      213: -3823321529698504770
+    second: tilemap_packed_keyboard_54
+  - first:
+      213: 673629811975752642
+    second: tilemap_packed_keyboard_55
+  - first:
+      213: -6167345315450353710
+    second: tilemap_packed_keyboard_56
+  - first:
+      213: 3081169225387097856
+    second: tilemap_packed_keyboard_57
+  - first:
+      213: 7431367339347091969
+    second: tilemap_packed_keyboard_58
+  - first:
+      213: -6636667868285713393
+    second: tilemap_packed_keyboard_59
+  - first:
+      213: -3246317155870445960
+    second: tilemap_packed_keyboard_60
+  - first:
+      213: -5958760019736298677
+    second: tilemap_packed_keyboard_61
+  - first:
+      213: 42249409903709421
+    second: tilemap_packed_keyboard_62
+  - first:
+      213: 8319105306092932859
+    second: tilemap_packed_keyboard_63
+  - first:
+      213: 7630976066525393467
+    second: tilemap_packed_keyboard_64
+  - first:
+      213: 2234385996583809117
+    second: tilemap_packed_keyboard_65
+  - first:
+      213: -1573728713656002779
+    second: tilemap_packed_keyboard_66
+  - first:
+      213: 6963614741251013076
+    second: tilemap_packed_keyboard_67
+  - first:
+      213: 1863526094386710531
+    second: tilemap_packed_keyboard_68
+  - first:
+      213: 7139417444136110000
+    second: tilemap_packed_keyboard_69
+  - first:
+      213: 3130578677453683903
+    second: tilemap_packed_keyboard_70
+  - first:
+      213: -3099373545209530215
+    second: tilemap_packed_keyboard_71
+  - first:
+      213: 1345850325168057905
+    second: tilemap_packed_keyboard_72
+  - first:
+      213: -6674382693140477216
+    second: tilemap_packed_keyboard_73
+  - first:
+      213: -4271293503408497735
+    second: tilemap_packed_keyboard_74
+  - first:
+      213: -2210748258742439756
+    second: tilemap_packed_keyboard_75
+  - first:
+      213: -4625987271702802258
+    second: tilemap_packed_keyboard_76
+  - first:
+      213: 3083041592747986042
+    second: _UpArrow
+  - first:
+      213: 6636102676218347098
+    second: _RightArrow
+  - first:
+      213: 3027111748273399368
+    second: _DownArrow
+  - first:
+      213: 4826210403433080730
+    second: _LeftArrow
+  - first:
+      213: -1003887814607301238
+    second: tilemap_packed_keyboard_81
+  - first:
+      213: -8240916282472540940
+    second: tilemap_packed_keyboard_82
+  - first:
+      213: -1419030738355626228
+    second: tilemap_packed_keyboard_83
+  - first:
+      213: 2436940521577406963
+    second: tilemap_packed_keyboard_84
+  - first:
+      213: 5517443225939152107
+    second: tilemap_packed_keyboard_85
+  - first:
+      213: 8487848964175458
+    second: tilemap_packed_keyboard_86
+  - first:
+      213: -5432065531587508638
+    second: tilemap_packed_keyboard_87
+  - first:
+      213: -6825081678444032483
+    second: tilemap_packed_keyboard_88
+  - first:
+      213: 737369453075551469
+    second: tilemap_packed_keyboard_89
+  - first:
+      213: 6704126368071783003
+    second: tilemap_packed_keyboard_90
+  - first:
+      213: 931491693200653147
+    second: tilemap_packed_keyboard_91
+  - first:
+      213: 7724256591030870200
+    second: tilemap_packed_keyboard_92
+  - first:
+      213: 1715925251124906400
+    second: tilemap_packed_keyboard_93
+  - first:
+      213: 2267040854294561135
+    second: tilemap_packed_keyboard_94
+  - first:
+      213: -2789395477634674774
+    second: tilemap_packed_keyboard_95
+  - first:
+      213: -1527499446167924376
+    second: tilemap_packed_keyboard_96
+  - first:
+      213: 9096265087594287944
+    second: tilemap_packed_keyboard_97
+  - first:
+      213: 3182612354671624808
+    second: tilemap_packed_keyboard_98
+  - first:
+      213: -3172542695207439382
+    second: tilemap_packed_keyboard_99
+  - first:
+      213: 1342354794173701235
+    second: tilemap_packed_keyboard_100
+  - first:
+      213: 7554537965177510680
+    second: tilemap_packed_keyboard_101
+  - first:
+      213: -4117330760282783006
+    second: _Space
+  - first:
+      213: 1698546293127871124
+    second: tilemap_packed_keyboard_103
+  - first:
+      213: 3587401176433371045
+    second: tilemap_packed_keyboard_104
+  - first:
+      213: 8529750071201216648
+    second: tilemap_packed_keyboard_105
+  - first:
+      213: -1127698984311314560
+    second: tilemap_packed_keyboard_106
+  - first:
+      213: -8018444194533207354
+    second: tilemap_packed_keyboard_107
+  - first:
+      213: -3155698013872088541
+    second: tilemap_packed_keyboard_108
+  - first:
+      213: 5883688621723486340
+    second: tilemap_packed_keyboard_109
+  - first:
+      213: -70488727514160852
+    second: tilemap_packed_keyboard_110
+  - first:
+      213: 7346463598212050721
+    second: tilemap_packed_keyboard_111
+  - first:
+      213: 2382774111455317810
+    second: tilemap_packed_keyboard_112
+  - first:
+      213: -7471569853301492523
+    second: tilemap_packed_keyboard_113
+  - first:
+      213: -502273826065793635
+    second: tilemap_packed_keyboard_114
+  - first:
+      213: -7344330982233148290
+    second: tilemap_packed_keyboard_115
+  - first:
+      213: -4284681199508060289
+    second: tilemap_packed_keyboard_116
+  - first:
+      213: -7864831929530474104
+    second: tilemap_packed_keyboard_117
+  - first:
+      213: -5762198198447501263
+    second: tilemap_packed_keyboard_118
+  - first:
+      213: -7119686081773902496
+    second: tilemap_packed_keyboard_119
+  - first:
+      213: 4871476969834278041
+    second: tilemap_packed_keyboard_120
+  - first:
+      213: -2751034357669762085
+    second: tilemap_packed_keyboard_121
+  - first:
+      213: -1925508051814270662
+    second: tilemap_packed_keyboard_122
+  - first:
+      213: 2326952182368578716
+    second: tilemap_packed_keyboard_123
+  - first:
+      213: -6041634583750598909
+    second: tilemap_packed_keyboard_124
+  - first:
+      213: 2857656034428929363
+    second: tilemap_packed_keyboard_125
+  - first:
+      213: 1261245931973053728
+    second: tilemap_packed_keyboard_126
+  - first:
+      213: 3876598129851475132
+    second: tilemap_packed_keyboard_127
+  - first:
+      213: 1272410036822081889
+    second: tilemap_packed_keyboard_128
+  - first:
+      213: -4741184495050601876
+    second: tilemap_packed_keyboard_129
+  - first:
+      213: 1186822611940130165
+    second: tilemap_packed_keyboard_130
+  - first:
+      213: -956759740358087455
+    second: tilemap_packed_keyboard_131
+  - first:
+      213: 344715056994919553
+    second: tilemap_packed_keyboard_132
+  - first:
+      213: 2132414492156924687
+    second: tilemap_packed_keyboard_133
+  - first:
+      213: -2403638917947000639
+    second: tilemap_packed_keyboard_134
+  - first:
+      213: -4168439258133473746
+    second: tilemap_packed_keyboard_135
+  - first:
+      213: -6406879356403865700
+    second: tilemap_packed_keyboard_136
+  - first:
+      213: 4261999258094926897
+    second: tilemap_packed_keyboard_137
+  - first:
+      213: -4490190640369330715
+    second: tilemap_packed_keyboard_138
+  - first:
+      213: -7529957697204797584
+    second: tilemap_packed_keyboard_139
+  - first:
+      213: 173428507334356649
+    second: tilemap_packed_keyboard_140
+  - first:
+      213: -2889877078504935407
+    second: tilemap_packed_keyboard_141
+  - first:
+      213: 8219895867287243141
+    second: tilemap_packed_keyboard_142
+  - first:
+      213: 4168159782825413753
+    second: tilemap_packed_keyboard_143
+  - first:
+      213: -1086566723173130533
+    second: tilemap_packed_keyboard_144
+  - first:
+      213: 5795055806736671034
+    second: tilemap_packed_keyboard_145
+  - first:
+      213: -629085109044330251
+    second: tilemap_packed_keyboard_146
+  - first:
+      213: 3573354319884282287
+    second: tilemap_packed_keyboard_147
+  - first:
+      213: 1161724002301584934
+    second: tilemap_packed_keyboard_148
+  - first:
+      213: 4888361488714800803
+    second: tilemap_packed_keyboard_149
+  - first:
+      213: 691761602227711589
+    second: tilemap_packed_keyboard_150
+  - first:
+      213: 4092038470652017648
+    second: tilemap_packed_keyboard_151
+  - first:
+      213: -6611640854485735552
+    second: tilemap_packed_keyboard_152
+  - first:
+      213: 5429324222818916069
+    second: tilemap_packed_keyboard_153
+  - first:
+      213: -4305966655460895399
+    second: tilemap_packed_keyboard_154
+  - first:
+      213: -4805880057017705335
+    second: tilemap_packed_keyboard_155
+  - first:
+      213: -5304465235002702425
+    second: tilemap_packed_keyboard_156
+  - first:
+      213: 3891159235868300559
+    second: tilemap_packed_keyboard_157
+  - first:
+      213: -8065947065073975747
+    second: tilemap_packed_keyboard_158
+  - first:
+      213: 4302435283615877245
+    second: tilemap_packed_keyboard_159
+  - first:
+      213: -4761580141698020646
+    second: tilemap_packed_keyboard_160
+  - first:
+      213: 7958854094830019709
+    second: tilemap_packed_keyboard_161
+  - first:
+      213: 89888203817212463
+    second: tilemap_packed_keyboard_162
+  - first:
+      213: 9155015937723884182
+    second: tilemap_packed_keyboard_163
+  - first:
+      213: -7315938405349928273
+    second: tilemap_packed_keyboard_164
+  - first:
+      213: 1216068288894637016
+    second: tilemap_packed_keyboard_165
+  - first:
+      213: 5782445957148074351
+    second: tilemap_packed_keyboard_166
+  - first:
+      213: -2547251609514805599
+    second: tilemap_packed_keyboard_167
+  - first:
+      213: 2499701295580393316
+    second: tilemap_packed_keyboard_168
+  - first:
+      213: 8044389315976620210
+    second: tilemap_packed_keyboard_169
+  - first:
+      213: 7644125602030422378
+    second: tilemap_packed_keyboard_170
+  - first:
+      213: 6313548225898969338
+    second: tilemap_packed_keyboard_171
+  - first:
+      213: -5229062707983596941
+    second: tilemap_packed_keyboard_172
+  - first:
+      213: 484608327920562065
+    second: tilemap_packed_keyboard_173
+  - first:
+      213: -4323198009380492169
+    second: tilemap_packed_keyboard_174
+  - first:
+      213: -7454461674656569365
+    second: tilemap_packed_keyboard_175
+  - first:
+      213: -5391117253180718931
+    second: tilemap_packed_keyboard_176
+  - first:
+      213: 7616994020610177915
+    second: tilemap_packed_keyboard_177
+  - first:
+      213: 899483502732160536
+    second: tilemap_packed_keyboard_178
+  - first:
+      213: 7812253990229964134
+    second: tilemap_packed_keyboard_179
+  - first:
+      213: -112976622530052935
+    second: tilemap_packed_keyboard_180
+  - first:
+      213: 1544525757118582722
+    second: tilemap_packed_keyboard_181
+  - first:
+      213: -3817007168554371851
+    second: tilemap_packed_keyboard_182
+  - first:
+      213: -2949948423032255710
+    second: tilemap_packed_keyboard_183
+  - first:
+      213: -2501453078578157207
+    second: tilemap_packed_keyboard_184
+  - first:
+      213: -4485093693450091154
+    second: tilemap_packed_keyboard_185
+  - first:
+      213: -4757515575465177957
+    second: tilemap_packed_keyboard_186
+  - first:
+      213: -2815964760807388240
+    second: tilemap_packed_keyboard_187
+  - first:
+      213: 2551899164562414182
+    second: tilemap_packed_keyboard_188
+  - first:
+      213: -7915043753187441951
+    second: tilemap_packed_keyboard_189
+  - first:
+      213: -273152315816970808
+    second: tilemap_packed_keyboard_190
+  - first:
+      213: -728405927926053319
+    second: tilemap_packed_keyboard_191
+  - first:
+      213: -3714972519391111874
+    second: tilemap_packed_keyboard_192
+  - first:
+      213: -1011620136356619054
+    second: tilemap_packed_keyboard_193
+  - first:
+      213: 5886364920495999105
+    second: tilemap_packed_keyboard_194
+  - first:
+      213: 194492853449032934
+    second: tilemap_packed_keyboard_195
+  - first:
+      213: 3822437642580344931
+    second: tilemap_packed_keyboard_196
+  - first:
+      213: 8671610739655126257
+    second: tilemap_packed_keyboard_197
+  - first:
+      213: -7401884762448026134
+    second: tilemap_packed_keyboard_198
+  - first:
+      213: -3414052903752387755
+    second: tilemap_packed_keyboard_199
+  - first:
+      213: 4580512449597051547
+    second: tilemap_packed_keyboard_200
+  - first:
+      213: -3471584779506324820
+    second: tilemap_packed_keyboard_201
+  - first:
+      213: -4347783457243330497
+    second: tilemap_packed_keyboard_202
+  - first:
+      213: -1972275601746848079
+    second: tilemap_packed_keyboard_203
+  - first:
+      213: -5424939901459740265
+    second: tilemap_packed_keyboard_204
+  - first:
+      213: 6706580812961589576
+    second: tilemap_packed_keyboard_205
+  - first:
+      213: 5307370072210632673
+    second: tilemap_packed_keyboard_206
+  - first:
+      213: -2064166447209602901
+    second: tilemap_packed_keyboard_207
+  - first:
+      213: 721013553862730386
+    second: tilemap_packed_keyboard_208
+  - first:
+      213: 7304861500260507309
+    second: tilemap_packed_keyboard_209
+  - first:
+      213: 3289679179527489126
+    second: tilemap_packed_keyboard_210
+  - first:
+      213: -210463054536264193
+    second: tilemap_packed_keyboard_211
+  - first:
+      213: 8758851597638742641
+    second: tilemap_packed_keyboard_212
+  - first:
+      213: 3472037761187409969
+    second: tilemap_packed_keyboard_213
+  - first:
+      213: 7278155623324440023
+    second: tilemap_packed_keyboard_214
+  - first:
+      213: -6695974323158187125
+    second: tilemap_packed_keyboard_215
+  - first:
+      213: 4790571681942237392
+    second: tilemap_packed_keyboard_216
+  - first:
+      213: -4901505649746668424
+    second: tilemap_packed_keyboard_217
+  - first:
+      213: -5749233037105995719
+    second: tilemap_packed_keyboard_218
+  - first:
+      213: 7438537269490867358
+    second: tilemap_packed_keyboard_219
+  - first:
+      213: -374985520439748458
+    second: tilemap_packed_keyboard_220
+  - first:
+      213: -5557897810446667680
+    second: tilemap_packed_keyboard_221
+  - first:
+      213: -8568604608703408780
+    second: tilemap_packed_keyboard_222
+  - first:
+      213: -1322571984323522451
+    second: tilemap_packed_keyboard_223
+  - first:
+      213: 5333219381430406004
+    second: tilemap_packed_keyboard_224
+  - first:
+      213: -1019941545280874798
+    second: tilemap_packed_keyboard_225
+  - first:
+      213: 5960291695298273136
+    second: tilemap_packed_keyboard_226
+  - first:
+      213: -4509684243144423370
+    second: tilemap_packed_keyboard_227
+  - first:
+      213: 7282905041359728700
+    second: tilemap_packed_keyboard_228
+  - first:
+      213: 7942546950409185286
+    second: tilemap_packed_keyboard_229
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dc0350e502ba060800000000000000
+      internalID: 6965696836844702986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a872c753da69af80800000000000000
+      internalID: -8094821399278749533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79daf0bd28013e3e0800000000000000
+      internalID: -2025757253179560553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1a6cbb78004c040800000000000000
+      internalID: 4666855696833618384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fc5173c43709eb0800000000000000
+      internalID: -4715142038678024295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd972fff0f150bb0800000000000000
+      internalID: -4970532460167717382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a8c8e361d88a080800000000000000
+      internalID: -9175929114089190852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b2bd1bcd4850920800000000000000
+      internalID: 2955914813850200869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b22955ead4731c0800000000000000
+      internalID: -4524061889515082878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47c20f087f107570800000000000000
+      internalID: 8462298300337538892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e107f9168f2bc5a0800000000000000
+      internalID: -6500049384171437597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa75e9c8f40b7510800000000000000
+      internalID: 1547836363517557418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e4241b667358560800000000000000
+      internalID: 7315314083933343309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edb590eac8392ff0800000000000000
+      internalID: -60454675990331931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2a2137a73180d80800000000000000
+      internalID: -8284350097910488397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef50433ab4c63a20800000000000000
+      internalID: 3041834902338166756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fb64c49810efaf0800000000000000
+      internalID: -360849230941208744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5130ae4eb08dd9df0800000000000000
+      internalID: -171743665173429483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b287b1c2d6b2309a0800000000000000
+      internalID: -6268118508478171093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cc6c970c377cd70800000000000000
+      internalID: 9063340045620399158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d3b90e71bfa50c0800000000000000
+      internalID: -4586077190552339102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4603cc91d523108c0800000000000000
+      internalID: -4034888415701094300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3c984e2914b7cf0800000000000000
+      internalID: -253536854861036566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ecf561877d72200800000000000000
+      internalID: 155329622938996381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_24
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fc74dc448d07f30800000000000000
+      internalID: 4571391411794464530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae2809ea62eb560800000000000000
+      internalID: 7331339774596410015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c527a85d75e28df0800000000000000
+      internalID: -179328708620376638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000ce94d138d1200800000000000000
+      internalID: 152422124217958407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b6acce25359bdc0800000000000000
+      internalID: -3622772809617740913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157073acf105aee30800000000000000
+      internalID: 4533524072368637777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e377b95461b7670800000000000000
+      internalID: 8537442006827744807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c61f393419271aa0800000000000000
+      internalID: -6190433995960936761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8feab710ee1fb4b10800000000000000
+      internalID: 1966931666806746872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012d483b76570b7b0800000000000000
+      internalID: -5210535680613756400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _W
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2ab9cf4cd3cd170800000000000000
+      internalID: 8204500537423143652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad55ee624f5e4e830800000000000000
+      internalID: 4099654397601928666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a02632bf9811b40800000000000000
+      internalID: 5409256339172100677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd1f0122d8b60ac0800000000000000
+      internalID: -3889218015550562878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edc00509d7ff4570800000000000000
+      internalID: 8453247537061613032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3157060b3223c2500800000000000000
+      internalID: 372727998029264147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_40
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310a6b997ab307930800000000000000
+      internalID: 4138873648577945619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df651ea6664b85c0800000000000000
+      internalID: -4212195619653718063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cdf649a2e80c3b0800000000000000
+      internalID: -5494235231861875578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41226d3ff6643d6e0800000000000000
+      internalID: -1814028778253966828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_44
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7a3607b63d54590800000000000000
+      internalID: -7690508330264713308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2380b6eb41400630800000000000000
+      internalID: 3891181872296788778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_46
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b2a16205242ed80800000000000000
+      internalID: -8222937057621038240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d2592bc64b92170800000000000000
+      internalID: 8154246979276582182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _enter
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed3a928066fe7320800000000000000
+      internalID: 2557752532761460193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6e025299399b850800000000000000
+      internalID: 6393303431991322285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _A
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad74c7b3dc197b420800000000000000
+      internalID: 2645743616755779546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _S
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7246f54e2435b9b50800000000000000
+      internalID: 6600961225605997607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _D
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81004ebc47799a400800000000000000
+      internalID: 335966175108530200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1240963655b69ebc0800000000000000
+      internalID: -3753350799952378847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_54
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfa7385355d0fac0800000000000000
+      internalID: -3823321529698504770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb8de4beb6395900800000000000000
+      internalID: 673629811975752642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_56
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d789619c10396aa0800000000000000
+      internalID: -6167345315450353710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_57
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f3014f51382ca20800000000000000
+      internalID: 3081169225387097856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_58
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1022939d835812760800000000000000
+      internalID: 7431367339347091969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04c4928cb1d5e3a0800000000000000
+      internalID: -6636667868285713393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_60
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ee5181fb3c2f2d0800000000000000
+      internalID: -3246317155870445960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b71d9355b3e4da0800000000000000
+      internalID: -5958760019736298677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_62
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decc74d4d99169000800000000000000
+      internalID: 42249409903709421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe8cba0336637370800000000000000
+      internalID: 8319105306092932859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f0c64d4ca6e960800000000000000
+      internalID: 7630976066525393467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d503c71c932220f10800000000000000
+      internalID: 2234385996583809117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52793b9a21ef82ae0800000000000000
+      internalID: -1573728713656002779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9b0fc56bab3a060800000000000000
+      internalID: 6963614741251013076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30847950c139cd910800000000000000
+      internalID: 1863526094386710531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7c5f4d65e441360800000000000000
+      internalID: 7139417444136110000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcf90b78bc027b20800000000000000
+      internalID: 3130578677453683903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998fa8b8e20dcf4d0800000000000000
+      internalID: -3099373545209530215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e6c787dbb6da210800000000000000
+      internalID: 1345850325168057905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eac8509d44df53a0800000000000000
+      internalID: -6674382693140477216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb17ed503159b4c0800000000000000
+      internalID: -4271293503408497735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0f7d5fb28d151e0800000000000000
+      internalID: -2210748258742439756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea01daef5113dcfb0800000000000000
+      internalID: -4625987271702802258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _UpArrow
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c8f737ef929ca20800000000000000
+      internalID: 3083041592747986042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _RightArrow
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e7305793c281c50800000000000000
+      internalID: 6636102676218347098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _DownArrow
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8466f33c816720a20800000000000000
+      internalID: 3027111748273399368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _LeftArrow
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a976ce3aac42af240800000000000000
+      internalID: 4826210403433080730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a851df7f9597112f0800000000000000
+      internalID: -1003887814607301238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4dd77ad4262ad80800000000000000
+      internalID: -8240916282472540940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_83
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fd3f2df079e4ce0800000000000000
+      internalID: -1419030738355626228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_84
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1606f2e70c1d120800000000000000
+      internalID: 2436940521577406963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec0d7e9165e19c40800000000000000
+      internalID: 5517443225939152107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_86
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266ba6657a72e1000800000000000000
+      internalID: 8487848964175458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_87
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2664519ed2d6d94b0800000000000000
+      internalID: -5432065531587508638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e0151df507841a0800000000000000
+      internalID: -6825081678444032483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_89
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4dace5c99ab3a00800000000000000
+      internalID: 737369453075551469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_90
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b529f3a6967d90d50800000000000000
+      internalID: 6704126368071783003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_91
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bb37c72c25dec00800000000000000
+      internalID: 931491693200653147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b06d56d172123b60800000000000000
+      internalID: 7724256591030870200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a94c6eace030d710800000000000000
+      internalID: 1715925251124906400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_94
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61868b45a5267f10800000000000000
+      internalID: 2267040854294561135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_95
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf018987931a49d0800000000000000
+      internalID: -2789395477634674774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8611e84c85b3dcae0800000000000000
+      internalID: -1527499446167924376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84358d037ec6c3e70800000000000000
+      internalID: 9096265087594287944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_98
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862c8f90319ea2c20800000000000000
+      internalID: 3182612354671624808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_99
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae376614a3dd8f3d0800000000000000
+      internalID: -3172542695207439382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c144db29001a210800000000000000
+      internalID: 1342354794173701235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_101
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b9b90f04c17d860800000000000000
+      internalID: 7554537965177510680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Space
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e24e82fc7d4cd6c0800000000000000
+      internalID: -4117330760282783006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a7174bad2729710800000000000000
+      internalID: 1698546293127871124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a72124fc5209c130800000000000000
+      internalID: 3587401176433371045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_105
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888bfc84f72cf5670800000000000000
+      internalID: 8529750071201216648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0872e82afbb9950f0800000000000000
+      internalID: -1127698984311314560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_107
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c21e851d73c8b090800000000000000
+      internalID: -8018444194533207354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_108
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a9fb04065b434d0800000000000000
+      internalID: -3155698013872088541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_109
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48806dad0af07a150800000000000000
+      internalID: 5883688621723486340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_110
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2169d330e2950ff0800000000000000
+      internalID: -70488727514160852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_111
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f64c628b1e3f560800000000000000
+      internalID: 7346463598212050721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_112
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f8a4d0e60511120800000000000000
+      internalID: 2382774111455317810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_113
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d47273fdc6af4890800000000000000
+      internalID: -7471569853301492523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_114
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d3f59cd909709f0800000000000000
+      internalID: -502273826065793635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74f81332e1b31a90800000000000000
+      internalID: -7344330982233148290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7707877621c984c0800000000000000
+      internalID: -4284681199508060289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_117
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881af2e97018ad290800000000000000
+      internalID: -7864831929530474104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_118
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1301428944f8800b0800000000000000
+      internalID: -5762198198447501263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065e297fa3bc13d90800000000000000
+      internalID: -7119686081773902496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_120
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ce77e6e76fa9340800000000000000
+      internalID: 4871476969834278041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_121
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbe23ac3dc52d9d0800000000000000
+      internalID: -2751034357669762085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_122
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39b47fe0a83745e0800000000000000
+      internalID: -1925508051814270662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_123
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c266f5eaefa4020800000000000000
+      internalID: 2326952182368578716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f94d42b5dc72ca0800000000000000
+      internalID: -6041634583750598909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3554366d50f68a720800000000000000
+      internalID: 2857656034428929363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_126
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d09a52e78d08110800000000000000
+      internalID: 1261245931973053728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_127
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4adb2c5717cc530800000000000000
+      internalID: 3876598129851475132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_128
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1610c6ddf2288a110800000000000000
+      internalID: 1272410036822081889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_129
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4be552dde33eb0800000000000000
+      internalID: -4741184495050601876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_130
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57db714a0e0787010800000000000000
+      internalID: 1186822611940130165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_131
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecaf84d518e8b2f0800000000000000
+      internalID: -956759740358087455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18429e8948ca8c400800000000000000
+      internalID: 344715056994919553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_133
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0398eebeabd79d10800000000000000
+      internalID: 2132414492156924687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_134
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8f67f932f84aed0800000000000000
+      internalID: -2403638917947000639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_135
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26592f749ab626c0800000000000000
+      internalID: -4168439258133473746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_136
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97a3c2ab213617a0800000000000000
+      internalID: -6406879356403865700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_137
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cf9b38eb9a52b30800000000000000
+      internalID: 4261999258094926897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_138
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e590031763afa1c0800000000000000
+      internalID: -4490190640369330715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_139
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fb36cae57308790800000000000000
+      internalID: -7529957697204797584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae279dfe44286200800000000000000
+      internalID: 173428507334356649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_141
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1107b2bbb1815e7d0800000000000000
+      internalID: -2889877078504935407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_142
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5898b5c8dbfe21270800000000000000
+      internalID: 8219895867287243141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_143
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cc0661d3748d930800000000000000
+      internalID: 4168159782825413753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde5188725dbbe0f0800000000000000
+      internalID: -1086566723173130533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_145
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31aa1e7d8c2c6050800000000000000
+      internalID: 5795055806736671034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_146
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0cce52d6a0547f0800000000000000
+      internalID: -629085109044330251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_147
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa96f4d42da179130800000000000000
+      internalID: 3573354319884282287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6262b3433d54f1010800000000000000
+      internalID: 1161724002301584934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_149
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae9b84dfd2f6d340800000000000000
+      internalID: 4888361488714800803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_150
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ea90a1381a99900800000000000000
+      internalID: 691761602227711589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_151
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb327afe47d9c830800000000000000
+      internalID: 4092038470652017648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087eaed3cabbe34a0800000000000000
+      internalID: -6611640854485735552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_153
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e69b876d95d85b40800000000000000
+      internalID: 5429324222818916069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_154
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955939e04222e34c0800000000000000
+      internalID: -4305966655460895399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_155
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c53500d851e4db0800000000000000
+      internalID: -4805880057017705335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_156
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5414819f0c266b0800000000000000
+      internalID: -5304465235002702425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05196275bc200630800000000000000
+      internalID: 3891159235868300559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_158
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e392921efff0090800000000000000
+      internalID: -8065947065073975747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_159
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78080d581255bb30800000000000000
+      internalID: 4302435283615877245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_160
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada098cc6187bedb0800000000000000
+      internalID: -4761580141698020646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_161
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74a185a1a7837e60800000000000000
+      internalID: 7958854094830019709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_162
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ad50a58d85f3100800000000000000
+      internalID: 89888203817212463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_163
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69262117d762d0f70800000000000000
+      internalID: 9155015937723884182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_164
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2da7628c0987a90800000000000000
+      internalID: -7315938405349928273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_165
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d39e2e6aa750e010800000000000000
+      internalID: 1216068288894637016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_166
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6164b816ff5f3050800000000000000
+      internalID: 5782445957148074351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_167
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6f355382856acd0800000000000000
+      internalID: -2547251609514805599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_168
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f27a79519b0b220800000000000000
+      internalID: 2499701295580393316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_169
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8ebbd367963af60800000000000000
+      internalID: 8044389315976620210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_170
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a690e771cb3651a60800000000000000
+      internalID: 7644125602030422378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_171
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8710d29aa3e9750800000000000000
+      internalID: 6313548225898969338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_172
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372456efb23ae67b0800000000000000
+      internalID: -5229062707983596941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_173
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa6e8e4bca9b600800000000000000
+      internalID: 484608327920562065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_174
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c2335d05ae004c0800000000000000
+      internalID: -4323198009380492169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_175
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7e4523a9e6c8890800000000000000
+      internalID: -7454461674656569365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_176
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da00fadeb67ee25b0800000000000000
+      internalID: -5391117253180718931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_177
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b7eb684bff4b960800000000000000
+      internalID: 7616994020610177915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_178
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81eaca5ea7b9b7c00800000000000000
+      internalID: 899483502732160536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_179
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665f8ceec93ba6c60800000000000000
+      internalID: 7812253990229964134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_180
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc3c224c50ae6ef0800000000000000
+      internalID: -112976622530052935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_181
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf8e7b2ef14f6510800000000000000
+      internalID: 1544525757118582722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_182
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4723d1434470bc0800000000000000
+      internalID: -3817007168554371851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_183
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b407be98daf07d0800000000000000
+      internalID: -2949948423032255710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_184
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969aa05adad094dd0800000000000000
+      internalID: -2501453078578157207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_185
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6500918c0fb1c1c0800000000000000
+      internalID: -4485093693450091154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_186
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c820f5ac8e9fdb0800000000000000
+      internalID: -4757515575465177957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_187
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbce0c38feabe8d0800000000000000
+      internalID: -2815964760807388240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_188
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66adb5605ca2a6320800000000000000
+      internalID: 2551899164562414182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_189
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2869564ad182290800000000000000
+      internalID: -7915043753187441951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_190
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5772e7a61953cf0800000000000000
+      internalID: -273152315816970808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_191
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936cda5faae24e5f0800000000000000
+      internalID: -728405927926053319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_192
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35da572d24c17cc0800000000000000
+      internalID: -3714972519391111874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_193
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcd4d488d006f1f0800000000000000
+      internalID: -1011620136356619054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_194
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1880c7835b190b150800000000000000
+      internalID: 5886364920495999105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_195
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e48e21483af2b200800000000000000
+      internalID: 194492853449032934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_196
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3604516a8c60c0530800000000000000
+      internalID: 3822437642580344931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_197
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc2b970600c75870800000000000000
+      internalID: 8671610739655126257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_198
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5a8e18609374990800000000000000
+      internalID: -7401884762448026134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_199
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553b273f8f8de90d0800000000000000
+      internalID: -3414052903752387755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_200
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b929c77edcf319f30800000000000000
+      internalID: 4580512449597051547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_201
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa6fd9490472dfc0800000000000000
+      internalID: -3471584779506324820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_202
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3801be2bf199a3c0800000000000000
+      internalID: -4347783457243330497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_203
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b695be2ac111a4e0800000000000000
+      internalID: -1972275601746848079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_204
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79946a5f6edb6b4b0800000000000000
+      internalID: -5424939901459740265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_205
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849a60667bf821d50800000000000000
+      internalID: 6706580812961589576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_206
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef67a506f097a940800000000000000
+      internalID: 5307370072210632673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_207
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0aacc7d8b9a53e0800000000000000
+      internalID: -2064166447209602901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292ea34d10e810a00800000000000000
+      internalID: 721013553862730386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_209
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae5478e4d4106560800000000000000
+      internalID: 7304861500260507309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_210
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6660cb8c8c947ad20800000000000000
+      internalID: 3289679179527489126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_211
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5b50c87f8441df0800000000000000
+      internalID: -210463054536264193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_212
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172be952f11bd8970800000000000000
+      internalID: 8758851597638742641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_213
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130715ab2f72f2030800000000000000
+      internalID: 3472037761187409969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_214
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d3446af3310560800000000000000
+      internalID: 7278155623324440023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_215
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83050374de1313a0800000000000000
+      internalID: -6695974323158187125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_216
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0763d20978b7240800000000000000
+      internalID: 4790571681942237392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_217
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8749742b49a5afbb0800000000000000
+      internalID: -4901505649746668424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_218
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9306b54730f9630b0800000000000000
+      internalID: -5749233037105995719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_219
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cd18c4c3efa3760800000000000000
+      internalID: 7438537269490867358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_220
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698164ae7a8cbcaf0800000000000000
+      internalID: -374985520439748458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_221
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060b76e63616ed2b0800000000000000
+      internalID: -5557897810446667680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_222
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475557db183361980800000000000000
+      internalID: -8568604608703408780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_223
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60538c99c745ade0800000000000000
+      internalID: -1322571984323522451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_224
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b436355c6630a40800000000000000
+      internalID: 5333219381430406004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_225
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6ded5819078d1f0800000000000000
+      internalID: -1019941545280874798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_226
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fd6f7c7b537b250800000000000000
+      internalID: 5960291695298273136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_227
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638433ef2126a61c0800000000000000
+      internalID: -4509684243144423370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_228
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30f5237c83121560800000000000000
+      internalID: 7282905041359728700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_packed_keyboard_229
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6086007be58993e60800000000000000
+      internalID: 7942546950409185286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
