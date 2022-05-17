@@ -12,6 +12,7 @@ TagManager:
   - Wall
   - Inimigo
   - Chegada
+  - Floater
   layers:
   - Default
   - TransparentFX
