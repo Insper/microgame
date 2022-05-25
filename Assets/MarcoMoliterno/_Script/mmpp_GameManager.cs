@@ -12,36 +12,24 @@ namespace Marcompp {
         //[SerializeField]private GameObject _basebDot;
         //[SerializeField] private GameObject _dotHolder;
         private MicrogameInternal.GameManager gm;
-        
-        public bool reached;
 
         [SerializeField]private GameObject[] levels;
         [SerializeField]private int[] flagpos = {0,1,3,4,3};
 
-        private static mmpp_GameManager _instance;
         private int _level;
 
-        public static mmpp_GameManager GetInstance()
-        {
-            if(_instance == null)
-            {
-            _instance = new mmpp_GameManager();
-            }
+        private mmpp_FlagManager fm;
 
-            return _instance;
-        }
 
-        private mmpp_GameManager()
-        {
-            reached = false;
-        }
-        
+
         void Start() {
-            reached = false;
             gm = MicrogameInternal.GameManager.GetInstance();
+            fm = mmpp_FlagManager.GetInstance();
             Invoke(nameof(Begin), 0.5f);
             LoadLevel();
+            fm.reached = false;
         }
+
 
         void LoadLevel() {
             _level = gm.ActiveLevel <= 4 ? gm.ActiveLevel : 4;
@@ -57,7 +45,7 @@ namespace Marcompp {
         }
 
         void EndCheck() {
-           if(!reached) gm.GameLost();
+           if(!fm.reached) gm.GameLost();
         }
     }
 }

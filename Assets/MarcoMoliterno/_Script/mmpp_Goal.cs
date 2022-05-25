@@ -9,13 +9,13 @@ public class mmpp_Goal : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
 
-    private mmpp_GameManager gm;
+    private mmpp_FlagManager fm;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        gm = mmpp_GameManager.GetInstance();
+        fm = mmpp_FlagManager.GetInstance();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -23,7 +23,7 @@ public class mmpp_Goal : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             animator.SetTrigger("Reached");
-            gm.reached = true;
+            fm.reached = true;
         }
     }
 }
